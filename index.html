@@ -684,6 +684,33 @@ a.sayac { cursor: pointer; }
 .pf-bolum { border: 1px solid var(--rule); margin: 0; min-width: 0; }
 .pf-bolum legend { display: flex; align-items: center; gap: 10px; font-weight: 750; font-size: 17px; padding: 0 6px; margin-left: -6px; }
 .pf-bolum legend .no { width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--accent); color: var(--accent); display: grid; place-items: center; font-family: var(--font-display); font-weight: 800; font-size: 14px; }
+/* Profil formu: her bölümün kendi rengi */
+.pf-bolum[data-renk="mavi"] { --r: #2F6BFF; }
+.pf-bolum[data-renk="mor"] { --r: #7B3FE4; }
+.pf-bolum[data-renk="turkuaz"] { --r: #0A9E95; }
+.pf-bolum[data-renk="turuncu"] { --r: #E8720C; }
+.pf-bolum[data-renk="yesil"] { --r: #1E9E52; }
+.pf-bolum[data-renk] { --accent: var(--r); --accent-soft: color-mix(in srgb, var(--r) 14%, transparent); position: relative; overflow: hidden; border: 1px solid color-mix(in srgb, var(--r) 30%, var(--rule)); border-top: 5px solid var(--r); background: linear-gradient(160deg, color-mix(in srgb, var(--r) 9%, var(--sheet)) 0%, var(--sheet) 55%); padding-top: 6px; }
+.pf-bolum[data-renk] legend { float: left; width: 100%; padding: 14px 0 6px; margin: 0 0 6px; }
+.pf-bolum[data-renk] legend + * { clear: both; }
+.pf-ikon { width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center; flex: none; color: #fff; background: linear-gradient(135deg, var(--r), color-mix(in srgb, var(--r) 65%, #000)); box-shadow: 0 6px 14px -6px var(--r); }
+.pf-lg { display: grid; gap: 2px; }
+.pf-lg b { font-size: 17px; font-weight: 800; }
+.pf-lg small { font-size: 13px; font-weight: 500; color: var(--ink-2); }
+.pf-bolum[data-renk] .kabarcik:has(input:checked) { background: var(--r); border-color: var(--r); color: #fff; }
+.pf-bolum[data-renk] .kabarcik:has(input:checked) .daire { border-color: #fff; background: #fff; color: var(--r); }
+.pf-bolum[data-renk] select:focus, .pf-bolum[data-renk] input:focus { outline: 2px solid var(--r); outline-offset: 1px; }
+.pf-bas { position: relative; overflow: hidden; color: #fff; border-radius: var(--r-m); padding: 22px 20px 18px; background: radial-gradient(circle at 92% 8%, rgba(255,255,255,.22) 0 70px, transparent 71px), radial-gradient(circle at 78% 110%, rgba(255,214,90,.35) 0 90px, transparent 91px), linear-gradient(125deg, #2346C8 0%, #6A3FE0 55%, #0A9E95 100%); display: grid; gap: 12px; }
+.pf-bas h1 { color: #fff; }
+.pf-bas p { color: rgba(255,255,255,.88); }
+.pf-bas .pf-saklama { font-size: 13px; margin: 0; color: rgba(255,255,255,.75); }
+.pf-doluluk { display: grid; gap: 6px; font-size: 14px; font-weight: 650; }
+.pf-doluluk-cubuk { height: 10px; border-radius: 99px; background: rgba(255,255,255,.25); overflow: hidden; }
+.pf-doluluk-cubuk span { display: block; height: 100%; width: 0; border-radius: 99px; background: linear-gradient(90deg, #FFD65A, #7CF0C5); transition: width .35s ease; }
+.pf-ad-alan label { color: #fff; font-weight: 650; }
+.pf-ad-alan .istege { font-weight: 500; opacity: .75; font-size: 13px; }
+.pf-ad-alan input { background: rgba(255,255,255,.95); color: #131A2B; border-color: transparent; }
+@media (prefers-reduced-motion: reduce) { .pf-doluluk-cubuk span { transition: none; } }
 .pf-izgara { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
 .kabarcik-grup.dikey { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px 14px; }
 .il-secici { display: grid; gap: 8px; margin-top: 8px; }
@@ -2889,7 +2916,7 @@ a.sayac { cursor: pointer; }
       '<div class="kart"><h2>Başka cihazdan profil taşı</h2><p class="acik">Diğer cihazında Profilim &gt; "Profil kodunu kopyala" ile aldığın kodu buraya yapıştır.</p><label class="gizli" for="pf-kod">Profil kodu</label><textarea id="pf-kod" class="kod-alani" rows="3" placeholder="KR1:…" spellcheck="false"></textarea><div><button type="button" class="btn" id="pf-kod-yukle">Profili yükle</button></div></div>';
   }
   function profilAltYazi(p) {
-    return [OGRENIM[p.duzey], bolumAdi(p), p.okul, p.mezuniyet ? p.mezuniyet + ' mezunu' : ''].filter(Boolean).join(' · ');
+    return [OGRENIM[p.duzey], bolumAdi(p)].filter(Boolean).join(' · ');
   }
   function profilPanoHtml(ap) {
     const puan = etkinPuan(ap);
@@ -2961,46 +2988,56 @@ a.sayac { cursor: pointer; }
     return yas != null ? 'Yaşın: ' + yas + '. İlanlardaki yaş sınırları bu tarihe göre hesaplanır.' : 'İlanlardaki yaş sınırlarını senin için hesaplamamız için gerekli.';
   }
   function profilFormHtml(p) {
-    const yil = Number(tf(simdi(), { year: 'numeric' }));
     const radyo = (ad, deger, yazi, secili) => '<label class="kabarcik"><input type="radio" name="' + ad + '" value="' + deger + '"' + (secili ? ' checked' : '') + '><span class="daire"></span>' + yazi + '</label>';
     const bolumler = BOLUMLER[p.duzey] || [];
+    const bolum = (renk, ikon, baslik, alt, ic) => '<fieldset class="kart pf-bolum" data-renk="' + renk + '"><legend><span class="pf-ikon" aria-hidden="true">' + svgIkon(ikon, 20) + '</span><span class="pf-lg"><b>' + baslik + '</b><small>' + alt + '</small></span></legend>' + ic + '</fieldset>';
     return '<form class="profil-form" id="profil-form" autocomplete="off" novalidate>' +
-      '<div class="pf-bas"><h1>' + (p.yeni ? 'Profil oluştur' : 'Profili düzenle') + '</h1><p>Yıldızlı alanlar ilan eşleştirmesi için gerekli. Bilgilerin ' + (S.bulut && S.bulut.yazabilir ? 'Claude hesabına' : 'yalnızca bu cihaza') + ' kaydedilir.</p></div>' +
-      '<fieldset class="kart pf-bolum"><legend><span class="no">1</span>Kişisel bilgiler</legend>' +
-      '<div class="pf-izgara"><div class="alan"><label for="pf-ad">Adın veya takma adın *</label><input id="pf-ad" value="' + esc(p.ad) + '" maxlength="40" autocomplete="given-name"></div>' +
-      '<div class="alan"><label for="pf-dogum">Doğum tarihin</label><input type="date" id="pf-dogum" value="' + esc(p.dogum) + '" aria-describedby="pf-yas-bilgi"><p class="yardim" id="pf-yas-bilgi">' + esc(pfYasMetni(p.dogum)) + '</p></div>' +
-      '<div class="alan"><label for="pf-ilim">Yaşadığın il</label><select id="pf-ilim"><option value="">Seç</option>' + IL_ADLARI.map(x => '<option' + (p.il === x ? ' selected' : '') + '>' + esc(x) + '</option>').join('') + '</select></div></div>' +
-      '<div class="alan"><span class="etk">Cinsiyet</span><div class="kabarcik-grup">' + radyo('pf-cins', 'kadin', 'Kadın', p.cinsiyet === 'kadin') + radyo('pf-cins', 'erkek', 'Erkek', p.cinsiyet === 'erkek') + radyo('pf-cins', '', 'Belirtmek istemiyorum', !p.cinsiyet) + '</div><p class="yardim">Bazı kadrolar yalnızca kadın veya erkek adaylara açık; boş bırakırsan bu ilanlar "kontrol et" olarak görünür.</p></div></fieldset>' +
-      '<fieldset class="kart pf-bolum"><legend><span class="no">2</span>Okul</legend>' +
-      '<div class="alan"><span class="etk">Öğrenim düzeyin *</span><div class="kabarcik-grup">' + radyo('pf-duzey', 'lisans', 'Lisans', p.duzey === 'lisans') + radyo('pf-duzey', 'onlisans', 'Önlisans', p.duzey === 'onlisans') + radyo('pf-duzey', 'ortaogretim', 'Ortaöğretim (lise)', p.duzey === 'ortaogretim') + '</div></div>' +
-      '<div class="pf-izgara"><div class="alan"><label for="pf-okul">Okulun</label><input id="pf-okul" value="' + esc(p.okul) + '" maxlength="80" placeholder="Örn. Anadolu Üniversitesi"></div>' +
-      '<div class="alan"><label for="pf-bolum">Bölümün veya programın *</label><select id="pf-bolum">' + bolumler.map(b => '<option value="' + b[0] + '"' + (b[0] === p.bolum ? ' selected' : '') + '>' + esc(b[1]) + '</option>').join('') + '</select></div>' +
-      '<div class="alan"><label for="pf-mezun">Mezuniyet yılın</label><select id="pf-mezun"><option value="">Seç</option><option value="okuyor"' + (p.mezuniyet === 'okuyor' ? ' selected' : '') + '>Hâlâ okuyorum</option>' + Array.from({ length: 30 }, (_, i) => yil - i).map(y => '<option' + (String(p.mezuniyet) === String(y) ? ' selected' : '') + '>' + y + '</option>').join('') + '</select></div></div></fieldset>' +
-      '<fieldset class="kart pf-bolum"><legend><span class="no">3</span>Sınav puanın ve sıralaman</legend><div id="pf-puanlar" class="puan-kap">' + puanAlanlariHtml(p, 'pf') + '</div></fieldset>' +
-      '<fieldset class="kart pf-bolum"><legend><span class="no">4</span>Belge ve sertifikaların</legend><div class="belge-secim" id="pf-belgeler">' + belgeSecimHtml(p, 'pf') + '</div><p class="belge-rehber-link"><a href="#sertifika">Bu belgeleri nereden alırım?</a></p><div id="pf-yds-kap">' + ydsHtml(p, 'pf') + '</div></fieldset>' +
-      '<fieldset class="kart pf-bolum"><legend><span class="no">5</span>Tercihlerin</legend>' +
-      '<div class="alan"><span class="etk">Nerede çalışmak istersin?</span><div class="kabarcik-grup">' + radyo('pf-yer', 'her', 'Her ilde çalışabilirim', !p.iller.length) + radyo('pf-yer', 'sec', 'Seçtiğim illerde', p.iller.length > 0) + '</div>' +
-      '<div class="il-secici" id="pf-il-secici"' + (p.iller.length ? '' : ' hidden') + '><label class="gizli" for="pf-il-ekle">İl ekle</label><select id="pf-il-ekle"><option value="">İl ekle…</option>' + IL_ADLARI.map(x => '<option>' + esc(x) + '</option>').join('') + '</select><div class="secili-iller" id="pf-iller">' + p.iller.map(x => '<button type="button" class="il-cip secili" data-cikar="' + esc(x) + '"><b>' + esc(x) + '</b><span aria-hidden="true">✕</span><span class="gizli">kaldır</span></button>').join('') + '</div></div>' +
-      '<p class="yardim">Türkiye geneli ilanlar her zaman gösterilir; seçtiğin illerin dışındaki ilanlar ayrıca işaretlenir.</p></div>' +
-      '<div class="alan"><span class="etk">Hangi alımlar ilgini çekiyor?</span><div class="kabarcik-grup">' + TUM_TURLER.map(t => '<label class="kabarcik"><input type="checkbox" name="pf-tur" value="' + t + '"' + (p.turler.includes(t) ? ' checked' : '') + '><span class="daire">✓</span>' + esc(TUR[t].uzun) + '</label>').join('') + '</div></div></fieldset>' +
+      '<div class="pf-bas"><div class="pf-bas-metin"><h1>' + (p.yeni ? 'Profil oluştur' : 'Profili düzenle') + '</h1><p>Yalnızca KPSS merkezi yerleştirme kılavuzunun kadro şartlarında baktığı bilgiler: öğrenim, bölüm, puan, yaş, cinsiyet, belge ve tercih ettiğin iller.</p></div>' +
+      '<div class="pf-doluluk" aria-live="polite"><div class="pf-doluluk-cubuk"><span id="pf-doluluk-dolgu"></span></div><span id="pf-doluluk-yazi"></span></div>' +
+      '<div class="alan pf-ad-alan"><label for="pf-ad">Profil adı <span class="istege">isteğe bağlı</span></label><input id="pf-ad" value="' + esc(p.ad) + '" maxlength="40" placeholder="Örn. Ebru, Lisans profili"></div>' +
+      '<p class="pf-saklama">' + esc('Bilgilerin ' + (S.bulut && S.bulut.yazabilir ? 'Claude hesabına' : 'yalnızca bu cihaza') + ' kaydedilir.') + '</p></div>' +
+      bolum('mavi', 'graduation', 'Öğrenim ve bölüm', 'Kadrolar öğrenim düzeyine ve mezun olunan bölüme göre ayrılır',
+        '<div class="alan"><span class="etk">Öğrenim düzeyin *</span><div class="kabarcik-grup">' + radyo('pf-duzey', 'lisans', 'Lisans', p.duzey === 'lisans') + radyo('pf-duzey', 'onlisans', 'Önlisans', p.duzey === 'onlisans') + radyo('pf-duzey', 'ortaogretim', 'Ortaöğretim (lise)', p.duzey === 'ortaogretim') + '</div></div>' +
+        '<div class="alan"><label for="pf-bolum">Mezun olduğun bölüm veya program *</label><select id="pf-bolum">' + bolumler.map(b => '<option value="' + b[0] + '"' + (b[0] === p.bolum ? ' selected' : '') + '>' + esc(b[1]) + '</option>').join('') + '</select><p class="yardim">Kılavuzdaki öğrenim nitelik kodları bölüm adına göre eşleşir.</p></div>') +
+      bolum('mor', 'chart', 'KPSS puanın', 'Merkezi yerleştirmede sıralama bu puanla yapılır',
+        '<div id="pf-puanlar" class="puan-kap">' + puanAlanlariHtml(p, 'pf') + '</div>') +
+      bolum('turkuaz', 'kisi', 'Yaş ve cinsiyet', 'Bazı kadrolarda yaş sınırı ya da cinsiyet şartı var',
+        '<div class="pf-izgara"><div class="alan"><label for="pf-dogum">Doğum tarihin</label><input type="date" id="pf-dogum" value="' + esc(p.dogum) + '" aria-describedby="pf-yas-bilgi"><p class="yardim" id="pf-yas-bilgi">' + esc(pfYasMetni(p.dogum)) + '</p></div></div>' +
+        '<div class="alan"><span class="etk">Cinsiyet</span><div class="kabarcik-grup">' + radyo('pf-cins', 'kadin', 'Kadın', p.cinsiyet === 'kadin') + radyo('pf-cins', 'erkek', 'Erkek', p.cinsiyet === 'erkek') + radyo('pf-cins', '', 'Belirtmek istemiyorum', !p.cinsiyet) + '</div><p class="yardim">Boş bırakırsan cinsiyet şartlı kadrolar "kontrol et" olarak görünür.</p></div>') +
+      bolum('turuncu', 'belge', 'Belge, sertifika ve yabancı dil', 'Kılavuzda nitelik kodu olarak istenen belgeler',
+        '<div class="belge-secim" id="pf-belgeler">' + belgeSecimHtml(p, 'pf') + '</div><p class="belge-rehber-link"><a href="#sertifika">Bu belgeleri nereden alırım?</a></p><div id="pf-yds-kap">' + ydsHtml(p, 'pf') + '</div>') +
+      bolum('yesil', 'harita', 'Tercih edeceğin iller', 'Merkezi yerleştirmede kadrolar il il tercih edilir',
+        '<div class="alan"><div class="kabarcik-grup">' + radyo('pf-yer', 'her', 'Her ilde çalışabilirim', !p.iller.length) + radyo('pf-yer', 'sec', 'Seçtiğim illerde', p.iller.length > 0) + '</div>' +
+        '<div class="il-secici" id="pf-il-secici"' + (p.iller.length ? '' : ' hidden') + '><label class="gizli" for="pf-il-ekle">İl ekle</label><select id="pf-il-ekle"><option value="">İl ekle…</option>' + IL_ADLARI.map(x => '<option>' + esc(x) + '</option>').join('') + '</select><div class="secili-iller" id="pf-iller">' + p.iller.map(x => '<button type="button" class="il-cip secili" data-cikar="' + esc(x) + '"><b>' + esc(x) + '</b><span aria-hidden="true">✕</span><span class="gizli">kaldır</span></button>').join('') + '</div></div>' +
+        '<p class="yardim">Türkiye geneli ilanlar her zaman gösterilir; seçtiğin illerin dışındakiler ayrıca işaretlenir.</p></div>') +
       '<div class="pf-dugmeler"><button type="submit" class="btn ana">' + (p.yeni ? 'Profili oluştur ve ilanlarımı göster' : 'Kaydet') + '</button><button type="button" class="btn" id="pf-vazgec">Vazgeç</button></div></form>';
+  }
+  function pfDolulukGuncelle() {
+    const f = $('#profil-form'); if (!f) return;
+    const puanVar = Array.from(f.querySelectorAll('#pf-puanlar input')).some(i => i.value.trim());
+    const adimlar = [!!$('#pf-bolum').value, puanVar, !!$('#pf-dogum').value, !!(f.querySelector('input[name="pf-cins"]:checked') || {}).value, f.querySelectorAll('input[name="pf-belge"]:checked').length > 0 || !!($('#pf-yds') && $('#pf-yds').value.trim()), true];
+    const n = adimlar.filter(Boolean).length, top = adimlar.length, yuzde = Math.round(n / top * 100);
+    const d = $('#pf-doluluk-dolgu'), y = $('#pf-doluluk-yazi');
+    if (d) d.style.width = yuzde + '%';
+    if (y) y.textContent = yuzde === 100 ? 'Profilin tamam, eşleştirme en doğru hâlinde' : 'Profilin %' + yuzde + ' dolu';
   }
   function profilFormOlaylari() {
     const f = $('#profil-form'); if (!f) return;
+    pfDolulukGuncelle(); f.addEventListener('input', pfDolulukGuncelle); f.addEventListener('change', () => setTimeout(pfDolulukGuncelle, 0));
     const pfDogum = $('#pf-dogum');
     if (pfDogum) pfDogum.addEventListener('input', () => { const b = $('#pf-yas-bilgi'); if (b) b.textContent = pfYasMetni(pfDogum.value); });
     const oku = () => {
       const p = S.profilForm;
-      p.ad = $('#pf-ad').value.trim(); p.dogum = $('#pf-dogum').value; p.il = $('#pf-ilim').value;
+      p.ad = $('#pf-ad').value.trim(); p.dogum = $('#pf-dogum').value;
       p.cinsiyet = (f.querySelector('input[name="pf-cins"]:checked') || {}).value || '';
       p.duzey = (f.querySelector('input[name="pf-duzey"]:checked') || {}).value || 'lisans';
-      p.okul = $('#pf-okul').value.trim(); p.bolum = $('#pf-bolum').value; p.mezuniyet = $('#pf-mezun').value;
+      p.okul = ''; p.mezuniyet = ''; p.bolum = $('#pf-bolum').value;
       p.puanlar = puanlariOku($('#pf-puanlar'), p.puanlar);
       const ana = p.puanlar[PUAN_TURU[p.duzey]] || {};
       p.puan = ana.puan || ''; p.siralama = ana.sira || '';
       const py = $('#pf-yds'); if (py) { p.yds = py.value.trim(); p.ydsDil = $('#pf-yds-dil').value; }
       p.belgeler = Array.from(f.querySelectorAll('input[name="pf-belge"]:checked')).map(i => i.value);
-      p.turler = Array.from(f.querySelectorAll('input[name="pf-tur"]:checked')).map(i => i.value);
+      if (f.querySelector('input[name="pf-tur"]')) p.turler = Array.from(f.querySelectorAll('input[name="pf-tur"]:checked')).map(i => i.value);
       if ((f.querySelector('input[name="pf-yer"]:checked') || {}).value === 'her') p.iller = [];
     };
     f.querySelectorAll('input[name="pf-duzey"]').forEach(r => r.addEventListener('change', () => {
@@ -3020,7 +3057,7 @@ a.sayac { cursor: pointer; }
     f.addEventListener('submit', ev => {
       ev.preventDefault(); oku();
       const p = S.profilForm;
-      if (!p.ad) { tost('Adını veya takma adını yaz'); $('#pf-ad').focus(); return; }
+      if (!p.ad) p.ad = 'Profilim';
       if (!p.turler.length) p.turler = TUM_TURLER.slice();
       const yeni = p.yeni; delete p.yeni;
       if (yeni) S.hesap.profiller.push(yeniProfil(p)); else S.hesap.profiller = S.hesap.profiller.map(x => (x.id === p.id ? yeniProfil(p) : x));
