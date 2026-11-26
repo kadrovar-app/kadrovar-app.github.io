@@ -1,0 +1,1841 @@
+{
+ "meta": {
+  "guncelleme": "2026-11-20",
+  "aciklama": "Unvan bazında merkezi yerleştirme puanları. d1 = KPSS-2026/1 (sonuçlar 24 Temmuz 2026, 2024 KPSS puanlarıyla), d2 = KPSS-2025/2. Taban = o unvanda yerleşen en düşük puan, tavan = en yüksek puan.",
+  "kaynaklar": [
+   {
+    "ad": "ÖSYM – KPSS-2026/1 yerleştirme sayısal bilgileri",
+    "url": "https://dokuman.osym.gov.tr/web/2026/7/kpss-20261-yerlestirme-sonuclarina-liskin-sayisal-bilgiler-24vo0pj5.pdf"
+   },
+   {
+    "ad": "tabanpuanlari.tr – KPSS merkezi atama puanları (unvan bazında)",
+    "url": "https://tabanpuanlari.tr/kpss/merkezi"
+   },
+   {
+    "ad": "Milli Gazete – KPSS-2026/1 lisans unvan tabanları",
+    "url": "https://www.milligazete.com.tr/kpss-lisans-taban-puanlari-2026-kac-oldu-memur-olmak-icin-kac-puan-gerekiyor-60-65-70-ve-75-puan-yeterli-mi"
+   },
+   {
+    "ad": "egitim.net.tr – KPSS-2026/1 taban ve tavan puanları",
+    "url": "https://egitim.net.tr/sinav/kpss-20261-taban-ve-tavan-puanlari-aciklandi-en-dusuk-puan-6444-oldu-16566h"
+   },
+   {
+    "ad": "2024 KPSS sıralama paylaşımları (Memurlar.net forumu)",
+    "url": "https://forum.memurlar.net/konu/2570357/2024-kpss-siralama.html"
+   },
+   {
+    "ad": "2026 KPSS P3 dağılım tahmini (KPSS Cafe)",
+    "url": "https://x.com/kpsscafe/status/2107794181665988891"
+   }
+  ],
+  "genel": {
+   "lisans": {
+    "puanTuru": "P3",
+    "kontenjan": 977,
+    "tercihYapan": 104148,
+    "enDusuk": 66.6,
+    "enYuksek": 97.0
+   },
+   "onlisans": {
+    "puanTuru": "P93",
+    "kontenjan": 828,
+    "tercihYapan": 70990,
+    "enDusuk": 64.45,
+    "enYuksek": 99.14
+   },
+   "ortaogretim": {
+    "puanTuru": "P94",
+    "kontenjan": 278,
+    "tercihYapan": 74159,
+    "enDusuk": 68.86,
+    "enYuksek": 99.08
+   }
+  },
+  "siraTablolari": {
+   "aciklama": "Puan → başarı sırası karşılıkları (yaklaşık). Tabanlar 2024 KPSS puanlarıyla oluştuğu için 2026 sınavına girenlerin başarı sırası 2024 puan karşılığına çevrilerek kıyaslanır. P3 2024 değerleri adayların paylaştığı sonuç belgelerinden; 2026 ve P93/P94 değerleri yayımlanan dağılım tahminleri ile ÖSYM puan formülüne dayalı modelden derlenmiştir.",
+   "tabanYili": "2024",
+   "adayYili": "2026",
+   "2024": {
+    "P3": {
+     "n": 1340000,
+     "noktalar": [
+      [
+       100,
+       1
+      ],
+      [
+       98.1,
+       7
+      ],
+      [
+       93.7,
+       434
+      ],
+      [
+       93.18,
+       581
+      ],
+      [
+       92.74,
+       798
+      ],
+      [
+       92.5,
+       918
+      ],
+      [
+       88.6,
+       5627
+      ],
+      [
+       84.11,
+       21261
+      ],
+      [
+       82.91,
+       28500
+      ],
+      [
+       80.96,
+       45000
+      ],
+      [
+       80.28,
+       52443
+      ],
+      [
+       70.3,
+       357000
+      ],
+      [
+       65,
+       660000
+      ],
+      [
+       60,
+       950000
+      ],
+      [
+       50,
+       1250000
+      ],
+      [
+       40,
+       1340000
+      ]
+     ]
+    },
+    "P93": {
+     "n": 1080000,
+     "noktalar": [
+      [
+       100,
+       1
+      ],
+      [
+       96,
+       81
+      ],
+      [
+       92.05,
+       900
+      ],
+      [
+       85,
+       11600
+      ],
+      [
+       80,
+       48200
+      ],
+      [
+       75,
+       146600
+      ],
+      [
+       70,
+       333000
+      ],
+      [
+       65,
+       583000
+      ],
+      [
+       60,
+       819000
+      ],
+      [
+       50,
+       1000000
+      ],
+      [
+       40,
+       1080000
+      ]
+     ]
+    },
+    "P94": {
+     "n": 1650000,
+     "noktalar": [
+      [
+       100,
+       1
+      ],
+      [
+       98,
+       10
+      ],
+      [
+       93.7,
+       470
+      ],
+      [
+       88.6,
+       5960
+      ],
+      [
+       80,
+       56300
+      ],
+      [
+       73.22,
+       219200
+      ],
+      [
+       69,
+       455600
+      ],
+      [
+       64,
+       854000
+      ],
+      [
+       55,
+       1340000
+      ],
+      [
+       40,
+       1650000
+      ]
+     ],
+     "belirsiz": true
+    }
+   },
+   "2026": {
+    "P3": {
+     "n": 1500000,
+     "noktalar": [
+      [
+       100,
+       1
+      ],
+      [
+       95,
+       150
+      ],
+      [
+       90,
+       3000
+      ],
+      [
+       85,
+       20000
+      ],
+      [
+       80,
+       75000
+      ],
+      [
+       75,
+       212000
+      ],
+      [
+       70,
+       463000
+      ],
+      [
+       65,
+       780000
+      ],
+      [
+       60,
+       1110000
+      ],
+      [
+       50,
+       1400000
+      ],
+      [
+       40,
+       1500000
+      ]
+     ]
+    },
+    "P93": {
+     "n": 1470199,
+     "noktalar": [
+      [
+       100,
+       1
+      ],
+      [
+       95,
+       911
+      ],
+      [
+       90,
+       5350
+      ],
+      [
+       85,
+       23900
+      ],
+      [
+       79.25,
+       96292
+      ],
+      [
+       74.62,
+       188454
+      ],
+      [
+       70,
+       370000
+      ],
+      [
+       65,
+       640000
+      ],
+      [
+       60,
+       950000
+      ],
+      [
+       50,
+       1350000
+      ],
+      [
+       40,
+       1470199
+      ]
+     ]
+    },
+    "P94": {
+     "n": 2462620,
+     "noktalar": [
+      [
+       100,
+       1
+      ],
+      [
+       98,
+       15
+      ],
+      [
+       93.7,
+       700
+      ],
+      [
+       88.6,
+       8900
+      ],
+      [
+       80,
+       84000
+      ],
+      [
+       73.22,
+       327147
+      ],
+      [
+       69,
+       680000
+      ],
+      [
+       64,
+       1275000
+      ],
+      [
+       55,
+       2000000
+      ],
+      [
+       40,
+       2462620
+      ]
+     ],
+     "belirsiz": true
+    }
+   }
+  }
+ },
+ "kadrolar": [
+  {
+   "id": "memur-lisans",
+   "unvan": "Memur",
+   "duzey": "lisans",
+   "bolumTags": [],
+   "bolumNot": "Çoğu kadro herhangi bir lisans programını kabul eder; bazıları belirli bölüm ister.",
+   "d1": {
+    "kontenjan": 170,
+    "taban": 74.47,
+    "tavan": 97.0
+   },
+   "d2": {
+    "kontenjan": 260,
+    "yaklasik": true,
+    "taban": 68.18,
+    "tavan": 97.86
+   },
+   "ornekler": [
+    [
+     "Rekabet Kurumu",
+     "Ankara",
+     7,
+     83.43,
+     "2026/1"
+    ],
+    [
+     "Eti Maden İşletmeleri",
+     "Ankara",
+     1,
+     74.47,
+     "2026/1"
+    ],
+    [
+     "Türkiye Yazma Eserler Kurumu",
+     "İstanbul",
+     1,
+     92.77,
+     "2026/1"
+    ],
+    [
+     "DHMİ",
+     "Malatya / Akçadağ",
+     1,
+     97.0,
+     "2026/1"
+    ]
+   ],
+   "not": "Aynı unvanda puan aralığı çok geniş: merkez kurumlar ve tercih edilen iller yüksek, küçük ilçeler daha düşük taban veriyor."
+  },
+  {
+   "id": "vhki-lisans",
+   "unvan": "Veri hazırlama ve kontrol işletmeni (VHKİ)",
+   "duzey": "lisans",
+   "bolumTags": [],
+   "sertifika": {
+    "herhangi": [
+     "bilgisayar"
+    ],
+    "not": "Çoğu VHKİ kadrosu MEB onaylı bilgisayar işletmenliği sertifikası (6225) ister; okulda bilgisayar dersi aldıysan transkriptin de geçer."
+   },
+   "d1": {
+    "kontenjan": 37,
+    "taban": 71.77,
+    "tavan": 99.14
+   },
+   "d2": {
+    "kontenjan": 27,
+    "taban": 71.18,
+    "tavan": 93.89
+   },
+   "ornekler": [
+    [
+     "TİTCK",
+     "Ankara",
+     9,
+     89.79,
+     "2026/1"
+    ],
+    [
+     "Uşak İl Özel İdaresi",
+     "Uşak",
+     5,
+     83.04,
+     "2026/1"
+    ],
+    [
+     "Ulaştırma ve Altyapı Bak.",
+     "Bolu",
+     1,
+     99.14,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "buro-lisans",
+   "unvan": "Büro personeli",
+   "duzey": "lisans",
+   "bolumTags": [],
+   "d1": {
+    "kontenjan": 57,
+    "taban": 69.23,
+    "tavan": 91.48
+   },
+   "d2": {
+    "kontenjan": 246,
+    "yaklasik": true,
+    "taban": 69.77,
+    "tavan": 91.49
+   },
+   "ornekler": [
+    [
+     "SGK",
+     "Konya",
+     3,
+     69.46,
+     "2026/1"
+    ],
+    [
+     "SGK",
+     "Adana",
+     1,
+     74.56,
+     "2026/1"
+    ],
+    [
+     "İnönü Üniversitesi",
+     "Malatya",
+     3,
+     80.19,
+     "2026/1"
+    ],
+    [
+     "Kentsel Dönüşüm Bşk.",
+     "Ankara",
+     12,
+     80.28,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "bilgisayar-isletmeni-lisans",
+   "unvan": "Bilgisayar işletmeni",
+   "duzey": "lisans",
+   "bolumTags": [],
+   "sertifika": {
+    "herhangi": [
+     "bilgisayar"
+    ],
+    "not": "Bilgisayar işletmenliği sertifikası (6225) aranır; programcı veya analist programcı sertifikası da kabul edilir."
+   },
+   "d1": {
+    "kontenjan": 34,
+    "taban": 70.98,
+    "tavan": 90.8
+   },
+   "d2": {
+    "kontenjan": 21,
+    "taban": 70.27,
+    "tavan": 82.92
+   },
+   "ornekler": [
+    [
+     "Tokat İl Özel İdaresi",
+     "Tokat",
+     6,
+     80.54,
+     "2025/2"
+    ],
+    [
+     "ŞUSKİ",
+     "Şanlıurfa",
+     3,
+     80.77,
+     "2025/2"
+    ],
+    [
+     "YÖK",
+     "Ankara",
+     1,
+     82.92,
+     "2025/2"
+    ]
+   ]
+  },
+  {
+   "id": "muhendis",
+   "unvan": "Mühendis",
+   "duzey": "lisans",
+   "bolumTags": [
+    "muhendislik"
+   ],
+   "bolumNot": "Kadroya göre ilgili mühendislik dalı istenir (inşaat, makine, elektrik, maden vb.).",
+   "d1": {
+    "kontenjan": 331,
+    "taban": 71.59,
+    "tavan": 94.74
+   },
+   "d2": null,
+   "ornekler": [
+    [
+     "Türkiye Taşkömürü Kurumu",
+     "Zonguldak",
+     26,
+     71.59,
+     "2026/1"
+    ],
+    [
+     "Devlet Malzeme Ofisi",
+     "Ankara",
+     3,
+     89.18,
+     "2026/1"
+    ],
+    [
+     "TCDD",
+     "İstanbul",
+     1,
+     93.82,
+     "2026/1"
+    ],
+    [
+     "TÜİK",
+     "Ankara",
+     1,
+     94.74,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "icra-memuru-lisans",
+   "unvan": "İcra memuru",
+   "duzey": "lisans",
+   "bolumTags": [],
+   "bolumNot": "Bazı kadrolar İİBF veya hukuk bölümleri isteyebilir.",
+   "d1": {
+    "kontenjan": 136,
+    "taban": 78.94,
+    "tavan": 90.56
+   },
+   "d2": {
+    "kontenjan": 4,
+    "taban": 81.36,
+    "tavan": 82.75
+   },
+   "ornekler": [
+    [
+     "SGK",
+     "İstanbul",
+     31,
+     78.94,
+     "2026/1"
+    ],
+    [
+     "SGK",
+     "İzmir",
+     10,
+     79.63,
+     "2026/1"
+    ],
+    [
+     "SGK",
+     "Ankara",
+     3,
+     90.56,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "hemsire-lisans",
+   "unvan": "Hemşire",
+   "duzey": "lisans",
+   "bolumTags": [
+    "hemsirelik"
+   ],
+   "d1": {
+    "kontenjan": 2,
+    "taban": 77.47,
+    "tavan": 77.94
+   },
+   "d2": {
+    "kontenjan": 107,
+    "taban": 75.44,
+    "tavan": 79.39
+   },
+   "ornekler": [
+    [
+     "Düzce Üniversitesi",
+     "Düzce",
+     10,
+     76.07,
+     "2025/2"
+    ],
+    [
+     "Eskişehir Osmangazi Üni.",
+     "Eskişehir",
+     7,
+     77.24,
+     "2025/2"
+    ],
+    [
+     "Erciyes Üniversitesi",
+     "Kayseri",
+     3,
+     77.75,
+     "2025/2"
+    ]
+   ],
+   "not": "Sağlık Bakanlığı'nın ayrı yerleştirmeleri (ör. beklenen 38 bin hekim dışı alım) bu tabloya dahil değil."
+  },
+  {
+   "id": "ebe",
+   "unvan": "Ebe",
+   "duzey": "lisans",
+   "bolumTags": [
+    "ebelik"
+   ],
+   "d1": {
+    "kontenjan": 0
+   },
+   "d2": {
+    "kontenjan": 6,
+    "taban": 74.45,
+    "tavan": 79.17
+   },
+   "ornekler": [
+    [
+     "Afyonkarahisar Sağlık Bilimleri Üni.",
+     "Afyonkarahisar",
+     6,
+     74.45,
+     "2025/2"
+    ]
+   ]
+  },
+  {
+   "id": "psikolog",
+   "unvan": "Psikolog",
+   "duzey": "lisans",
+   "bolumTags": [
+    "psikoloji"
+   ],
+   "d1": {
+    "kontenjan": 2,
+    "taban": 88.71,
+    "tavan": 89.54
+   },
+   "d2": {
+    "kontenjan": 2,
+    "taban": 88.58,
+    "tavan": 89.12
+   },
+   "ornekler": [
+    [
+     "TCDD Taşımacılık",
+     "Malatya",
+     1,
+     88.71,
+     "2026/1"
+    ],
+    [
+     "Nevşehir Hacı Bektaş Veli Üni.",
+     "Nevşehir",
+     1,
+     89.54,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "avukat",
+   "unvan": "Avukat",
+   "duzey": "lisans",
+   "bolumTags": [
+    "hukuk"
+   ],
+   "sertifika": {
+    "herhangi": [
+     "avukatlik"
+    ],
+    "not": "Tercihin son gününde avukatlık ruhsatına sahip olmak gerekir (7205, 7361); bazı kadrolar ruhsattan sonra 2 yıl deneyim ister (7207)."
+   },
+   "d1": {
+    "kontenjan": 74,
+    "taban": 90.57,
+    "tavan": 95.71
+   },
+   "d2": {
+    "kontenjan": 30,
+    "taban": 90.85,
+    "tavan": 96.48
+   },
+   "ornekler": [
+    [
+     "Gelir İdaresi Başkanlığı",
+     "Şırnak",
+     1,
+     90.57,
+     "2026/1"
+    ],
+    [
+     "TEDAŞ",
+     "Denizli",
+     1,
+     95.71,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "mimar",
+   "unvan": "Mimar",
+   "duzey": "lisans",
+   "bolumTags": [
+    "mimarlik"
+   ],
+   "d1": {
+    "kontenjan": null,
+    "taban": 88.73,
+    "tavan": null
+   },
+   "d2": null,
+   "ornekler": []
+  },
+  {
+   "id": "muhasebeci-lisans",
+   "unvan": "Muhasebeci",
+   "duzey": "lisans",
+   "bolumTags": [
+    "iibf"
+   ],
+   "d1": {
+    "kontenjan": 3,
+    "taban": 80.02,
+    "tavan": 81.19
+   },
+   "d2": {
+    "kontenjan": 1,
+    "taban": 81.11,
+    "tavan": 81.11
+   },
+   "ornekler": [
+    [
+     "Toprak Mahsulleri Ofisi",
+     "Yozgat / Yerköy",
+     1,
+     80.02,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "programci-lisans",
+   "unvan": "Programcı",
+   "duzey": "lisans",
+   "bolumTags": [
+    "bilisim",
+    "matematik",
+    "istatistik"
+   ],
+   "d1": {
+    "kontenjan": 2,
+    "taban": 78.72,
+    "tavan": 85.06
+   },
+   "d2": {
+    "kontenjan": 5,
+    "taban": 85.22,
+    "tavan": 91.19
+   },
+   "ornekler": [
+    [
+     "YÖK",
+     "Ankara",
+     1,
+     85.22,
+     "2025/2"
+    ],
+    [
+     "DHMİ",
+     "Ankara",
+     1,
+     91.19,
+     "2025/2"
+    ]
+   ]
+  },
+  {
+   "id": "kutuphaneci",
+   "unvan": "Kütüphaneci",
+   "duzey": "lisans",
+   "bolumTags": [
+    "bilgibelge"
+   ],
+   "d1": {
+    "kontenjan": 3,
+    "taban": 80.89,
+    "tavan": 83.08
+   },
+   "d2": {
+    "kontenjan": 2,
+    "taban": 80.2,
+    "tavan": 81.27
+   },
+   "ornekler": [
+    [
+     "Nevşehir Hacı Bektaş Veli Üni.",
+     "Nevşehir",
+     1,
+     80.89,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "istatistikci",
+   "unvan": "İstatistikçi",
+   "duzey": "lisans",
+   "bolumTags": [
+    "istatistik"
+   ],
+   "d1": {
+    "kontenjan": 11,
+    "taban": 72.79,
+    "tavan": 78.46
+   },
+   "d2": null,
+   "ornekler": [
+    [
+     "TÜİK",
+     "Trabzon",
+     2,
+     74.53,
+     "2026/1"
+    ],
+    [
+     "TÜİK",
+     "Hatay",
+     2,
+     74.91,
+     "2026/1"
+    ],
+    [
+     "TÜİK",
+     "Kastamonu",
+     1,
+     78.46,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "veteriner",
+   "unvan": "Veteriner hekim",
+   "duzey": "lisans",
+   "bolumTags": [
+    "veteriner"
+   ],
+   "d1": {
+    "kontenjan": 19,
+    "taban": 80.83,
+    "tavan": 88.9
+   },
+   "d2": {
+    "kontenjan": 17,
+    "taban": 82.15,
+    "tavan": 88.37
+   },
+   "ornekler": [
+    [
+     "TİGEM",
+     "Şanlıurfa / Ceylanpınar",
+     2,
+     80.83,
+     "2026/1"
+    ],
+    [
+     "Et ve Süt Kurumu",
+     "Ankara / Sincan",
+     2,
+     88.9,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "uzman-lisans",
+   "unvan": "Uzman (bölge kalkınma idareleri)",
+   "duzey": "lisans",
+   "bolumTags": [
+    "iibf",
+    "muhendislik",
+    "sehirplan"
+   ],
+   "d1": {
+    "kontenjan": 3,
+    "taban": 69.29,
+    "tavan": 84.04
+   },
+   "d2": null,
+   "ornekler": [
+    [
+     "GAP Bölge Kalkınma İdaresi",
+     "Şanlıurfa",
+     1,
+     69.29,
+     "2026/1"
+    ],
+    [
+     "DOKAP",
+     "Giresun",
+     1,
+     84.04,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "koruma-guvenlik-lisans",
+   "unvan": "Koruma ve güvenlik görevlisi",
+   "duzey": "lisans",
+   "bolumTags": [],
+   "sertifika": {
+    "herhangi": [
+     "guvenlik-silahli",
+     "guvenlik-silahsiz"
+    ],
+    "not": "Özel güvenlik görevlisi kimlik kartı (6551) istenir. Silahlı kadrolarda (7304) 21 yaşını doldurmak ve \"silahlı özel güvenlik görevlisi olur\" raporu gerekir."
+   },
+   "d1": {
+    "kontenjan": 0
+   },
+   "d2": {
+    "kontenjan": 1,
+    "taban": 89.08,
+    "tavan": 89.08
+   },
+   "ornekler": [
+    [
+     "Muğla Sıtkı Koçman Üni.",
+     "Muğla / Bodrum",
+     1,
+     89.08,
+     "2025/2"
+    ]
+   ]
+  },
+  {
+   "id": "fizyoterapist",
+   "unvan": "Fizyoterapist",
+   "duzey": "lisans",
+   "bolumTags": [
+    "fizyoterapi"
+   ],
+   "d1": {
+    "kontenjan": 0
+   },
+   "d2": {
+    "kontenjan": 5,
+    "taban": 90.24,
+    "tavan": 90.95
+   },
+   "ornekler": [
+    [
+     "Afyonkarahisar Sağlık Bilimleri Üni.",
+     "Afyonkarahisar",
+     5,
+     90.24,
+     "2025/2"
+    ]
+   ]
+  },
+  {
+   "id": "memur-onlisans",
+   "unvan": "Memur",
+   "duzey": "onlisans",
+   "bolumTags": [],
+   "d1": {
+    "kontenjan": 46,
+    "taban": 71.75,
+    "tavan": 82.63
+   },
+   "d2": {
+    "kontenjan": 31,
+    "yaklasik": true,
+    "taban": 77.29,
+    "tavan": 87.71
+   },
+   "ornekler": [
+    [
+     "Türkiye Taşkömürü Kurumu",
+     "Zonguldak",
+     3,
+     80.21,
+     "2026/1"
+    ],
+    [
+     "TİGEM",
+     "Ankara / Polatlı",
+     1,
+     81.44,
+     "2026/1"
+    ],
+    [
+     "DDY",
+     "Adana",
+     1,
+     82.63,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "vhki-onlisans",
+   "unvan": "Veri hazırlama ve kontrol işletmeni (VHKİ)",
+   "duzey": "onlisans",
+   "bolumTags": [],
+   "sertifika": {
+    "herhangi": [
+     "bilgisayar"
+    ],
+    "not": "Çoğu VHKİ kadrosu MEB onaylı bilgisayar işletmenliği sertifikası (6225) ister; okulda bilgisayar dersi aldıysan transkriptin de geçer."
+   },
+   "d1": {
+    "kontenjan": 0
+   },
+   "d2": {
+    "kontenjan": 7,
+    "taban": 84.75,
+    "tavan": 92.36
+   },
+   "ornekler": [
+    [
+     "Tokat İl Özel İdaresi",
+     "Tokat",
+     4,
+     84.75,
+     "2025/2"
+    ],
+    [
+     "Ulaştırma ve Altyapı Bak.",
+     "Ankara",
+     1,
+     92.36,
+     "2025/2"
+    ]
+   ]
+  },
+  {
+   "id": "buro-onlisans",
+   "unvan": "Büro personeli",
+   "duzey": "onlisans",
+   "bolumTags": [],
+   "d1": {
+    "kontenjan": 67,
+    "taban": 72.61,
+    "tavan": 83.48
+   },
+   "d2": {
+    "kontenjan": 499,
+    "yaklasik": true,
+    "taban": 76.26,
+    "tavan": 89.07
+   },
+   "ornekler": [
+    [
+     "SGK",
+     "Şanlıurfa / Harran",
+     1,
+     79.04,
+     "2026/1"
+    ],
+    [
+     "Ulaştırma ve Altyapı Bak.",
+     "Ankara",
+     13,
+     80.82,
+     "2026/1"
+    ],
+    [
+     "SGK",
+     "Balıkesir",
+     2,
+     83.48,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "bilgisayar-isletmeni-onlisans",
+   "unvan": "Bilgisayar işletmeni",
+   "duzey": "onlisans",
+   "bolumTags": [],
+   "sertifika": {
+    "herhangi": [
+     "bilgisayar"
+    ],
+    "not": "Bilgisayar işletmenliği sertifikası (6225) aranır; programcı veya analist programcı sertifikası da kabul edilir."
+   },
+   "d1": {
+    "kontenjan": 1,
+    "taban": 89.39,
+    "tavan": 89.39
+   },
+   "d2": {
+    "kontenjan": 1,
+    "taban": 83.4,
+    "tavan": 83.4
+   },
+   "ornekler": [
+    [
+     "TİGEM",
+     "Ankara",
+     1,
+     89.39,
+     "2026/1"
+    ],
+    [
+     "Türk Dil Kurumu",
+     "Ankara",
+     1,
+     83.4,
+     "2025/2"
+    ]
+   ]
+  },
+  {
+   "id": "tekniker",
+   "unvan": "Tekniker",
+   "duzey": "onlisans",
+   "bolumTags": [
+    "teknik"
+   ],
+   "bolumNot": "Kadroya göre elektrik, elektronik, makine, inşaat, harita gibi ilgili program istenir.",
+   "d1": {
+    "kontenjan": 451,
+    "taban": 71.34,
+    "tavan": 97.55
+   },
+   "d2": {
+    "kontenjan": null,
+    "taban": 66.04,
+    "tavan": 96.44
+   },
+   "ornekler": [
+    [
+     "Türkiye Taşkömürü Kurumu",
+     "Zonguldak",
+     5,
+     71.34,
+     "2026/1"
+    ],
+    [
+     "MGK Genel Sekreterliği",
+     "Ankara",
+     2,
+     89.7,
+     "2026/1"
+    ],
+    [
+     "DHMİ",
+     "Hatay",
+     1,
+     94.5,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "saglik-teknikeri",
+   "unvan": "Sağlık teknikeri",
+   "duzey": "onlisans",
+   "bolumTags": [
+    "saglik"
+   ],
+   "d1": {
+    "kontenjan": 3,
+    "taban": 85.33,
+    "tavan": 90.75
+   },
+   "d2": {
+    "kontenjan": 73,
+    "taban": 78.95,
+    "tavan": 91.21
+   },
+   "ornekler": [
+    [
+     "Afyonkarahisar Sağlık Bilimleri Üni.",
+     "Afyonkarahisar",
+     9,
+     89.34,
+     "2025/2"
+    ],
+    [
+     "Dokuz Eylül Üniversitesi",
+     "İzmir",
+     1,
+     91.21,
+     "2025/2"
+    ]
+   ],
+   "not": "Sağlık Bakanlığı'nın ayrı yerleştirmeleri bu tabloya dahil değil."
+  },
+  {
+   "id": "sofor-onlisans",
+   "unvan": "Şoför",
+   "duzey": "onlisans",
+   "bolumTags": [],
+   "sertifika": {
+    "herhangi": [
+     "ehliyet-d",
+     "ehliyet-c",
+     "ehliyet-b"
+    ],
+    "tercih": [
+     "ehliyet-d"
+    ],
+    "not": "Şoför kadrolarının çoğu D sınıfı ehliyet (6514) ister; DE de kabul edilir (7302). Bazı kurumlar 5 yıllık ehliyet (6519), SRC ve psikoteknik de ister."
+   },
+   "d1": {
+    "kontenjan": 23,
+    "taban": 64.45,
+    "tavan": 74.32
+   },
+   "d2": {
+    "kontenjan": 55,
+    "taban": 65.25,
+    "tavan": 86.58
+   },
+   "ornekler": [
+    [
+     "Gelir İdaresi Başkanlığı",
+     "İstanbul",
+     5,
+     64.45,
+     "2026/1"
+    ],
+    [
+     "Gelir İdaresi Başkanlığı",
+     "Ankara",
+     10,
+     64.89,
+     "2026/1"
+    ],
+    [
+     "Gelir İdaresi Başkanlığı",
+     "Tunceli",
+     1,
+     74.32,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "koruma-guvenlik-onlisans",
+   "unvan": "Koruma ve güvenlik görevlisi",
+   "duzey": "onlisans",
+   "bolumTags": [],
+   "sertifika": {
+    "herhangi": [
+     "guvenlik-silahli",
+     "guvenlik-silahsiz"
+    ],
+    "not": "Özel güvenlik görevlisi kimlik kartı (6551) istenir. Silahlı kadrolarda (7304) 21 yaşını doldurmak ve \"silahlı özel güvenlik görevlisi olur\" raporu gerekir."
+   },
+   "d1": {
+    "kontenjan": 75,
+    "taban": 69.59,
+    "tavan": 86.78
+   },
+   "d2": {
+    "kontenjan": 160,
+    "yaklasik": true,
+    "taban": 69.67,
+    "tavan": 87.44
+   },
+   "ornekler": [
+    [
+     "SGK",
+     "İstanbul",
+     5,
+     69.85,
+     "2026/1"
+    ],
+    [
+     "MGK Genel Sekreterliği",
+     "Ankara",
+     6,
+     69.99,
+     "2026/1"
+    ],
+    [
+     "Kentsel Dönüşüm Bşk.",
+     "Ankara",
+     11,
+     84.95,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "destek-onlisans",
+   "unvan": "Destek personeli",
+   "duzey": "onlisans",
+   "bolumTags": [],
+   "d1": {
+    "kontenjan": 20,
+    "taban": 75.88,
+    "tavan": 87.91
+   },
+   "d2": {
+    "kontenjan": 107,
+    "taban": 74.17,
+    "tavan": 93.83
+   },
+   "ornekler": [
+    [
+     "Strateji ve Bütçe Bşk.",
+     "Ankara",
+     2,
+     75.88,
+     "2026/1"
+    ],
+    [
+     "SGK",
+     "Ankara",
+     2,
+     77.32,
+     "2026/1"
+    ],
+    [
+     "SGK",
+     "İstanbul",
+     3,
+     87.37,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "icra-memuru-onlisans",
+   "unvan": "İcra memuru",
+   "duzey": "onlisans",
+   "bolumTags": [],
+   "d1": {
+    "kontenjan": 39,
+    "taban": 83.95,
+    "tavan": 86.86
+   },
+   "d2": {
+    "kontenjan": 1,
+    "taban": 87.55,
+    "tavan": 87.55
+   },
+   "ornekler": [
+    [
+     "SGK",
+     "Afyonkarahisar",
+     1,
+     85.5,
+     "2026/1"
+    ],
+    [
+     "SGK",
+     "Gaziantep",
+     2,
+     86.15,
+     "2026/1"
+    ],
+    [
+     "SGK",
+     "Bitlis",
+     1,
+     86.86,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "saglik-memuru-onlisans",
+   "unvan": "Sağlık memuru",
+   "duzey": "onlisans",
+   "bolumTags": [
+    "saglik"
+   ],
+   "d1": {
+    "kontenjan": 13,
+    "taban": 85.43,
+    "tavan": 89.21
+   },
+   "d2": {
+    "kontenjan": 1,
+    "taban": 94.72,
+    "tavan": 94.72
+   },
+   "ornekler": [
+    [
+     "Türkiye Taşkömürü Kurumu",
+     "Zonguldak",
+     12,
+     85.43,
+     "2026/1"
+    ],
+    [
+     "Hudut ve Sahiller Sağlık GM",
+     "Bartın",
+     1,
+     89.21,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "sekreter-onlisans",
+   "unvan": "Sekreter",
+   "duzey": "onlisans",
+   "bolumTags": [
+    "buro"
+   ],
+   "d1": {
+    "kontenjan": 2,
+    "taban": 88.03,
+    "tavan": 88.03
+   },
+   "d2": {
+    "kontenjan": 6,
+    "taban": 85.6,
+    "tavan": 90.03
+   },
+   "ornekler": [
+    [
+     "Rekabet Kurumu",
+     "Ankara",
+     2,
+     88.03,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "itfaiyeci-onlisans",
+   "unvan": "İtfaiyeci",
+   "duzey": "onlisans",
+   "bolumTags": [
+    "itfaiye"
+   ],
+   "d1": {
+    "kontenjan": 1,
+    "taban": 89.63,
+    "tavan": 89.63
+   },
+   "d2": {
+    "kontenjan": 6,
+    "taban": 82.75,
+    "tavan": 84.55
+   },
+   "ornekler": [
+    [
+     "EÜAŞ",
+     "Şanlıurfa / Bozova",
+     2,
+     82.75,
+     "2025/2"
+    ],
+    [
+     "TCDD",
+     "İstanbul / Üsküdar",
+     2,
+     82.89,
+     "2025/2"
+    ]
+   ]
+  },
+  {
+   "id": "destek-ortaogretim",
+   "unvan": "Destek personeli",
+   "duzey": "ortaogretim",
+   "bolumTags": [],
+   "d1": {
+    "kontenjan": 92,
+    "taban": 68.86,
+    "tavan": 96.9
+   },
+   "d2": {
+    "kontenjan": null,
+    "taban": 67.22,
+    "tavan": 96.58
+   },
+   "ornekler": [
+    [
+     "Strateji ve Bütçe Bşk.",
+     "Ankara",
+     2,
+     68.86,
+     "2026/1"
+    ],
+    [
+     "SGK",
+     "İstanbul",
+     13,
+     71.58,
+     "2026/1"
+    ],
+    [
+     "Ulaştırma ve Altyapı Bak.",
+     "İzmir",
+     1,
+     96.9,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "teknisyen",
+   "unvan": "Teknisyen",
+   "duzey": "ortaogretim",
+   "bolumTags": [
+    "mesleki-teknik"
+   ],
+   "bolumNot": "Kadroya göre ilgili meslek lisesi alanı istenir.",
+   "d1": {
+    "kontenjan": 108,
+    "taban": 69.03,
+    "tavan": 92.34
+   },
+   "d2": {
+    "kontenjan": 91,
+    "taban": 69.73,
+    "tavan": 89.85
+   },
+   "ornekler": [
+    [
+     "Gelir İdaresi Başkanlığı",
+     "Ankara",
+     10,
+     79.27,
+     "2026/1"
+    ],
+    [
+     "SGK",
+     "İstanbul",
+     1,
+     80.32,
+     "2026/1"
+    ],
+    [
+     "Hazine ve Maliye Bak.",
+     "Ankara",
+     5,
+     81.9,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "sofor-ortaogretim",
+   "unvan": "Şoför",
+   "duzey": "ortaogretim",
+   "bolumTags": [],
+   "sertifika": {
+    "herhangi": [
+     "ehliyet-d",
+     "ehliyet-c",
+     "ehliyet-b"
+    ],
+    "tercih": [
+     "ehliyet-d"
+    ],
+    "not": "Şoför kadrolarının çoğu D sınıfı ehliyet (6514) ister; DE de kabul edilir (7302). Bazı kurumlar 5 yıllık ehliyet (6519), SRC ve psikoteknik de ister."
+   },
+   "d1": {
+    "kontenjan": 15,
+    "taban": 86.55,
+    "tavan": 94.66
+   },
+   "d2": {
+    "kontenjan": 5,
+    "taban": 86.29,
+    "tavan": 93.2
+   },
+   "ornekler": [
+    [
+     "Uşak İl Özel İdaresi",
+     "Uşak",
+     4,
+     86.55,
+     "2026/1"
+    ],
+    [
+     "Hazine ve Maliye Bak.",
+     "Ankara",
+     10,
+     87.81,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "hizmetli",
+   "unvan": "Hizmetli",
+   "duzey": "ortaogretim",
+   "bolumTags": [],
+   "d1": {
+    "kontenjan": 9,
+    "taban": 74.71,
+    "tavan": 94.47
+   },
+   "d2": {
+    "kontenjan": 7,
+    "taban": 93.5,
+    "tavan": 96.58
+   },
+   "ornekler": [
+    [
+     "MGK Genel Sekreterliği",
+     "Ankara",
+     6,
+     74.71,
+     "2026/1"
+    ],
+    [
+     "Uşak İl Özel İdaresi",
+     "Uşak",
+     2,
+     94.47,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "koruma-guvenlik-ortaogretim",
+   "unvan": "Koruma ve güvenlik görevlisi",
+   "duzey": "ortaogretim",
+   "bolumTags": [],
+   "sertifika": {
+    "herhangi": [
+     "guvenlik-silahli",
+     "guvenlik-silahsiz"
+    ],
+    "not": "Özel güvenlik görevlisi kimlik kartı (6551) istenir. Silahlı kadrolarda (7304) 21 yaşını doldurmak ve \"silahlı özel güvenlik görevlisi olur\" raporu gerekir."
+   },
+   "d1": {
+    "kontenjan": 1,
+    "taban": 89.21,
+    "tavan": 89.21
+   },
+   "d2": null,
+   "ornekler": [
+    [
+     "Muğla Sıtkı Koçman Üni.",
+     "Muğla / Kavaklıdere",
+     1,
+     89.21,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "saglik-memuru-ortaogretim",
+   "unvan": "Sağlık memuru",
+   "duzey": "ortaogretim",
+   "bolumTags": [
+    "mesleki-saglik"
+   ],
+   "d1": {
+    "kontenjan": 2,
+    "taban": 80.85,
+    "tavan": 82.45
+   },
+   "d2": {
+    "kontenjan": 3,
+    "taban": 81.08,
+    "tavan": 81.41
+   },
+   "ornekler": [
+    [
+     "Türkiye Taşkömürü Kurumu",
+     "Zonguldak",
+     2,
+     80.85,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "asci-ortaogretim",
+   "unvan": "Aşçı",
+   "duzey": "ortaogretim",
+   "bolumTags": [
+    "asci"
+   ],
+   "bolumVeyaSertifika": [
+    "ascilik"
+   ],
+   "d1": {
+    "kontenjan": 3,
+    "taban": 78.38,
+    "tavan": 85.92
+   },
+   "d2": {
+    "kontenjan": 7,
+    "taban": 76.7,
+    "tavan": 84.52
+   },
+   "ornekler": [
+    [
+     "Gelir İdaresi Başkanlığı",
+     "Erzincan",
+     1,
+     78.38,
+     "2026/1"
+    ],
+    [
+     "Gelir İdaresi Başkanlığı",
+     "Elazığ",
+     1,
+     85.92,
+     "2026/1"
+    ]
+   ],
+   "bolumNot": "Yiyecek-içecek alanı mezunları veya MEB onaylı aşçılık sertifikası (6205) olanlar başvurabilir."
+  },
+  {
+   "id": "bekci",
+   "unvan": "Bekçi",
+   "duzey": "ortaogretim",
+   "bolumTags": [],
+   "d1": {
+    "kontenjan": 4,
+    "taban": 93.85,
+    "tavan": 93.85
+   },
+   "d2": null,
+   "ornekler": [
+    [
+     "Çankırı İl Özel İdaresi",
+     "Çankırı",
+     4,
+     93.85,
+     "2026/1"
+    ]
+   ]
+  },
+  {
+   "id": "dagitici",
+   "unvan": "Dağıtıcı",
+   "duzey": "ortaogretim",
+   "bolumTags": [],
+   "d1": {
+    "kontenjan": 2,
+    "taban": 98.8,
+    "tavan": 98.8
+   },
+   "d2": null,
+   "ornekler": [
+    [
+     "Hazine ve Maliye Bak.",
+     "Ankara",
+     2,
+     98.8,
+     "2026/1"
+    ]
+   ]
+  }
+ ]
+}
