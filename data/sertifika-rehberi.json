@@ -1,1092 +1,1101 @@
 {
- "guncelleme": "2026-11-20",
- "aciklama": "Bilgiler resmî kaynaklardan derlendi. Ücret, süre ve şartlar değişebilir; başvurmadan önce bağlantıdaki resmî sayfayı kontrol et.",
- "kaynaklar": [
-  {
-   "ad": "EGM: Özel güvenlik kimlik kartı e-Devlet başvuru kılavuzu",
-   "url": "https://egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Kimlik-Kart-Basvuru-Kilavuz.pdf"
-  },
-  {
-   "ad": "ÇSGB İSGGM: 2025/İSG sınav duyurusu",
-   "url": "https://www.csgb.gov.tr/isggm/tr/duyurular/01072025/"
-  },
-  {
-   "ad": "MEB: HEMBA uzaktan eğitim kursları",
-   "url": "https://www.meb.gov.tr/hemba-kurslarindan-yaklasik-3-milyon-kisi-yararlandi/haber/37655/tr"
-  },
-  {
-   "ad": "Ulaştırma ve Altyapı Bakanlığı: Gemi insanları sıkça sorulan sorular",
-   "url": "https://iskenderunliman.uab.gov.tr/uploads/pages/gemi-insanlari-servisi-sikca-sorulan-sorular.pdf"
-  },
-  {
-   "ad": "Telsiz Operatör Yeterlikleri ve Sınav Yönetmeliği",
-   "url": "https://www.lexpera.com.tr/mevzuat/yonetmelikler/telsiz-operator-yeterlikleri-ve-sinav-yonetmeligi"
-  },
-  {
-   "ad": "Sahil Güvenlik Komutanlığı uzman erbaş alım kılavuzu (kurbağa adam şartları)",
-   "url": "https://sg.gov.tr/kurumlar/sg.gov.tr/duyurular/KILAVUZ-UZMAN-_2025_1_.pdf"
-  },
-  {
-   "ad": "Diyanet: Vaizlik, Kur'an kursu öğreticiliği, imam-hatiplik ve müezzin-kayyımlık sınav yönetmeliği",
-   "url": "https://www.resmigazete.gov.tr/eskiler/2011/10/20111026-4.htm"
-  },
-  {
-   "ad": "Akdeniz Üniversitesi: 2026-2027 pedagojik formasyon ilanı",
-   "url": "https://webis.akdeniz.edu.tr/uploads/1125/announcement/2026-2027%20Kay%C4%B1t%20%C4%B0lan%C4%B1%20Formasyon.pdf"
-  },
-  {
-   "ad": "e-Devlet: SRC hizmetleri",
-   "url": "https://www.turkiye.gov.tr/arama2?aranan=src"
+  "guncelleme": "2026-11-20",
+  "aciklama": "Bilgiler resmî kaynaklardan derlendi. Ücret, süre ve şartlar değişebilir; başvurmadan önce bağlantıdaki resmî sayfayı kontrol et.",
+  "kaynaklar": [
+    {
+      "ad": "EGM: Özel güvenlik kimlik kartı e-Devlet başvuru kılavuzu",
+      "url": "https://egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Kimlik-Kart-Basvuru-Kilavuz.pdf"
+    },
+    {
+      "ad": "ÇSGB İSGGM: 2025/İSG sınav duyurusu",
+      "url": "https://www.csgb.gov.tr/isggm/tr/duyurular/01072025/"
+    },
+    {
+      "ad": "MEB: HEMBA uzaktan eğitim kursları",
+      "url": "https://www.meb.gov.tr/hemba-kurslarindan-yaklasik-3-milyon-kisi-yararlandi/haber/37655/tr"
+    },
+    {
+      "ad": "Ulaştırma ve Altyapı Bakanlığı: Gemi insanları sıkça sorulan sorular",
+      "url": "https://iskenderunliman.uab.gov.tr/uploads/pages/gemi-insanlari-servisi-sikca-sorulan-sorular.pdf"
+    },
+    {
+      "ad": "Telsiz Operatör Yeterlikleri ve Sınav Yönetmeliği",
+      "url": "https://www.lexpera.com.tr/mevzuat/yonetmelikler/telsiz-operator-yeterlikleri-ve-sinav-yonetmeligi"
+    },
+    {
+      "ad": "Sahil Güvenlik Komutanlığı uzman erbaş alım kılavuzu (kurbağa adam şartları)",
+      "url": "https://sg.gov.tr/kurumlar/sg.gov.tr/duyurular/KILAVUZ-UZMAN-_2025_1_.pdf"
+    },
+    {
+      "ad": "Diyanet: Vaizlik, Kur'an kursu öğreticiliği, imam-hatiplik ve müezzin-kayyımlık sınav yönetmeliği",
+      "url": "https://www.resmigazete.gov.tr/eskiler/2011/10/20111026-4.htm"
+    },
+    {
+      "ad": "Akdeniz Üniversitesi: 2026-2027 pedagojik formasyon ilanı",
+      "url": "https://webis.akdeniz.edu.tr/uploads/1125/announcement/2026-2027%20Kay%C4%B1t%20%C4%B0lan%C4%B1%20Formasyon.pdf"
+    },
+    {
+      "ad": "e-Devlet: SRC hizmetleri",
+      "url": "https://www.turkiye.gov.tr/arama2?aranan=src"
+    }
+  ],
+  "belgeler": {
+    "ehliyet-b": {
+      "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
+      "nasil": "MEB'e bağlı bir sürücü kursunda ya da sürücü kursu açan bir halk eğitim merkezinde eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın. Ehliyetin kendisi için online başvuru yoktur; kursa şahsen kayıt olursun, yalnız sınavları geçtikten sonraki belge teslimi randevusu internetten alınır.",
+      "online": [
+        {
+          "ad": "Sınavları geçtikten sonra: belge teslimi için randevu (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "MEB'e bağlı özel motorlu taşıt sürücü kursları",
+        "Halk eğitim merkezleri (sürücü kursu açılan ilçelerde)",
+        "Aile hekimi ya da hastane (sürücü sağlık raporu)",
+        "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
+      ],
+      "not": "Kılavuza göre B şartı olan kadrolara BE, C1, C, CE, D1, D ve DE ehliyetiyle de başvurabilirsin."
+    },
+    "ehliyet-be": {
+      "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
+      "nasil": "MEB'e bağlı bir sürücü kursunda ya da sürücü kursu açan bir halk eğitim merkezinde eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın. Ehliyetin kendisi için online başvuru yoktur; kursa şahsen kayıt olursun, yalnız sınavları geçtikten sonraki belge teslimi randevusu internetten alınır.",
+      "online": [
+        {
+          "ad": "Sınavları geçtikten sonra: belge teslimi için randevu (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "MEB'e bağlı özel motorlu taşıt sürücü kursları",
+        "Halk eğitim merkezleri (sürücü kursu açılan ilçelerde)",
+        "Aile hekimi ya da hastane (sürücü sağlık raporu)",
+        "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
+      ],
+      "not": "BE için önce B sınıfı ehliyetin olmalı."
+    },
+    "ehliyet-c1": {
+      "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
+      "nasil": "MEB'e bağlı bir sürücü kursunda ya da sürücü kursu açan bir halk eğitim merkezinde eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın. Ehliyetin kendisi için online başvuru yoktur; kursa şahsen kayıt olursun, yalnız sınavları geçtikten sonraki belge teslimi randevusu internetten alınır.",
+      "online": [
+        {
+          "ad": "Sınavları geçtikten sonra: belge teslimi için randevu (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "MEB'e bağlı özel motorlu taşıt sürücü kursları",
+        "Halk eğitim merkezleri (sürücü kursu açılan ilçelerde)",
+        "Aile hekimi ya da hastane (sürücü sağlık raporu)",
+        "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
+      ],
+      "not": "Yaş ve önceki ehliyet şartı sınıfa göre değişir; kurs kayıt sırasında söyler."
+    },
+    "ehliyet-c": {
+      "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
+      "nasil": "MEB'e bağlı bir sürücü kursunda ya da sürücü kursu açan bir halk eğitim merkezinde eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın. Ehliyetin kendisi için online başvuru yoktur; kursa şahsen kayıt olursun, yalnız sınavları geçtikten sonraki belge teslimi randevusu internetten alınır.",
+      "online": [
+        {
+          "ad": "Sınavları geçtikten sonra: belge teslimi için randevu (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "MEB'e bağlı özel motorlu taşıt sürücü kursları",
+        "Halk eğitim merkezleri (sürücü kursu açılan ilçelerde)",
+        "Aile hekimi ya da hastane (sürücü sağlık raporu)",
+        "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
+      ],
+      "not": "C şartı olan kadrolara CE ehliyetiyle de başvurabilirsin."
+    },
+    "ehliyet-ce": {
+      "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
+      "nasil": "MEB'e bağlı bir sürücü kursunda ya da sürücü kursu açan bir halk eğitim merkezinde eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın. Ehliyetin kendisi için online başvuru yoktur; kursa şahsen kayıt olursun, yalnız sınavları geçtikten sonraki belge teslimi randevusu internetten alınır.",
+      "online": [
+        {
+          "ad": "Sınavları geçtikten sonra: belge teslimi için randevu (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "MEB'e bağlı özel motorlu taşıt sürücü kursları",
+        "Halk eğitim merkezleri (sürücü kursu açılan ilçelerde)",
+        "Aile hekimi ya da hastane (sürücü sağlık raporu)",
+        "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
+      ],
+      "not": "CE için önce C sınıfı ehliyetin olmalı."
+    },
+    "ehliyet-d1": {
+      "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
+      "nasil": "MEB'e bağlı bir sürücü kursunda ya da sürücü kursu açan bir halk eğitim merkezinde eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın. Ehliyetin kendisi için online başvuru yoktur; kursa şahsen kayıt olursun, yalnız sınavları geçtikten sonraki belge teslimi randevusu internetten alınır.",
+      "online": [
+        {
+          "ad": "Sınavları geçtikten sonra: belge teslimi için randevu (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "MEB'e bağlı özel motorlu taşıt sürücü kursları",
+        "Halk eğitim merkezleri (sürücü kursu açılan ilçelerde)",
+        "Aile hekimi ya da hastane (sürücü sağlık raporu)",
+        "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
+      ],
+      "not": "Yaş ve önceki ehliyet şartı sınıfa göre değişir; kurs kayıt sırasında söyler."
+    },
+    "ehliyet-d": {
+      "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
+      "nasil": "MEB'e bağlı bir sürücü kursunda ya da sürücü kursu açan bir halk eğitim merkezinde eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın. Ehliyetin kendisi için online başvuru yoktur; kursa şahsen kayıt olursun, yalnız sınavları geçtikten sonraki belge teslimi randevusu internetten alınır.",
+      "online": [
+        {
+          "ad": "Sınavları geçtikten sonra: belge teslimi için randevu (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "MEB'e bağlı özel motorlu taşıt sürücü kursları",
+        "Halk eğitim merkezleri (sürücü kursu açılan ilçelerde)",
+        "Aile hekimi ya da hastane (sürücü sağlık raporu)",
+        "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
+      ],
+      "not": "D şartı olan kadrolara DE ehliyetiyle de başvurabilirsin."
+    },
+    "ehliyet-de": {
+      "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
+      "nasil": "MEB'e bağlı bir sürücü kursunda ya da sürücü kursu açan bir halk eğitim merkezinde eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın. Ehliyetin kendisi için online başvuru yoktur; kursa şahsen kayıt olursun, yalnız sınavları geçtikten sonraki belge teslimi randevusu internetten alınır.",
+      "online": [
+        {
+          "ad": "Sınavları geçtikten sonra: belge teslimi için randevu (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "MEB'e bağlı özel motorlu taşıt sürücü kursları",
+        "Halk eğitim merkezleri (sürücü kursu açılan ilçelerde)",
+        "Aile hekimi ya da hastane (sürücü sağlık raporu)",
+        "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
+      ],
+      "not": "DE için önce D sınıfı ehliyetin olmalı. Kılavuza göre CE ve D sınıfı ehliyeti birlikte olanlar da DE şartını karşılar."
+    },
+    "ehliyet-g": {
+      "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
+      "nasil": "MEB'e bağlı bir sürücü kursunda ya da sürücü kursu açan bir halk eğitim merkezinde eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın. Ehliyetin kendisi için online başvuru yoktur; kursa şahsen kayıt olursun, yalnız sınavları geçtikten sonraki belge teslimi randevusu internetten alınır.",
+      "online": [
+        {
+          "ad": "Sınavları geçtikten sonra: belge teslimi için randevu (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "MEB'e bağlı özel motorlu taşıt sürücü kursları",
+        "Halk eğitim merkezleri (sürücü kursu açılan ilçelerde)",
+        "Aile hekimi ya da hastane (sürücü sağlık raporu)",
+        "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
+      ],
+      "not": "G sınıfı, iş makinesiyle trafiğe çıkmak içindir. Makineyi kullanmak için ayrıca o makinenin operatörlük belgesi gerekir."
+    },
+    "ehliyet-5yil": {
+      "veren": "Belge değil, süre şartı",
+      "nasil": "İlgili sınıftaki ehliyetini en az 5 yıl önce almış olman gerekir. Veriliş tarihi ehliyetinin üzerinde yazar; e-Devlet'teki sürücü belgesi sorgulama hizmetinden de görebilirsin.",
+      "online": [
+        {
+          "ad": "Ehliyet bilgilerini gör (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=s%C3%BCr%C3%BCc%C3%BC%20belgesi%20sorgulama",
+          "tur": "sorgu"
+        }
+      ],
+      "yerler": []
+    },
+    "src": {
+      "veren": "Ulaştırma ve Altyapı Bakanlığı (eğitim ve sınav: MEB)",
+      "nasil": "MEB onaylı bir sürücü kursunda SRC eğitimini alıp MEB'in mesleki yeterlilik sınavını geçersin. Belgeyi Ulaştırma ve Altyapı Bakanlığı düzenler; e-Devlet'ten karekodlu olarak görüntülenir.",
+      "online": [
+        {
+          "ad": "SRC belgeni sorgula ya da düzenlet (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/udvh-mesleki-yeterlilik-belgesi-sorgulamaduzenleme",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "MEB onaylı sürücü kursları (SRC eğitimi)"
+      ],
+      "not": "SRC'nin türü (SRC1–SRC5) yapılacak işe göre değişir; ilanda hangisinin istendiğine bak."
+    },
+    "psikoteknik": {
+      "veren": "İl sağlık müdürlüklerinin yetkilendirdiği psikoteknik değerlendirme merkezleri",
+      "nasil": "Yetkili bir psikoteknik değerlendirme merkezinden randevu alıp bilgisayarlı testlere girersin; psikiyatri uzmanı değerlendirmesinden sonra raporun düzenlenir. Rapor e-Devlet'te de görünür.",
+      "online": [],
+      "yerler": [
+        "İl sağlık müdürlüğünün ruhsat verdiği psikoteknik değerlendirme merkezleri (liste il sağlık müdürlüğünün sitesinde)"
+      ]
+    },
+    "bilgisayar": {
+      "veren": "Millî Eğitim Bakanlığı ya da üniversiteler",
+      "nasil": "Halk Eğitim Merkezinin bilgisayar işletmenliği kursuna e-Yaygın'dan kaydolup kursu bitirirsin; MEB onaylı belgen e-Devlet'e düşer. Halk Eğitim kursları ücretsizdir.",
+      "online": [
+        {
+          "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
+          "url": "https://e-yaygin.meb.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "Belgeni gör: Yaygın Eğitim Sertifika Belgesi Sorgulama (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=Yayg%C4%B1n%20E%C4%9Fitim%20Sertifika%20Belgesi%20Sorgulama",
+          "tur": "sorgu"
+        }
+      ],
+      "yerler": [
+        "Halk Eğitim Merkezleri (kurslar ücretsiz)",
+        "MEB onaylı özel kurslar",
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)"
+      ],
+      "not": "Okulda bilgisayar dersi aldıysan transkriptin de bu şartı karşılar. HEMBA'daki uzaktan kursların sonunda katılım belgesi verilir; sertifika istenen kadrolar için kurs bitirme belgesi gerekebilir."
+    },
+    "bilgisayar-programci": {
+      "veren": "Millî Eğitim Bakanlığı ya da üniversiteler",
+      "nasil": "MEB onaylı bilgisayar programcılığı ya da analist programcılık kursunu bitirerek veya bir üniversitenin sürekli eğitim merkezinin sertifika programıyla alınır.",
+      "online": [
+        {
+          "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
+          "url": "https://e-yaygin.meb.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "MEB onaylı özel kurslar",
+        "Halk Eğitim Merkezleri (kurs açılan yerlerde)",
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)"
+      ],
+      "not": "Kılavuza göre bilgisayar işletmenliği sertifikası istenen kadrolara bu sertifikayla da başvurabilirsin."
+    },
+    "ascilik": {
+      "veren": "Millî Eğitim Bakanlığı",
+      "nasil": "Halk Eğitim Merkezinin aşçılık kursuna e-Yaygın'dan kaydolup ya da MEB onaylı bir aşçılık kursunu bitirip alırsın. Mesleki Eğitim Merkezlerinden alınan aşçılık kalfalık ve ustalık belgeleri de kullanılabilir.",
+      "online": [
+        {
+          "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
+          "url": "https://e-yaygin.meb.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "Belgeni gör: Yaygın Eğitim Sertifika Belgesi Sorgulama (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=Yayg%C4%B1n%20E%C4%9Fitim%20Sertifika%20Belgesi%20Sorgulama",
+          "tur": "sorgu"
+        }
+      ],
+      "yerler": [
+        "Halk Eğitim Merkezleri",
+        "Mesleki Eğitim Merkezleri (MESEM)",
+        "MEB onaylı özel kurslar"
+      ]
+    },
+    "kalorifer": {
+      "veren": "Millî Eğitim Bakanlığı",
+      "nasil": "Halk Eğitim Merkezinin kalorifer ateşçiliği kursuna e-Yaygın'dan kaydolup kursu bitirerek alırsın. MEB onaylı özel kurslar da bu belgeyi verir.",
+      "online": [
+        {
+          "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
+          "url": "https://e-yaygin.meb.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "Belgeni gör: Yaygın Eğitim Sertifika Belgesi Sorgulama (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=Yayg%C4%B1n%20E%C4%9Fitim%20Sertifika%20Belgesi%20Sorgulama",
+          "tur": "sorgu"
+        }
+      ],
+      "yerler": [
+        "Halk Eğitim Merkezleri (kurslar ücretsiz)",
+        "MEB onaylı özel kurslar"
+      ],
+      "not": "Kaloriferci kadrolarında 3308 sayılı Kanuna göre alınmış ustalık belgesi de sertifika yerine geçer."
+    },
+    "dogalgaz-kalorifer": {
+      "veren": "Millî Eğitim Bakanlığı",
+      "nasil": "Halk Eğitim Merkezinin doğalgaz kalorifer ateşçiliği kursuna e-Yaygın'dan kaydolup kursu bitirerek alırsın. MEB onaylı özel kurslar da bu belgeyi verir.",
+      "online": [
+        {
+          "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
+          "url": "https://e-yaygin.meb.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "Belgeni gör: Yaygın Eğitim Sertifika Belgesi Sorgulama (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=Yayg%C4%B1n%20E%C4%9Fitim%20Sertifika%20Belgesi%20Sorgulama",
+          "tur": "sorgu"
+        }
+      ],
+      "yerler": [
+        "Halk Eğitim Merkezleri (kurslar ücretsiz)",
+        "MEB onaylı özel kurslar"
+      ],
+      "not": "Kaloriferci kadrolarında 3308 sayılı Kanuna göre alınmış ustalık belgesi de sertifika yerine geçer."
+    },
+    "guvenlik-silahsiz": {
+      "veren": "Valiliklerin özel güvenlik birimleri (sınav: Emniyet Genel Müdürlüğü)",
+      "nasil": "Yetkili bir özel güvenlik eğitim kurumunda temel eğitimi tamamlayıp Emniyet Genel Müdürlüğünün sınavını geçersin. Kimlik kartı başvurusunu e-Devlet'ten yaparsın; bunun için Sağlık Bakanlığı sisteminde \"özel güvenlik görevlisi olabilir\" e-raporun bulunmalı.",
+      "online": [
+        {
+          "ad": "Kimlik kartı başvurusu (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=%C3%B6zel%20g%C3%BCvenlik%20kimlik%20kart%C4%B1",
+          "tur": "sorgu"
+        },
+        {
+          "ad": "e-Devlet başvuru kılavuzu (EGM)",
+          "url": "https://egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Kimlik-Kart-Basvuru-Kilavuz.pdf",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Özel güvenlik eğitim kurumları (temel eğitim)",
+        "Valiliklerin özel güvenlik şube müdürlükleri"
+      ],
+      "not": "Silahsız temel eğitim sınavında 100 sorudan en az 60 puan alman gerekir."
+    },
+    "guvenlik-silahli": {
+      "veren": "Valiliklerin özel güvenlik birimleri (sınav: Emniyet Genel Müdürlüğü)",
+      "nasil": "Yetkili bir özel güvenlik eğitim kurumunda temel eğitimi tamamlayıp Emniyet Genel Müdürlüğünün sınavını geçersin. Kimlik kartı başvurusunu e-Devlet'ten yaparsın; bunun için Sağlık Bakanlığı sisteminde \"özel güvenlik görevlisi olabilir\" e-raporun bulunmalı.",
+      "online": [
+        {
+          "ad": "Kimlik kartı başvurusu (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=%C3%B6zel%20g%C3%BCvenlik%20kimlik%20kart%C4%B1",
+          "tur": "sorgu"
+        },
+        {
+          "ad": "e-Devlet başvuru kılavuzu (EGM)",
+          "url": "https://egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Kimlik-Kart-Basvuru-Kilavuz.pdf",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Özel güvenlik eğitim kurumları (temel eğitim)",
+        "Valiliklerin özel güvenlik şube müdürlükleri"
+      ],
+      "not": "Silahlı adaylar ayrıca silah bilgisi ve atıştan değerlendirilir. Silahlı kart, silahsız kart isteyen kadroları da karşılar."
+    },
+    "ustalik": {
+      "veren": "Millî Eğitim Bakanlığı Mesleki Eğitim Merkezleri (MESEM)",
+      "nasil": "Kalfalık belgesi olanlar ustalık eğitimini tamamlayıp ustalık sınavına girer. Mesleğinde uzun süre sigortalı çalıştıysan ustalık telafi programıyla da alabilirsin. Başvuru ilçendeki Mesleki Eğitim Merkezine şahsen yapılır.",
+      "online": [
+        {
+          "ad": "Belgeni sorgula: Kalfalık ve Ustalık Belgesi (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=Kalfal%C4%B1k%2C%20Ustal%C4%B1k%2C%20Usta%20%C3%96%C4%9Freticilik%20ve%20%C4%B0%C5%9F%20Yeri%20A%C3%A7ma%20Belgesi%20Sorgulama",
+          "tur": "sorgu"
+        }
+      ],
+      "yerler": [
+        "Mesleki Eğitim Merkezleri (MESEM)",
+        "Mesleki eğitim merkezi programı uygulayan meslek liseleri"
+      ],
+      "not": "3308 sayılı Mesleki Eğitim Kanununa göre verilen belgeler geçerlidir."
+    },
+    "avukatlik": {
+      "veren": "Barolar (ruhsatname)",
+      "nasil": "Hukuk fakültesini bitirip ÖSYM'nin Hukuk Mesleklerine Giriş Sınavında (HMGS) en az 70 alırsın. Ardından bir baroda bir yıllık stajı (altı ayı mahkemede, altı ayı avukat yanında) tamamlarsın. Staj bitim belgesiyle baro levhasına yazılınca ruhsatnameni alırsın.",
+      "online": [
+        {
+          "ad": "ÖSYM Aday İşlemleri (sınav başvurusu)",
+          "url": "https://ais.osym.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "Türkiye Barolar Birliği",
+          "url": "https://www.barobirlik.org.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Staj yapacağın ildeki baro"
+      ]
+    },
+    "avukatlik-2yil": {
+      "veren": "Barolar",
+      "nasil": "Ruhsatnameni aldıktan sonra en az 2 yıl avukatlık yapmış olman gerekir. Süreyi baro kaydın ve sigorta hizmet dökümünle belgelersin.",
+      "online": [
+        {
+          "ad": "Hizmet dökümünü al (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=SGK%20Tescil%20ve%20Hizmet%20D%C3%B6k%C3%BCm%C3%BC",
+          "tur": "sorgu"
+        }
+      ],
+      "yerler": [
+        "Kayıtlı olduğun baro (çalışma belgesi)"
+      ]
+    },
+    "pedagojik": {
+      "veren": "Üniversitelerin eğitim fakülteleri",
+      "nasil": "Eğitim fakültelerinin \"Pedagojik Formasyon Eğitimi Sertifika Programı\"na üniversitenin ilanıyla başvurursun; teorik derslerin yanında okullarda 12 haftalık öğretmenlik uygulaması yapılır.",
+      "online": [],
+      "yerler": [
+        "Program açan üniversitelerin eğitim fakülteleri (ilanlar üniversite sitelerinde)"
+      ],
+      "not": "1 Eylül 2025'ten beri MEB'de öğretmen olmak için formasyon yerine Millî Eğitim Akademisi hazırlık eğitimi aranıyor. Formasyon şartı olan diğer kadrolarda bu belge hâlâ istenebilir."
+    },
+    "isg-c": {
+      "veren": "Çalışma ve Sosyal Güvenlik Bakanlığı (İş Sağlığı ve Güvenliği Genel Müdürlüğü)",
+      "online": [
+        {
+          "ad": "İSG-KATİP (eğitim ve belge işlemleri)",
+          "url": "https://isgkatip.csgb.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "ÖSYM Aday İşlemleri (sınav başvurusu)",
+          "url": "https://ais.osym.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Bakanlıkça yetkilendirilmiş iş sağlığı ve güvenliği eğitim kurumları"
+      ],
+      "nasil": "Bakanlıkça yetkilendirilmiş bir eğitim kurumunda iş güvenliği uzmanlığı eğitimini tamamlarsın; bilgilerin İSG-KATİP üzerinden ÖSYM'ye bildirilir ve ÖSYM'nin İSG sınavına girersin. Başarılı olunca belge başvurusunu İSG-KATİP'ten yaparsın.",
+      "not": "Eğitime kimlerin katılabileceği (mühendis, mimar, teknik eleman vb.) yönetmelikte sayılıdır; eğitim kurumuna danış."
+    },
+    "isg-b": {
+      "veren": "Çalışma ve Sosyal Güvenlik Bakanlığı (İş Sağlığı ve Güvenliği Genel Müdürlüğü)",
+      "online": [
+        {
+          "ad": "İSG-KATİP (eğitim ve belge işlemleri)",
+          "url": "https://isgkatip.csgb.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "ÖSYM Aday İşlemleri (sınav başvurusu)",
+          "url": "https://ais.osym.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Bakanlıkça yetkilendirilmiş iş sağlığı ve güvenliği eğitim kurumları"
+      ],
+      "nasil": "C sınıfı belgeyle en az 3 yıl fiilen iş güvenliği uzmanı olarak çalıştıktan sonra ÖSYM'nin İSG sınavında B sınıfından başarılı olursun; belge başvurusu İSG-KATİP'ten yapılır."
+    },
+    "isg-a": {
+      "veren": "Çalışma ve Sosyal Güvenlik Bakanlığı (İş Sağlığı ve Güvenliği Genel Müdürlüğü)",
+      "online": [
+        {
+          "ad": "İSG-KATİP (eğitim ve belge işlemleri)",
+          "url": "https://isgkatip.csgb.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "ÖSYM Aday İşlemleri (sınav başvurusu)",
+          "url": "https://ais.osym.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Bakanlıkça yetkilendirilmiş iş sağlığı ve güvenliği eğitim kurumları"
+      ],
+      "nasil": "B sınıfı belgeyle en az 4 yıl fiilen iş güvenliği uzmanı olarak çalıştıktan sonra ÖSYM'nin İSG sınavında A sınıfından başarılı olursun; belge başvurusu İSG-KATİP'ten yapılır."
+    },
+    "ekat": {
+      "veren": "Elektrik Kuvvetli Akım Tesisleri Yönetmeliğine göre yetkili eğitim kurumları",
+      "nasil": "Elektrik kuvvetli akım tesislerinde yüksek gerilim altında çalışma izin belgesidir. Yetkili bir eğitim merkezinde yaklaşık 120 saatlik EKAT eğitimini alıp sınavı geçen elektrik personeline verilir.",
+      "online": [],
+      "yerler": [
+        "EKAT eğitimi veren yetkili eğitim merkezleri",
+        "Elektrik üretim ve dağıtım şirketlerinin eğitim merkezleri (ör. EÜAŞ)"
+      ],
+      "not": "Genellikle elektrik alanından mezun teknik personelden istenir."
+    },
+    "planlama": {
+      "veren": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+      "nasil": "Plan yapımına yetkili şehir plancılarına verilen yeterlik belgesidir. Gruplar mesleki deneyime göre belirlenir; başvuru şartları Bakanlığın Mekânsal Planlar Yapım Yönetmeliğinde yer alır.",
+      "online": [
+        {
+          "ad": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
+          "url": "https://www.csb.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Bakanlığın Mekânsal Planlama Genel Müdürlüğü"
+      ],
+      "not": "Şehir ve bölge planlama mezunlarına yöneliktir."
+    },
+    "hava-trafik": {
+      "veren": "Sivil Havacılık Genel Müdürlüğü (SHGM)",
+      "nasil": "DHMİ'nin hava trafik kontrolörü adayı alımlarıyla girip DHMİ'nin eğitimini tamamlayanlara SHGM lisans verir. Bazı üniversitelerin hava trafik kontrol bölümleri de bu alanda eğitim veriyor.",
+      "online": [
+        {
+          "ad": "DHMİ (alım duyuruları)",
+          "url": "https://www.dhmi.gov.tr",
+          "tur": "bilgi"
+        },
+        {
+          "ad": "Sivil Havacılık Genel Müdürlüğü",
+          "url": "https://web.shgm.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "DHMİ eğitim birimleri",
+        "Hava trafik kontrol bölümü olan üniversiteler"
+      ]
+    },
+    "prog-iki-dil": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "BTK Akademi (ücretsiz çevrim içi eğitimler)",
+          "url": "https://www.btkakademi.gov.tr",
+          "tur": "bilgi"
+        },
+        {
+          "ad": "Microsoft Learn sertifikaları",
+          "url": "https://learn.microsoft.com/credentials/",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "Oracle University sertifikaları",
+          "url": "https://education.oracle.com",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ],
+      "not": "BTK Akademi öğrenmek için iyi bir başlangıç; katılım belgelerinin kabulü ilana göre değişir."
+    },
+    "java": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "Oracle University sertifikaları",
+          "url": "https://education.oracle.com",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "BTK Akademi (ücretsiz çevrim içi eğitimler)",
+          "url": "https://www.btkakademi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "sql": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "Oracle University sertifikaları",
+          "url": "https://education.oracle.com",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "Microsoft Learn sertifikaları",
+          "url": "https://learn.microsoft.com/credentials/",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "unix": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "LPI Linux sertifikaları",
+          "url": "https://www.lpi.org",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "Red Hat eğitim ve sertifikaları",
+          "url": "https://www.redhat.com/en/services/training-and-certification",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "linux": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "LPI Linux sertifikaları",
+          "url": "https://www.lpi.org",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "Red Hat eğitim ve sertifikaları",
+          "url": "https://www.redhat.com/en/services/training-and-certification",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "BTK Akademi (ücretsiz çevrim içi eğitimler)",
+          "url": "https://www.btkakademi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "cisco": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "Cisco Networking Academy",
+          "url": "https://www.netacad.com",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "BTK Akademi (ücretsiz çevrim içi eğitimler)",
+          "url": "https://www.btkakademi.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "oracle-dba": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "Oracle University sertifikaları",
+          "url": "https://education.oracle.com",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "web-tasarim": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "BTK Akademi (ücretsiz çevrim içi eğitimler)",
+          "url": "https://www.btkakademi.gov.tr",
+          "tur": "bilgi"
+        },
+        {
+          "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
+          "url": "https://e-yaygin.meb.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ],
+      "not": "Halk Eğitim Merkezlerinin web tasarım kursları da MEB onaylı belge verir."
+    },
+    "aspnet": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "Microsoft Learn sertifikaları",
+          "url": "https://learn.microsoft.com/credentials/",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "spring": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "Spring Academy",
+          "url": "https://spring.academy",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "hibernate": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ],
+      "not": "Hibernate için resmî bir üretici sınavı yok; kurs belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılır."
+    },
+    "csharp": {
+      "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
+      "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
+      "online": [
+        {
+          "ad": "Microsoft Learn sertifikaları",
+          "url": "https://learn.microsoft.com/credentials/",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "ccnp": {
+      "veren": "Cisco",
+      "nasil": "Cisco'nun CCNP sınavlarına yetkili sınav merkezlerinde (Pearson VUE) ya da çevrim içi girip geçenlere verilir. Hazırlık için Cisco Networking Academy kursları kullanılabilir.",
+      "online": [
+        {
+          "ad": "Cisco Networking Academy",
+          "url": "https://www.netacad.com",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "mcsa": {
+      "veren": "Microsoft",
+      "nasil": "Microsoft, MCSA sınavlarını 2021'de kaldırdı; daha önce alınmış MCSA belgeleri geçerliliğini koruyor. Yeni alacaksan Microsoft'un rol tabanlı veritabanı sertifikalarına (ör. Azure Database Administrator Associate) bak ve ilanın bunu kabul edip etmediğini kontrol et.",
+      "online": [
+        {
+          "ad": "Microsoft Learn sertifikaları",
+          "url": "https://learn.microsoft.com/credentials/",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Üniversitelerin sürekli eğitim merkezleri (SEM)",
+        "MEB onaylı bilişim kursları",
+        "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
+      ]
+    },
+    "stcw": {
+      "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
+      "nasil": "Denizde çalışacak herkesin aldığı temel güvenlik eğitimleridir (denizde kişisel can kurtarma, yangınla mücadele, ilk yardım, kişisel emniyet). Yetkili bir denizcilik eğitim kurumunda kursu bitirip sınavı geçince belge düzenlenir.",
+      "online": [
+        {
+          "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
+          "url": "https://gemiadami.uab.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "e-Denizcilik",
+          "url": "https://e-denizcilik.uab.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Bakanlıkça yetkilendirilmiş denizcilik eğitim kurumları",
+        "Liman başkanlıkları"
+      ]
+    },
+    "telsiz": {
+      "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
+      "nasil": "GMDSS telsiz operatörü yeterlikleridir (GOC genel, ROC tahditli). İdarenin onayladığı bir eğitim kurumunda eğitimi alıp Denizcilik Genel Müdürlüğünün sınavını geçenlere verilir.",
+      "online": [
+        {
+          "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
+          "url": "https://gemiadami.uab.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "e-Denizcilik",
+          "url": "https://e-denizcilik.uab.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "İdarece onaylı denizcilik eğitim kurumları",
+        "Liman başkanlıkları (sınav başvurusu)"
+      ],
+      "not": "GOC için en az ortaokul, ROC için en az ilkokul mezunu olmak gerekir."
+    },
+    "usta-gemici": {
+      "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
+      "nasil": "Gemici olarak deniz hizmeti ve gerekli eğitimlerden sonra Bakanlığın yeterlik sınavını geçenlere verilir. Şartların ayrıntısı Gemiadamları ve Kılavuz Kaptanlar Yönetmeliğindedir.",
+      "online": [
+        {
+          "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
+          "url": "https://gemiadami.uab.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "e-Denizcilik",
+          "url": "https://e-denizcilik.uab.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Denizcilik meslek liseleri, meslek yüksekokulları ve fakülteleri",
+        "Bakanlıkça yetkilendirilmiş denizcilik eğitim kurumları",
+        "Liman başkanlıkları (sınav ve belge başvurusu)"
+      ]
+    },
+    "vardiya-zabiti": {
+      "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
+      "nasil": "Denizcilik meslek lisesi, meslek yüksekokulu ya da fakültesinin güverte bölümünü bitirip deniz stajını ve Bakanlığın yeterlik sınavını tamamlayanlara verilir. Şartların ayrıntısı Gemiadamları ve Kılavuz Kaptanlar Yönetmeliğindedir.",
+      "online": [
+        {
+          "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
+          "url": "https://gemiadami.uab.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "e-Denizcilik",
+          "url": "https://e-denizcilik.uab.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Denizcilik meslek liseleri, meslek yüksekokulları ve fakülteleri",
+        "Bakanlıkça yetkilendirilmiş denizcilik eğitim kurumları",
+        "Liman başkanlıkları (sınav ve belge başvurusu)"
+      ]
+    },
+    "makine-zabiti": {
+      "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
+      "nasil": "Denizcilik meslek lisesi, meslek yüksekokulu ya da fakültesinin makine bölümünü bitirip deniz stajını ve Bakanlığın yeterlik sınavını tamamlayanlara verilir. Şartların ayrıntısı Gemiadamları ve Kılavuz Kaptanlar Yönetmeliğindedir.",
+      "online": [
+        {
+          "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
+          "url": "https://gemiadami.uab.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "e-Denizcilik",
+          "url": "https://e-denizcilik.uab.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Denizcilik meslek liseleri, meslek yüksekokulları ve fakülteleri",
+        "Bakanlıkça yetkilendirilmiş denizcilik eğitim kurumları",
+        "Liman başkanlıkları (sınav ve belge başvurusu)"
+      ]
+    },
+    "sinirli-kaptan": {
+      "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
+      "nasil": "Sınırlı tonajdaki gemiler için kaptan yeterliğidir; eğitim, deniz hizmeti ve Bakanlığın yeterlik sınavıyla alınır. Şartların ayrıntısı Gemiadamları ve Kılavuz Kaptanlar Yönetmeliğindedir.",
+      "online": [
+        {
+          "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
+          "url": "https://gemiadami.uab.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "e-Denizcilik",
+          "url": "https://e-denizcilik.uab.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "Denizcilik meslek liseleri, meslek yüksekokulları ve fakülteleri",
+        "Bakanlıkça yetkilendirilmiş denizcilik eğitim kurumları",
+        "Liman başkanlıkları (sınav ve belge başvurusu)"
+      ]
+    },
+    "kurbaga-adam": {
+      "veren": "Türkiye Sualtı Sporları Federasyonu (TSSF) ya da Ulaştırma ve Altyapı Bakanlığı",
+      "nasil": "İlanlarda çoğunlukla TSSF onaylı dalıcı belgesi ya da Bakanlığın profesyonel balıkadam yeterliği isteniyor. TSSF belgeleri federasyona bağlı dalış merkezlerinde eğitimle alınır; profesyonel yeterlik için liman başkanlığına başvurulur.",
+      "online": [
+        {
+          "ad": "Türkiye Sualtı Sporları Federasyonu",
+          "url": "https://tssf.gov.tr",
+          "tur": "bilgi"
+        },
+        {
+          "ad": "Dalıcı sertifikanı sorgula (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/turkiye-sualti-sporlari-federasyonu",
+          "tur": "sorgu"
+        }
+      ],
+      "yerler": [
+        "TSSF'ye bağlı dalış eğitim merkezleri",
+        "Liman başkanlıkları (profesyonel balıkadam yeterliği)"
+      ],
+      "not": "Hangi belgenin kabul edileceği ilanda yazar; örneğin Sahil Güvenlik ilanları TSSF onaylı en az 2 yıldız dalıcı belgesi istiyor."
+    },
+    "hafizlik": {
+      "veren": "Diyanet İşleri Başkanlığı (il ve ilçe müftülükleri)",
+      "nasil": "Diyanet'e bağlı Kur'an kurslarında hafızlık eğitimini tamamlayıp hafızlık tespit sınavını geçenlere verilir. Hafızlık bilgin müftülük aracılığıyla Diyanet'in sistemine kaydedilir.",
+      "online": [
+        {
+          "ad": "Diyanet sınav duyuruları",
+          "url": "https://insankaynaklari.diyanet.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Diyanet'e bağlı Kur'an kursları",
+        "İl ve ilçe müftülükleri (sınav ve kayıt)"
+      ]
+    },
+    "kuran-ogretici": {
+      "veren": "Diyanet İşleri Başkanlığı",
+      "nasil": "Diyanet İşleri Başkanlığının bu unvana ilk kez alınacaklar için yaptığı yeterlik sınavını (yazılı ve/veya sözlü, uygulamalı) geçenlere verilir. Sınav ve alım duyuruları Diyanet'in İnsan Kaynakları sayfasında yayımlanır.",
+      "online": [
+        {
+          "ad": "Diyanet sınav duyuruları",
+          "url": "https://insankaynaklari.diyanet.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Diyanet'in belirlediği sınav merkezleri",
+        "İl müftülükleri (bilgi ve başvuru)"
+      ]
+    },
+    "imam-hatip-yeterlik": {
+      "veren": "Diyanet İşleri Başkanlığı",
+      "nasil": "Diyanet İşleri Başkanlığının bu unvana ilk kez alınacaklar için yaptığı yeterlik sınavını (yazılı ve/veya sözlü, uygulamalı) geçenlere verilir. Sınav ve alım duyuruları Diyanet'in İnsan Kaynakları sayfasında yayımlanır.",
+      "online": [
+        {
+          "ad": "Diyanet sınav duyuruları",
+          "url": "https://insankaynaklari.diyanet.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Diyanet'in belirlediği sınav merkezleri",
+        "İl müftülükleri (bilgi ve başvuru)"
+      ]
+    },
+    "muezzin-yeterlik": {
+      "veren": "Diyanet İşleri Başkanlığı",
+      "nasil": "Diyanet İşleri Başkanlığının bu unvana ilk kez alınacaklar için yaptığı yeterlik sınavını (yazılı ve/veya sözlü, uygulamalı) geçenlere verilir. Sınav ve alım duyuruları Diyanet'in İnsan Kaynakları sayfasında yayımlanır.",
+      "online": [
+        {
+          "ad": "Diyanet sınav duyuruları",
+          "url": "https://insankaynaklari.diyanet.gov.tr",
+          "tur": "bilgi"
+        }
+      ],
+      "yerler": [
+        "Diyanet'in belirlediği sınav merkezleri",
+        "İl müftülükleri (bilgi ve başvuru)"
+      ],
+      "not": "Lise mezunlarının müezzin-kayyım alımlarına başvurabilmesi için genellikle hafızlık belgesi de istenir."
+    },
+    "myk": {
+      "veren": "Mesleki Yeterlilik Kurumu (MYK) yetkilendirilmiş belgelendirme kuruluşları",
+      "nasil": "Mesleğinde MYK'nın yetkilendirdiği bir belgelendirme kuruluşuna başvurup teorik ve uygulamalı sınavı geçersin. Hangi kuruluşun hangi meslekte yetkili olduğu MYK'nın sitesinde listelenir.",
+      "online": [
+        {
+          "ad": "Yetkili kuruluşları bul (MYK)",
+          "url": "https://www.myk.gov.tr",
+          "tur": "bilgi"
+        },
+        {
+          "ad": "Belgeni sorgula: MYK Mesleki Yeterlilik Belgesi (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=MYK%20Mesleki%20Yeterlilik%20Belgesi%20Sorgulama",
+          "tur": "sorgu"
+        }
+      ],
+      "yerler": [
+        "MYK yetkilendirilmiş belgelendirme kuruluşları (sınav merkezleri)"
+      ],
+      "not": "Kurs almak tek başına MYK belgesi sağlamaz; belge yalnızca yetkili kuruluşun sınavıyla verilir."
+    },
+    "hijyen": {
+      "veren": "Millî Eğitim Bakanlığı (Halk Eğitim Merkezleri ve MEB onaylı kurslar)",
+      "nasil": "En az 8 saatlik hijyen eğitimini Halk Eğitim Merkezinde (e-Yaygın ile kayıt) ya da MEB onaylı bir kursta alırsın; değerlendirmeden sonra kurs bitirme belgesi verilir.",
+      "online": [
+        {
+          "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
+          "url": "https://e-yaygin.meb.gov.tr",
+          "tur": "basvuru"
+        },
+        {
+          "ad": "Belgeni gör: Yaygın Eğitim Sertifika Belgesi Sorgulama (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/arama2?aranan=Yayg%C4%B1n%20E%C4%9Fitim%20Sertifika%20Belgesi%20Sorgulama",
+          "tur": "sorgu"
+        }
+      ],
+      "yerler": [
+        "Halk Eğitim Merkezleri (kurslar ücretsiz)",
+        "MEB onaylı özel kurslar"
+      ]
+    },
+    "ilk-yardim": {
+      "veren": "Sağlık Bakanlığı (il sağlık müdürlükleri)",
+      "nasil": "Sağlık Bakanlığınca yetkilendirilmiş bir ilk yardım eğitim merkezinde 16 saatlik temel ilk yardım eğitimini alıp il sağlık müdürlüğünün sınavını geçersin. Sertifika 3 yıl geçerlidir; süresi bitince yenilenir.",
+      "online": [],
+      "yerler": [
+        "Sağlık Bakanlığı onaylı ilk yardım eğitim merkezleri",
+        "Türk Kızılay'ın ilk yardım eğitim merkezleri"
+      ],
+      "not": "Yetkisiz kurumların çevrim içi \"ilk yardım sertifikaları\" resmî ilk yardımcı belgesi yerine geçmez."
+    },
+    "forklift": {
+      "veren": "MEB yetkili kurslar (operatörlük) ve nüfus müdürlükleri (G sınıfı ehliyet)",
+      "online": [
+        {
+          "ad": "Ehliyet için randevu al (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "MEB onaylı iş makinesi operatörlüğü kursları",
+        "Sürücü kursları (G sınıfı ehliyet)"
+      ],
+      "nasil": "Forklift operatörlük belgesi MEB'in yetkilendirdiği iş makinesi operatörlüğü kurslarında verilir. Forkliftle trafiğe çıkacaksan ayrıca G sınıfı ehliyet gerekir.",
+      "not": "Bazı operatörlük mesleklerinde MYK belgesi de zorunlu; işçi ilanında hangisinin istendiğine bak."
+    },
+    "is-makinesi": {
+      "veren": "MEB yetkili kurslar (operatörlük) ve nüfus müdürlükleri (G sınıfı ehliyet)",
+      "online": [
+        {
+          "ad": "Ehliyet için randevu al (NVİ)",
+          "url": "https://randevu.nvi.gov.tr",
+          "tur": "basvuru"
+        }
+      ],
+      "yerler": [
+        "MEB onaylı iş makinesi operatörlüğü kursları",
+        "Sürücü kursları (G sınıfı ehliyet)"
+      ],
+      "nasil": "Her makine (ekskavatör, loder, greyder vb.) için ayrı operatörlük belgesi MEB'in yetkilendirdiği kurslarda verilir. Makineyle trafiğe çıkmak için ayrıca G sınıfı ehliyet gerekir.",
+      "not": "Ekskavatör operatörlüğü gibi bazı mesleklerde MYK mesleki yeterlilik belgesi de zorunlu hâle getirildi."
+    }
   }
- ],
- "belgeler": {
-  "ehliyet-b": {
-   "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
-   "nasil": "MEB'e bağlı bir sürücü kursunda (ehliyet kursu) eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın.",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB'e bağlı özel motorlu taşıt sürücü kursları",
-    "Aile hekimi ya da hastane (sürücü sağlık raporu)",
-    "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
-   ],
-   "not": "Kılavuza göre B şartı olan kadrolara BE, C1, C, CE, D1, D ve DE ehliyetiyle de başvurabilirsin."
-  },
-  "ehliyet-be": {
-   "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
-   "nasil": "MEB'e bağlı bir sürücü kursunda (ehliyet kursu) eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın.",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB'e bağlı özel motorlu taşıt sürücü kursları",
-    "Aile hekimi ya da hastane (sürücü sağlık raporu)",
-    "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
-   ],
-   "not": "BE için önce B sınıfı ehliyetin olmalı."
-  },
-  "ehliyet-c1": {
-   "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
-   "nasil": "MEB'e bağlı bir sürücü kursunda (ehliyet kursu) eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın.",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB'e bağlı özel motorlu taşıt sürücü kursları",
-    "Aile hekimi ya da hastane (sürücü sağlık raporu)",
-    "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
-   ],
-   "not": "Yaş ve önceki ehliyet şartı sınıfa göre değişir; kurs kayıt sırasında söyler."
-  },
-  "ehliyet-c": {
-   "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
-   "nasil": "MEB'e bağlı bir sürücü kursunda (ehliyet kursu) eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın.",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB'e bağlı özel motorlu taşıt sürücü kursları",
-    "Aile hekimi ya da hastane (sürücü sağlık raporu)",
-    "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
-   ],
-   "not": "C şartı olan kadrolara CE ehliyetiyle de başvurabilirsin."
-  },
-  "ehliyet-ce": {
-   "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
-   "nasil": "MEB'e bağlı bir sürücü kursunda (ehliyet kursu) eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın.",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB'e bağlı özel motorlu taşıt sürücü kursları",
-    "Aile hekimi ya da hastane (sürücü sağlık raporu)",
-    "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
-   ],
-   "not": "CE için önce C sınıfı ehliyetin olmalı."
-  },
-  "ehliyet-d1": {
-   "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
-   "nasil": "MEB'e bağlı bir sürücü kursunda (ehliyet kursu) eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın.",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB'e bağlı özel motorlu taşıt sürücü kursları",
-    "Aile hekimi ya da hastane (sürücü sağlık raporu)",
-    "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
-   ],
-   "not": "Yaş ve önceki ehliyet şartı sınıfa göre değişir; kurs kayıt sırasında söyler."
-  },
-  "ehliyet-d": {
-   "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
-   "nasil": "MEB'e bağlı bir sürücü kursunda (ehliyet kursu) eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın.",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB'e bağlı özel motorlu taşıt sürücü kursları",
-    "Aile hekimi ya da hastane (sürücü sağlık raporu)",
-    "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
-   ],
-   "not": "D şartı olan kadrolara DE ehliyetiyle de başvurabilirsin."
-  },
-  "ehliyet-de": {
-   "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
-   "nasil": "MEB'e bağlı bir sürücü kursunda (ehliyet kursu) eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın.",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB'e bağlı özel motorlu taşıt sürücü kursları",
-    "Aile hekimi ya da hastane (sürücü sağlık raporu)",
-    "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
-   ],
-   "not": "DE için önce D sınıfı ehliyetin olmalı. Kılavuza göre CE ve D sınıfı ehliyeti birlikte olanlar da DE şartını karşılar."
-  },
-  "ehliyet-g": {
-   "veren": "Nüfus ve Vatandaşlık İşleri (NVİ) il ve ilçe müdürlükleri",
-   "nasil": "MEB'e bağlı bir sürücü kursunda (ehliyet kursu) eğitim alıp MEB'in teorik e-sınavını ve direksiyon sınavını geçersin. Sonra sağlık raporun ve diğer evrakınla nüfus müdürlüğünden randevu alıp belgeni teslim alırsın.",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB'e bağlı özel motorlu taşıt sürücü kursları",
-    "Aile hekimi ya da hastane (sürücü sağlık raporu)",
-    "İl ve ilçe nüfus müdürlükleri (belge teslimi)"
-   ],
-   "not": "G sınıfı, iş makinesiyle trafiğe çıkmak içindir. Makineyi kullanmak için ayrıca o makinenin operatörlük belgesi gerekir."
-  },
-  "ehliyet-5yil": {
-   "veren": "Belge değil, süre şartı",
-   "nasil": "İlgili sınıftaki ehliyetini en az 5 yıl önce almış olman gerekir. Veriliş tarihi ehliyetinin üzerinde yazar; e-Devlet'teki sürücü belgesi sorgulama hizmetinden de görebilirsin.",
-   "online": [
-    {
-     "ad": "Ehliyet bilgilerini gör (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=s%C3%BCr%C3%BCc%C3%BC%20belgesi%20sorgulama",
-     "tur": "sorgu"
-    }
-   ],
-   "yerler": []
-  },
-  "src": {
-   "veren": "Ulaştırma ve Altyapı Bakanlığı (eğitim ve sınav: MEB)",
-   "nasil": "MEB onaylı bir sürücü kursunda SRC eğitimini alıp MEB'in mesleki yeterlilik sınavını geçersin. Belgeyi Ulaştırma ve Altyapı Bakanlığı düzenler; e-Devlet'ten karekodlu olarak görüntülenir.",
-   "online": [
-    {
-     "ad": "SRC belgeni sorgula ya da düzenlet (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/udvh-mesleki-yeterlilik-belgesi-sorgulamaduzenleme",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB onaylı sürücü kursları (SRC eğitimi)"
-   ],
-   "not": "SRC'nin türü (SRC1–SRC5) yapılacak işe göre değişir; ilanda hangisinin istendiğine bak."
-  },
-  "psikoteknik": {
-   "veren": "İl sağlık müdürlüklerinin yetkilendirdiği psikoteknik değerlendirme merkezleri",
-   "nasil": "Yetkili bir psikoteknik değerlendirme merkezinden randevu alıp bilgisayarlı testlere girersin; psikiyatri uzmanı değerlendirmesinden sonra raporun düzenlenir. Rapor e-Devlet'te de görünür.",
-   "online": [],
-   "yerler": [
-    "İl sağlık müdürlüğünün ruhsat verdiği psikoteknik değerlendirme merkezleri (liste il sağlık müdürlüğünün sitesinde)"
-   ]
-  },
-  "bilgisayar": {
-   "veren": "Millî Eğitim Bakanlığı ya da üniversiteler",
-   "nasil": "Halk Eğitim Merkezinin bilgisayar işletmenliği kursuna e-Yaygın'dan kaydolup kursu bitirirsin; MEB onaylı belgen e-Devlet'e düşer. Halk Eğitim kursları ücretsizdir.",
-   "online": [
-    {
-     "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
-     "url": "https://e-yaygin.meb.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "Belgeni gör: Yaygın Eğitim Sertifika Belgesi Sorgulama (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=Yayg%C4%B1n%20E%C4%9Fitim%20Sertifika%20Belgesi%20Sorgulama",
-     "tur": "sorgu"
-    }
-   ],
-   "yerler": [
-    "Halk Eğitim Merkezleri (kurslar ücretsiz)",
-    "MEB onaylı özel kurslar",
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)"
-   ],
-   "not": "Okulda bilgisayar dersi aldıysan transkriptin de bu şartı karşılar. HEMBA'daki uzaktan kursların sonunda katılım belgesi verilir; sertifika istenen kadrolar için kurs bitirme belgesi gerekebilir."
-  },
-  "bilgisayar-programci": {
-   "veren": "Millî Eğitim Bakanlığı ya da üniversiteler",
-   "nasil": "MEB onaylı bilgisayar programcılığı ya da analist programcılık kursunu bitirerek veya bir üniversitenin sürekli eğitim merkezinin sertifika programıyla alınır.",
-   "online": [
-    {
-     "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
-     "url": "https://e-yaygin.meb.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB onaylı özel kurslar",
-    "Halk Eğitim Merkezleri (kurs açılan yerlerde)",
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)"
-   ],
-   "not": "Kılavuza göre bilgisayar işletmenliği sertifikası istenen kadrolara bu sertifikayla da başvurabilirsin."
-  },
-  "ascilik": {
-   "veren": "Millî Eğitim Bakanlığı",
-   "nasil": "Halk Eğitim Merkezinin aşçılık kursuna e-Yaygın'dan kaydolup ya da MEB onaylı bir aşçılık kursunu bitirip alırsın. Mesleki Eğitim Merkezlerinden alınan aşçılık kalfalık ve ustalık belgeleri de kullanılabilir.",
-   "online": [
-    {
-     "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
-     "url": "https://e-yaygin.meb.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "Belgeni gör: Yaygın Eğitim Sertifika Belgesi Sorgulama (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=Yayg%C4%B1n%20E%C4%9Fitim%20Sertifika%20Belgesi%20Sorgulama",
-     "tur": "sorgu"
-    }
-   ],
-   "yerler": [
-    "Halk Eğitim Merkezleri",
-    "Mesleki Eğitim Merkezleri (MESEM)",
-    "MEB onaylı özel kurslar"
-   ]
-  },
-  "kalorifer": {
-   "veren": "Millî Eğitim Bakanlığı",
-   "nasil": "Halk Eğitim Merkezinin kalorifer ateşçiliği kursuna e-Yaygın'dan kaydolup kursu bitirerek alırsın. MEB onaylı özel kurslar da bu belgeyi verir.",
-   "online": [
-    {
-     "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
-     "url": "https://e-yaygin.meb.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "Belgeni gör: Yaygın Eğitim Sertifika Belgesi Sorgulama (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=Yayg%C4%B1n%20E%C4%9Fitim%20Sertifika%20Belgesi%20Sorgulama",
-     "tur": "sorgu"
-    }
-   ],
-   "yerler": [
-    "Halk Eğitim Merkezleri (kurslar ücretsiz)",
-    "MEB onaylı özel kurslar"
-   ],
-   "not": "Kaloriferci kadrolarında 3308 sayılı Kanuna göre alınmış ustalık belgesi de sertifika yerine geçer."
-  },
-  "dogalgaz-kalorifer": {
-   "veren": "Millî Eğitim Bakanlığı",
-   "nasil": "Halk Eğitim Merkezinin doğalgaz kalorifer ateşçiliği kursuna e-Yaygın'dan kaydolup kursu bitirerek alırsın. MEB onaylı özel kurslar da bu belgeyi verir.",
-   "online": [
-    {
-     "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
-     "url": "https://e-yaygin.meb.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "Belgeni gör: Yaygın Eğitim Sertifika Belgesi Sorgulama (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=Yayg%C4%B1n%20E%C4%9Fitim%20Sertifika%20Belgesi%20Sorgulama",
-     "tur": "sorgu"
-    }
-   ],
-   "yerler": [
-    "Halk Eğitim Merkezleri (kurslar ücretsiz)",
-    "MEB onaylı özel kurslar"
-   ],
-   "not": "Kaloriferci kadrolarında 3308 sayılı Kanuna göre alınmış ustalık belgesi de sertifika yerine geçer."
-  },
-  "guvenlik-silahsiz": {
-   "veren": "Valiliklerin özel güvenlik birimleri (sınav: Emniyet Genel Müdürlüğü)",
-   "nasil": "Yetkili bir özel güvenlik eğitim kurumunda temel eğitimi tamamlayıp Emniyet Genel Müdürlüğünün sınavını geçersin. Kimlik kartı başvurusunu e-Devlet'ten yaparsın; bunun için Sağlık Bakanlığı sisteminde \"özel güvenlik görevlisi olabilir\" e-raporun bulunmalı.",
-   "online": [
-    {
-     "ad": "Kimlik kartı başvurusu (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=%C3%B6zel%20g%C3%BCvenlik%20kimlik%20kart%C4%B1",
-     "tur": "sorgu"
-    },
-    {
-     "ad": "e-Devlet başvuru kılavuzu (EGM)",
-     "url": "https://egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Kimlik-Kart-Basvuru-Kilavuz.pdf",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Özel güvenlik eğitim kurumları (temel eğitim)",
-    "Valiliklerin özel güvenlik şube müdürlükleri"
-   ],
-   "not": "Silahsız temel eğitim sınavında 100 sorudan en az 60 puan alman gerekir."
-  },
-  "guvenlik-silahli": {
-   "veren": "Valiliklerin özel güvenlik birimleri (sınav: Emniyet Genel Müdürlüğü)",
-   "nasil": "Yetkili bir özel güvenlik eğitim kurumunda temel eğitimi tamamlayıp Emniyet Genel Müdürlüğünün sınavını geçersin. Kimlik kartı başvurusunu e-Devlet'ten yaparsın; bunun için Sağlık Bakanlığı sisteminde \"özel güvenlik görevlisi olabilir\" e-raporun bulunmalı.",
-   "online": [
-    {
-     "ad": "Kimlik kartı başvurusu (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=%C3%B6zel%20g%C3%BCvenlik%20kimlik%20kart%C4%B1",
-     "tur": "sorgu"
-    },
-    {
-     "ad": "e-Devlet başvuru kılavuzu (EGM)",
-     "url": "https://egm.gov.tr/kurumlar/egm.gov.tr/IcSite/ozelguvenlik/Kimlik-Kart-Basvuru-Kilavuz.pdf",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Özel güvenlik eğitim kurumları (temel eğitim)",
-    "Valiliklerin özel güvenlik şube müdürlükleri"
-   ],
-   "not": "Silahlı adaylar ayrıca silah bilgisi ve atıştan değerlendirilir. Silahlı kart, silahsız kart isteyen kadroları da karşılar."
-  },
-  "ustalik": {
-   "veren": "Millî Eğitim Bakanlığı Mesleki Eğitim Merkezleri (MESEM)",
-   "nasil": "Kalfalık belgesi olanlar ustalık eğitimini tamamlayıp ustalık sınavına girer. Mesleğinde uzun süre sigortalı çalıştıysan ustalık telafi programıyla da alabilirsin. Başvuru ilçendeki Mesleki Eğitim Merkezine şahsen yapılır.",
-   "online": [
-    {
-     "ad": "Belgeni sorgula: Kalfalık ve Ustalık Belgesi (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=Kalfal%C4%B1k%2C%20Ustal%C4%B1k%2C%20Usta%20%C3%96%C4%9Freticilik%20ve%20%C4%B0%C5%9F%20Yeri%20A%C3%A7ma%20Belgesi%20Sorgulama",
-     "tur": "sorgu"
-    }
-   ],
-   "yerler": [
-    "Mesleki Eğitim Merkezleri (MESEM)",
-    "Mesleki eğitim merkezi programı uygulayan meslek liseleri"
-   ],
-   "not": "3308 sayılı Mesleki Eğitim Kanununa göre verilen belgeler geçerlidir."
-  },
-  "avukatlik": {
-   "veren": "Barolar (ruhsatname)",
-   "nasil": "Hukuk fakültesini bitirip ÖSYM'nin Hukuk Mesleklerine Giriş Sınavında (HMGS) en az 70 alırsın. Ardından bir baroda bir yıllık stajı (altı ayı mahkemede, altı ayı avukat yanında) tamamlarsın. Staj bitim belgesiyle baro levhasına yazılınca ruhsatnameni alırsın.",
-   "online": [
-    {
-     "ad": "ÖSYM Aday İşlemleri (sınav başvurusu)",
-     "url": "https://ais.osym.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "Türkiye Barolar Birliği",
-     "url": "https://www.barobirlik.org.tr",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Staj yapacağın ildeki baro"
-   ]
-  },
-  "avukatlik-2yil": {
-   "veren": "Barolar",
-   "nasil": "Ruhsatnameni aldıktan sonra en az 2 yıl avukatlık yapmış olman gerekir. Süreyi baro kaydın ve sigorta hizmet dökümünle belgelersin.",
-   "online": [
-    {
-     "ad": "Hizmet dökümünü al (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=SGK%20Tescil%20ve%20Hizmet%20D%C3%B6k%C3%BCm%C3%BC",
-     "tur": "sorgu"
-    }
-   ],
-   "yerler": [
-    "Kayıtlı olduğun baro (çalışma belgesi)"
-   ]
-  },
-  "pedagojik": {
-   "veren": "Üniversitelerin eğitim fakülteleri",
-   "nasil": "Eğitim fakültelerinin \"Pedagojik Formasyon Eğitimi Sertifika Programı\"na üniversitenin ilanıyla başvurursun; teorik derslerin yanında okullarda 12 haftalık öğretmenlik uygulaması yapılır.",
-   "online": [],
-   "yerler": [
-    "Program açan üniversitelerin eğitim fakülteleri (ilanlar üniversite sitelerinde)"
-   ],
-   "not": "1 Eylül 2025'ten beri MEB'de öğretmen olmak için formasyon yerine Millî Eğitim Akademisi hazırlık eğitimi aranıyor. Formasyon şartı olan diğer kadrolarda bu belge hâlâ istenebilir."
-  },
-  "isg-c": {
-   "veren": "Çalışma ve Sosyal Güvenlik Bakanlığı (İş Sağlığı ve Güvenliği Genel Müdürlüğü)",
-   "online": [
-    {
-     "ad": "İSG-KATİP (eğitim ve belge işlemleri)",
-     "url": "https://isgkatip.csgb.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "ÖSYM Aday İşlemleri (sınav başvurusu)",
-     "url": "https://ais.osym.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Bakanlıkça yetkilendirilmiş iş sağlığı ve güvenliği eğitim kurumları"
-   ],
-   "nasil": "Bakanlıkça yetkilendirilmiş bir eğitim kurumunda iş güvenliği uzmanlığı eğitimini tamamlarsın; bilgilerin İSG-KATİP üzerinden ÖSYM'ye bildirilir ve ÖSYM'nin İSG sınavına girersin. Başarılı olunca belge başvurusunu İSG-KATİP'ten yaparsın.",
-   "not": "Eğitime kimlerin katılabileceği (mühendis, mimar, teknik eleman vb.) yönetmelikte sayılıdır; eğitim kurumuna danış."
-  },
-  "isg-b": {
-   "veren": "Çalışma ve Sosyal Güvenlik Bakanlığı (İş Sağlığı ve Güvenliği Genel Müdürlüğü)",
-   "online": [
-    {
-     "ad": "İSG-KATİP (eğitim ve belge işlemleri)",
-     "url": "https://isgkatip.csgb.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "ÖSYM Aday İşlemleri (sınav başvurusu)",
-     "url": "https://ais.osym.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Bakanlıkça yetkilendirilmiş iş sağlığı ve güvenliği eğitim kurumları"
-   ],
-   "nasil": "C sınıfı belgeyle en az 3 yıl fiilen iş güvenliği uzmanı olarak çalıştıktan sonra ÖSYM'nin İSG sınavında B sınıfından başarılı olursun; belge başvurusu İSG-KATİP'ten yapılır."
-  },
-  "isg-a": {
-   "veren": "Çalışma ve Sosyal Güvenlik Bakanlığı (İş Sağlığı ve Güvenliği Genel Müdürlüğü)",
-   "online": [
-    {
-     "ad": "İSG-KATİP (eğitim ve belge işlemleri)",
-     "url": "https://isgkatip.csgb.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "ÖSYM Aday İşlemleri (sınav başvurusu)",
-     "url": "https://ais.osym.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Bakanlıkça yetkilendirilmiş iş sağlığı ve güvenliği eğitim kurumları"
-   ],
-   "nasil": "B sınıfı belgeyle en az 4 yıl fiilen iş güvenliği uzmanı olarak çalıştıktan sonra ÖSYM'nin İSG sınavında A sınıfından başarılı olursun; belge başvurusu İSG-KATİP'ten yapılır."
-  },
-  "ekat": {
-   "veren": "Elektrik Kuvvetli Akım Tesisleri Yönetmeliğine göre yetkili eğitim kurumları",
-   "nasil": "Elektrik kuvvetli akım tesislerinde yüksek gerilim altında çalışma izin belgesidir. Yetkili bir eğitim merkezinde yaklaşık 120 saatlik EKAT eğitimini alıp sınavı geçen elektrik personeline verilir.",
-   "online": [],
-   "yerler": [
-    "EKAT eğitimi veren yetkili eğitim merkezleri",
-    "Elektrik üretim ve dağıtım şirketlerinin eğitim merkezleri (ör. EÜAŞ)"
-   ],
-   "not": "Genellikle elektrik alanından mezun teknik personelden istenir."
-  },
-  "planlama": {
-   "veren": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
-   "nasil": "Plan yapımına yetkili şehir plancılarına verilen yeterlik belgesidir. Gruplar mesleki deneyime göre belirlenir; başvuru şartları Bakanlığın Mekânsal Planlar Yapım Yönetmeliğinde yer alır.",
-   "online": [
-    {
-     "ad": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı",
-     "url": "https://www.csb.gov.tr",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Bakanlığın Mekânsal Planlama Genel Müdürlüğü"
-   ],
-   "not": "Şehir ve bölge planlama mezunlarına yöneliktir."
-  },
-  "hava-trafik": {
-   "veren": "Sivil Havacılık Genel Müdürlüğü (SHGM)",
-   "nasil": "DHMİ'nin hava trafik kontrolörü adayı alımlarıyla girip DHMİ'nin eğitimini tamamlayanlara SHGM lisans verir. Bazı üniversitelerin hava trafik kontrol bölümleri de bu alanda eğitim veriyor.",
-   "online": [
-    {
-     "ad": "DHMİ (alım duyuruları)",
-     "url": "https://www.dhmi.gov.tr",
-     "tur": "bilgi"
-    },
-    {
-     "ad": "Sivil Havacılık Genel Müdürlüğü",
-     "url": "https://web.shgm.gov.tr",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "DHMİ eğitim birimleri",
-    "Hava trafik kontrol bölümü olan üniversiteler"
-   ]
-  },
-  "prog-iki-dil": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "BTK Akademi (ücretsiz çevrim içi eğitimler)",
-     "url": "https://www.btkakademi.gov.tr",
-     "tur": "bilgi"
-    },
-    {
-     "ad": "Microsoft Learn sertifikaları",
-     "url": "https://learn.microsoft.com/credentials/",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "Oracle University sertifikaları",
-     "url": "https://education.oracle.com",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ],
-   "not": "BTK Akademi öğrenmek için iyi bir başlangıç; katılım belgelerinin kabulü ilana göre değişir."
-  },
-  "java": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "Oracle University sertifikaları",
-     "url": "https://education.oracle.com",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "BTK Akademi (ücretsiz çevrim içi eğitimler)",
-     "url": "https://www.btkakademi.gov.tr",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "sql": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "Oracle University sertifikaları",
-     "url": "https://education.oracle.com",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "Microsoft Learn sertifikaları",
-     "url": "https://learn.microsoft.com/credentials/",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "unix": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "LPI Linux sertifikaları",
-     "url": "https://www.lpi.org",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "Red Hat eğitim ve sertifikaları",
-     "url": "https://www.redhat.com/en/services/training-and-certification",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "linux": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "LPI Linux sertifikaları",
-     "url": "https://www.lpi.org",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "Red Hat eğitim ve sertifikaları",
-     "url": "https://www.redhat.com/en/services/training-and-certification",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "BTK Akademi (ücretsiz çevrim içi eğitimler)",
-     "url": "https://www.btkakademi.gov.tr",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "cisco": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "Cisco Networking Academy",
-     "url": "https://www.netacad.com",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "BTK Akademi (ücretsiz çevrim içi eğitimler)",
-     "url": "https://www.btkakademi.gov.tr",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "oracle-dba": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "Oracle University sertifikaları",
-     "url": "https://education.oracle.com",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "web-tasarim": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "BTK Akademi (ücretsiz çevrim içi eğitimler)",
-     "url": "https://www.btkakademi.gov.tr",
-     "tur": "bilgi"
-    },
-    {
-     "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
-     "url": "https://e-yaygin.meb.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ],
-   "not": "Halk Eğitim Merkezlerinin web tasarım kursları da MEB onaylı belge verir."
-  },
-  "aspnet": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "Microsoft Learn sertifikaları",
-     "url": "https://learn.microsoft.com/credentials/",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "spring": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "Spring Academy",
-     "url": "https://spring.academy",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "hibernate": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ],
-   "not": "Hibernate için resmî bir üretici sınavı yok; kurs belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılır."
-  },
-  "csharp": {
-   "veren": "Üretici firmalar, üniversiteler ve MEB onaylı kurslar",
-   "nasil": "Bu şart çoğunlukla sözleşmeli bilişim personeli kadrolarında \"bilgi sahibi olmak ve belgelemek\" biçiminde aranır. Üretici sertifikası, kurs bitirme belgesi ya da bu teknolojiyle çalıştığını gösteren belge kullanılabilir; hangisinin kabul edileceğini ilan belirler.",
-   "online": [
-    {
-     "ad": "Microsoft Learn sertifikaları",
-     "url": "https://learn.microsoft.com/credentials/",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "ccnp": {
-   "veren": "Cisco",
-   "nasil": "Cisco'nun CCNP sınavlarına yetkili sınav merkezlerinde (Pearson VUE) ya da çevrim içi girip geçenlere verilir. Hazırlık için Cisco Networking Academy kursları kullanılabilir.",
-   "online": [
-    {
-     "ad": "Cisco Networking Academy",
-     "url": "https://www.netacad.com",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "mcsa": {
-   "veren": "Microsoft",
-   "nasil": "Microsoft, MCSA sınavlarını 2021'de kaldırdı; daha önce alınmış MCSA belgeleri geçerliliğini koruyor. Yeni alacaksan Microsoft'un rol tabanlı veritabanı sertifikalarına (ör. Azure Database Administrator Associate) bak ve ilanın bunu kabul edip etmediğini kontrol et.",
-   "online": [
-    {
-     "ad": "Microsoft Learn sertifikaları",
-     "url": "https://learn.microsoft.com/credentials/",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Üniversitelerin sürekli eğitim merkezleri (SEM)",
-    "MEB onaylı bilişim kursları",
-    "Üreticilerin yetkili sınav merkezleri (ör. Pearson VUE)"
-   ]
-  },
-  "stcw": {
-   "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
-   "nasil": "Denizde çalışacak herkesin aldığı temel güvenlik eğitimleridir (denizde kişisel can kurtarma, yangınla mücadele, ilk yardım, kişisel emniyet). Yetkili bir denizcilik eğitim kurumunda kursu bitirip sınavı geçince belge düzenlenir.",
-   "online": [
-    {
-     "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
-     "url": "https://gemiadami.uab.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "e-Denizcilik",
-     "url": "https://e-denizcilik.uab.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Bakanlıkça yetkilendirilmiş denizcilik eğitim kurumları",
-    "Liman başkanlıkları"
-   ]
-  },
-  "telsiz": {
-   "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
-   "nasil": "GMDSS telsiz operatörü yeterlikleridir (GOC genel, ROC tahditli). İdarenin onayladığı bir eğitim kurumunda eğitimi alıp Denizcilik Genel Müdürlüğünün sınavını geçenlere verilir.",
-   "online": [
-    {
-     "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
-     "url": "https://gemiadami.uab.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "e-Denizcilik",
-     "url": "https://e-denizcilik.uab.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "İdarece onaylı denizcilik eğitim kurumları",
-    "Liman başkanlıkları (sınav başvurusu)"
-   ],
-   "not": "GOC için en az ortaokul, ROC için en az ilkokul mezunu olmak gerekir."
-  },
-  "usta-gemici": {
-   "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
-   "nasil": "Gemici olarak deniz hizmeti ve gerekli eğitimlerden sonra Bakanlığın yeterlik sınavını geçenlere verilir. Şartların ayrıntısı Gemiadamları ve Kılavuz Kaptanlar Yönetmeliğindedir.",
-   "online": [
-    {
-     "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
-     "url": "https://gemiadami.uab.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "e-Denizcilik",
-     "url": "https://e-denizcilik.uab.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Denizcilik meslek liseleri, meslek yüksekokulları ve fakülteleri",
-    "Bakanlıkça yetkilendirilmiş denizcilik eğitim kurumları",
-    "Liman başkanlıkları (sınav ve belge başvurusu)"
-   ]
-  },
-  "vardiya-zabiti": {
-   "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
-   "nasil": "Denizcilik meslek lisesi, meslek yüksekokulu ya da fakültesinin güverte bölümünü bitirip deniz stajını ve Bakanlığın yeterlik sınavını tamamlayanlara verilir. Şartların ayrıntısı Gemiadamları ve Kılavuz Kaptanlar Yönetmeliğindedir.",
-   "online": [
-    {
-     "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
-     "url": "https://gemiadami.uab.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "e-Denizcilik",
-     "url": "https://e-denizcilik.uab.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Denizcilik meslek liseleri, meslek yüksekokulları ve fakülteleri",
-    "Bakanlıkça yetkilendirilmiş denizcilik eğitim kurumları",
-    "Liman başkanlıkları (sınav ve belge başvurusu)"
-   ]
-  },
-  "makine-zabiti": {
-   "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
-   "nasil": "Denizcilik meslek lisesi, meslek yüksekokulu ya da fakültesinin makine bölümünü bitirip deniz stajını ve Bakanlığın yeterlik sınavını tamamlayanlara verilir. Şartların ayrıntısı Gemiadamları ve Kılavuz Kaptanlar Yönetmeliğindedir.",
-   "online": [
-    {
-     "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
-     "url": "https://gemiadami.uab.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "e-Denizcilik",
-     "url": "https://e-denizcilik.uab.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Denizcilik meslek liseleri, meslek yüksekokulları ve fakülteleri",
-    "Bakanlıkça yetkilendirilmiş denizcilik eğitim kurumları",
-    "Liman başkanlıkları (sınav ve belge başvurusu)"
-   ]
-  },
-  "sinirli-kaptan": {
-   "veren": "Ulaştırma ve Altyapı Bakanlığı Denizcilik Genel Müdürlüğü (liman başkanlıkları)",
-   "nasil": "Sınırlı tonajdaki gemiler için kaptan yeterliğidir; eğitim, deniz hizmeti ve Bakanlığın yeterlik sınavıyla alınır. Şartların ayrıntısı Gemiadamları ve Kılavuz Kaptanlar Yönetmeliğindedir.",
-   "online": [
-    {
-     "ad": "Gemiadamı başvurusu (e-Devlet ile giriş)",
-     "url": "https://gemiadami.uab.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "e-Denizcilik",
-     "url": "https://e-denizcilik.uab.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "Denizcilik meslek liseleri, meslek yüksekokulları ve fakülteleri",
-    "Bakanlıkça yetkilendirilmiş denizcilik eğitim kurumları",
-    "Liman başkanlıkları (sınav ve belge başvurusu)"
-   ]
-  },
-  "kurbaga-adam": {
-   "veren": "Türkiye Sualtı Sporları Federasyonu (TSSF) ya da Ulaştırma ve Altyapı Bakanlığı",
-   "nasil": "İlanlarda çoğunlukla TSSF onaylı dalıcı belgesi ya da Bakanlığın profesyonel balıkadam yeterliği isteniyor. TSSF belgeleri federasyona bağlı dalış merkezlerinde eğitimle alınır; profesyonel yeterlik için liman başkanlığına başvurulur.",
-   "online": [
-    {
-     "ad": "Türkiye Sualtı Sporları Federasyonu",
-     "url": "https://tssf.gov.tr",
-     "tur": "bilgi"
-    },
-    {
-     "ad": "Dalıcı sertifikanı sorgula (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/turkiye-sualti-sporlari-federasyonu",
-     "tur": "sorgu"
-    }
-   ],
-   "yerler": [
-    "TSSF'ye bağlı dalış eğitim merkezleri",
-    "Liman başkanlıkları (profesyonel balıkadam yeterliği)"
-   ],
-   "not": "Hangi belgenin kabul edileceği ilanda yazar; örneğin Sahil Güvenlik ilanları TSSF onaylı en az 2 yıldız dalıcı belgesi istiyor."
-  },
-  "hafizlik": {
-   "veren": "Diyanet İşleri Başkanlığı (il ve ilçe müftülükleri)",
-   "nasil": "Diyanet'e bağlı Kur'an kurslarında hafızlık eğitimini tamamlayıp hafızlık tespit sınavını geçenlere verilir. Hafızlık bilgin müftülük aracılığıyla Diyanet'in sistemine kaydedilir.",
-   "online": [
-    {
-     "ad": "Diyanet sınav duyuruları",
-     "url": "https://insankaynaklari.diyanet.gov.tr",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Diyanet'e bağlı Kur'an kursları",
-    "İl ve ilçe müftülükleri (sınav ve kayıt)"
-   ]
-  },
-  "kuran-ogretici": {
-   "veren": "Diyanet İşleri Başkanlığı",
-   "nasil": "Diyanet İşleri Başkanlığının bu unvana ilk kez alınacaklar için yaptığı yeterlik sınavını (yazılı ve/veya sözlü, uygulamalı) geçenlere verilir. Sınav ve alım duyuruları Diyanet'in İnsan Kaynakları sayfasında yayımlanır.",
-   "online": [
-    {
-     "ad": "Diyanet sınav duyuruları",
-     "url": "https://insankaynaklari.diyanet.gov.tr",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Diyanet'in belirlediği sınav merkezleri",
-    "İl müftülükleri (bilgi ve başvuru)"
-   ]
-  },
-  "imam-hatip-yeterlik": {
-   "veren": "Diyanet İşleri Başkanlığı",
-   "nasil": "Diyanet İşleri Başkanlığının bu unvana ilk kez alınacaklar için yaptığı yeterlik sınavını (yazılı ve/veya sözlü, uygulamalı) geçenlere verilir. Sınav ve alım duyuruları Diyanet'in İnsan Kaynakları sayfasında yayımlanır.",
-   "online": [
-    {
-     "ad": "Diyanet sınav duyuruları",
-     "url": "https://insankaynaklari.diyanet.gov.tr",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Diyanet'in belirlediği sınav merkezleri",
-    "İl müftülükleri (bilgi ve başvuru)"
-   ]
-  },
-  "muezzin-yeterlik": {
-   "veren": "Diyanet İşleri Başkanlığı",
-   "nasil": "Diyanet İşleri Başkanlığının bu unvana ilk kez alınacaklar için yaptığı yeterlik sınavını (yazılı ve/veya sözlü, uygulamalı) geçenlere verilir. Sınav ve alım duyuruları Diyanet'in İnsan Kaynakları sayfasında yayımlanır.",
-   "online": [
-    {
-     "ad": "Diyanet sınav duyuruları",
-     "url": "https://insankaynaklari.diyanet.gov.tr",
-     "tur": "bilgi"
-    }
-   ],
-   "yerler": [
-    "Diyanet'in belirlediği sınav merkezleri",
-    "İl müftülükleri (bilgi ve başvuru)"
-   ],
-   "not": "Lise mezunlarının müezzin-kayyım alımlarına başvurabilmesi için genellikle hafızlık belgesi de istenir."
-  },
-  "myk": {
-   "veren": "Mesleki Yeterlilik Kurumu (MYK) yetkilendirilmiş belgelendirme kuruluşları",
-   "nasil": "Mesleğinde MYK'nın yetkilendirdiği bir belgelendirme kuruluşuna başvurup teorik ve uygulamalı sınavı geçersin. Hangi kuruluşun hangi meslekte yetkili olduğu MYK'nın sitesinde listelenir.",
-   "online": [
-    {
-     "ad": "Yetkili kuruluşları bul (MYK)",
-     "url": "https://www.myk.gov.tr",
-     "tur": "bilgi"
-    },
-    {
-     "ad": "Belgeni sorgula: MYK Mesleki Yeterlilik Belgesi (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=MYK%20Mesleki%20Yeterlilik%20Belgesi%20Sorgulama",
-     "tur": "sorgu"
-    }
-   ],
-   "yerler": [
-    "MYK yetkilendirilmiş belgelendirme kuruluşları (sınav merkezleri)"
-   ],
-   "not": "Kurs almak tek başına MYK belgesi sağlamaz; belge yalnızca yetkili kuruluşun sınavıyla verilir."
-  },
-  "hijyen": {
-   "veren": "Millî Eğitim Bakanlığı (Halk Eğitim Merkezleri ve MEB onaylı kurslar)",
-   "nasil": "En az 8 saatlik hijyen eğitimini Halk Eğitim Merkezinde (e-Yaygın ile kayıt) ya da MEB onaylı bir kursta alırsın; değerlendirmeden sonra kurs bitirme belgesi verilir.",
-   "online": [
-    {
-     "ad": "Halk Eğitim kursuna kaydol (e-Yaygın)",
-     "url": "https://e-yaygin.meb.gov.tr",
-     "tur": "basvuru"
-    },
-    {
-     "ad": "Belgeni gör: Yaygın Eğitim Sertifika Belgesi Sorgulama (e-Devlet)",
-     "url": "https://www.turkiye.gov.tr/arama2?aranan=Yayg%C4%B1n%20E%C4%9Fitim%20Sertifika%20Belgesi%20Sorgulama",
-     "tur": "sorgu"
-    }
-   ],
-   "yerler": [
-    "Halk Eğitim Merkezleri (kurslar ücretsiz)",
-    "MEB onaylı özel kurslar"
-   ]
-  },
-  "ilk-yardim": {
-   "veren": "Sağlık Bakanlığı (il sağlık müdürlükleri)",
-   "nasil": "Sağlık Bakanlığınca yetkilendirilmiş bir ilk yardım eğitim merkezinde 16 saatlik temel ilk yardım eğitimini alıp il sağlık müdürlüğünün sınavını geçersin. Sertifika 3 yıl geçerlidir; süresi bitince yenilenir.",
-   "online": [],
-   "yerler": [
-    "Sağlık Bakanlığı onaylı ilk yardım eğitim merkezleri",
-    "Türk Kızılay'ın ilk yardım eğitim merkezleri"
-   ],
-   "not": "Yetkisiz kurumların çevrim içi \"ilk yardım sertifikaları\" resmî ilk yardımcı belgesi yerine geçmez."
-  },
-  "forklift": {
-   "veren": "MEB yetkili kurslar (operatörlük) ve nüfus müdürlükleri (G sınıfı ehliyet)",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB onaylı iş makinesi operatörlüğü kursları",
-    "Sürücü kursları (G sınıfı ehliyet)"
-   ],
-   "nasil": "Forklift operatörlük belgesi MEB'in yetkilendirdiği iş makinesi operatörlüğü kurslarında verilir. Forkliftle trafiğe çıkacaksan ayrıca G sınıfı ehliyet gerekir.",
-   "not": "Bazı operatörlük mesleklerinde MYK belgesi de zorunlu; işçi ilanında hangisinin istendiğine bak."
-  },
-  "is-makinesi": {
-   "veren": "MEB yetkili kurslar (operatörlük) ve nüfus müdürlükleri (G sınıfı ehliyet)",
-   "online": [
-    {
-     "ad": "Ehliyet için randevu al (NVİ)",
-     "url": "https://randevu.nvi.gov.tr",
-     "tur": "basvuru"
-    }
-   ],
-   "yerler": [
-    "MEB onaylı iş makinesi operatörlüğü kursları",
-    "Sürücü kursları (G sınıfı ehliyet)"
-   ],
-   "nasil": "Her makine (ekskavatör, loder, greyder vb.) için ayrı operatörlük belgesi MEB'in yetkilendirdiği kurslarda verilir. Makineyle trafiğe çıkmak için ayrıca G sınıfı ehliyet gerekir.",
-   "not": "Ekskavatör operatörlüğü gibi bazı mesleklerde MYK mesleki yeterlilik belgesi de zorunlu hâle getirildi."
-  }
- }
 }
