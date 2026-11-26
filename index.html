@@ -1010,7 +1010,19 @@ body { background:
 .rpo-liste li { display: grid; gap: 2px; padding: 8px 10px; border-radius: var(--r-s); background: var(--sheet); border: 1px solid var(--rule); }
 .rpo-liste span { font-size: 12px; color: var(--ink-2); font-weight: 650; }
 .rpo-liste em { color: var(--warn); font-style: normal; }
-.rpo-uyari { margin: 0; color: var(--warn); font-size: 14px; }</style>
+.rpo-uyari { margin: 0; color: var(--warn); font-size: 14px; }
+/* İşin ayrıntıları */
+.isd { margin: 16px 0; display: grid; gap: 10px; }
+.isd h3 { font-size: 18px; font-weight: 800; }
+.isd-izgara { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.isd-kutu { --r: #2F6BFF; border-radius: var(--r-m); padding: 12px 14px; border: 1px solid color-mix(in srgb, var(--r) 30%, var(--rule)); border-top: 4px solid var(--r); background: linear-gradient(170deg, color-mix(in srgb, var(--r) 9%, var(--sheet)), var(--sheet) 60%); }
+.isd-kutu[data-r="mor"] { --r: #7B3FE4; } .isd-kutu[data-r="yesil"] { --r: #1E9E52; } .isd-kutu[data-r="turkuaz"] { --r: #0A9E95; } .isd-kutu[data-r="turuncu"] { --r: #E8720C; }
+.isd-kutu h4 { display: flex; align-items: center; gap: 8px; margin: 0 0 6px; font-size: 15px; font-weight: 800; color: var(--r); }
+.isd-kutu p, .isd-kutu ul { margin: 0; font-size: 14px; }
+.isd-kutu ul { padding-left: 18px; display: grid; gap: 3px; }
+.isd-maas { font-size: 17px !important; font-weight: 800; color: var(--ink); }
+.isd-not { margin-top: 4px !important; color: var(--ink-2); font-size: 13px !important; }
+.isd-uyari { margin: 0; font-size: 12.5px; color: var(--ink-2); }</style>
 </head>
 <body>
 <header class="ustbar">
@@ -1740,6 +1752,7 @@ body { background:
       seninIcinHtml(il) +
       resmiIlanHtml(il) +
       duyuruHtml(il) +
+      isDetayHtml(il) +
       '<div class="poster-alan"><div class="poster-kap"><canvas id="poster" class="' + (S.posterBicim === 'hikaye' ? 'hikaye' : '') + '" width="1080" height="' + (S.posterBicim === 'hikaye' ? 1920 : 1350) + '" role="img" aria-label="' + esc(il.kurum + ' ' + il.baslik + ' paylaşım görseli') + '"></canvas>' +
       '<div class="bicim-sec" role="group" aria-label="Görsel boyutu"><button type="button" data-bicim="gonderi" aria-pressed="' + (S.posterBicim !== 'hikaye') + '">Gönderi 4:5</button><button type="button" data-bicim="hikaye" aria-pressed="' + (S.posterBicim === 'hikaye') + '">Hikâye 9:16</button></div></div>' +
       '<div class="paylas"><button type="button" class="btn takip-btn" id="d-takip" aria-pressed="false"></button>' +
@@ -3431,6 +3444,109 @@ body { background:
     });
   }
 
+  /* ---------- İşin ayrıntıları: görev, çalışma saatleri, tahmini maaş, haklar, ücretler ---------- */
+  const MAAS = {
+    donem: 'Temmuz–Aralık 2026',
+    enDusukMemur: 70224, memurLisans: 73070, sozlesmeTavanBrut: 76873.55, asgariNet: 28075.5, asgariBrut: 33030,
+    kaynaklar: [
+      { ad: 'ÇSGB – 2026 asgari ücret', url: 'https://csgb.gov.tr/dhdb/haberler/23122025/' },
+      { ad: 'Habertürk – Temmuz 2026 memur maaşları', url: 'https://www.haberturk.com/memur-maasi-odeme-tarihi-2026-temmuz-zamli-memur-maaslari-ne-zaman-yatacak-en-dusuk-memur-maasi-ne-kadar-oldu-3897981' },
+      { ad: 'Alomaliye – Temmuz 2026 mali ve sosyal haklar genelgesi', url: 'https://www.alomaliye.com/2026/07/03/2026-yili-temmuz-ayina-ait-mali-ve-sosyal-haklara-iliskin-genelge-neleri-degistiriyor/' }
+    ]
+  };
+  const TL = x => (Number.isInteger(x) ? x.toLocaleString('tr-TR') : x.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })) + ' TL';
+  const GOREVLER = [
+    [/merkezi yerleştirme/i, 'Yerleştiğin kadronun unvanına göre değişir: memur, VHKİ, teknisyen, sağlık personeli vb. Kadroların görev yerleri tercih kılavuzunda.'],
+    [/sistem yönetici|sistem uzman/i, 'Sunucuları, işletim sistemlerini, sanallaştırma ve ağ altyapısını kurar, günceller ve kesintisiz çalışmasını sağlar.'],
+    [/bilişim|yazılım|programcı|çözümleyici/i, 'Kurumun yazılım, veri tabanı, ağ ve güvenlik sistemlerini geliştirir, kurar ve işletir.'],
+    [/bilgisayar mühendis/i, 'Kurumun bilgi işlem altyapısını, ağlarını, sunucularını ve kullanıcı desteğini yürütür.'],
+    [/bilgisayar işletmen|vhki|veri hazırlama/i, 'Resmî yazışmaları, veri girişini ve evrak kayıtlarını bilgisayarda hazırlar ve arşivler.'],
+    [/kaymakam/i, 'Eğitimden sonra ilçelerde devleti temsil eden mülki idare amiri olarak görev yapar.'],
+    [/müfettiş|denetmen|denetçi|kontrolör/i, 'Kurum birimlerinde denetim, inceleme ve soruşturma yapar; yardımcılık döneminden sonra yeterlik sınavıyla unvanı alır.'],
+    [/uzman yardımcı|uzman personel|uzman ve/i, 'Kurumun alanına giren konularda araştırma, rapor, mevzuat ve proje çalışmaları yapar; tez ve yeterlik sınavından sonra uzman olur.'],
+    [/zabıta/i, 'Belediyenin düzen, sağlık ve esenlik kurallarını uygular; pazar yerleri, işyerleri ve kaldırımlarda denetim yapar.'],
+    [/itfaiye/i, 'Yangın, kurtarma ve doğal afet olaylarına müdahale eder; nöbet usulüyle çalışır.'],
+    [/koruma ve güvenlik|güvenlik görevli/i, 'Kurum binalarının, personelin ve ziyaretçilerin güvenliğini sağlar; giriş kontrolü ve devriye yapar.'],
+    [/psikolog/i, 'Danışanlarla görüşme, değerlendirme ve psikososyal destek çalışmaları yürütür.'],
+    [/sosyal çalışmacı/i, 'Sosyal inceleme raporu hazırlar, ailelere ve bireylere sosyal hizmet desteği verir.'],
+    [/harita|geomatik/i, 'Ölçme, haritalama, kadastro ve coğrafi bilgi sistemi işlerini yürütür.'],
+    [/maden mühendis/i, 'Maden sahalarında ruhsat, denetim, üretim planlama ve iş güvenliği işlerini yürütür.'],
+    [/makine mühendis/i, 'Makine, tesisat ve araç parkının projelendirme, bakım ve denetim işlerini yürütür.'],
+    [/çevre mühendis/i, 'Atık, su, hava kalitesi ve çevre izinleriyle ilgili inceleme, denetim ve proje işlerini yürütür.'],
+    [/mühendis|mimar/i, 'Kurumun proje, yapım, bakım ve kontrol işlerinde teknik personel olarak çalışır.'],
+    [/muhasebeci/i, 'Kurumun mali kayıtlarını, ödemelerini ve bütçe işlemlerini yürütür.'],
+    [/evlendirme/i, 'Nikâh işlemlerini, evrak hazırlığını ve evlendirme kayıtlarını yürütür.'],
+    [/astsubay/i, 'Türk Silahlı Kuvvetlerinde eğitimden sonra sınıfına göre teknik, idari veya harekât görevlerinde çalışır.'],
+    [/uzman erbaş/i, 'Silahlı Kuvvetlerde birliklerde sözleşmeli olarak harekât ve teknik görevlerde çalışır.'],
+    [/operatör|iş makinesi|beko|loder|tanker/i, 'Kurumun iş makinelerini veya tanker aracını kullanır; günlük bakım ve kontrollerini yapar.'],
+    [/şoför|sürücü/i, 'Kurum araçlarıyla personel ve malzeme taşır; araçların günlük bakımını yapar.'],
+    [/büro|destek personeli/i, 'Yazışma, dosyalama, randevu ve ön büro işlerini yürütür.'],
+    [/memur/i, 'Kurumun yazı işleri, evrak, kayıt ve vatandaş işlemlerini yürütür.']
+  ];
+  function isDetayi(il) {
+    const t = [il.baslik, il.statu, il.posterAlt, ...(il.dagilim || [])].join(' ');
+    const st = (il.statu || '').toLocaleLowerCase('tr-TR');
+    let tip = 'memur';
+    if (/astsubay|uzman erbaş/i.test(t)) tip = 'askeri';
+    else if (/bilişim/.test(st)) tip = 'bilisim';
+    else if (il.tur === 'isci' || /işçi/.test(st)) tip = 'isci';
+    else if (/ajans personeli|iş kanunu|iş sözleşmesi|proje bazlı/.test(st)) tip = 'iskanunu';
+    else if (/sözleşmeli|4\/b|ek 27|ek-27/.test(st)) tip = 'sozlesmeli';
+    else if (/a grubu|uzman yardımcı|müfettiş|kontrolör|denetmen|kaymakam|rekabet/i.test(t)) tip = 'agrubu';
+    const adaylar = [il.baslik, il.posterAlt, il.statu, (il.dagilim || []).join(' ')];
+    let gorev = '';
+    for (const m of adaylar) { const g = GOREVLER.find(x => x[0].test(m || '')); if (g) { gorev = g[1]; break; } }
+    if (!gorev) gorev = 'Görev tanımı resmî ilanda yer alıyor.';
+    if ((il.dagilim || []).length > 1) gorev += ' Bu ilanda birden fazla unvan var; her unvanın görevi farklıdır.';
+    const vardiya = /itfaiye|güvenlik görevli|koruma ve güvenlik|zabıta|vardiya|nöbet/i.test(t) || /vardiya|nöbet/i.test((il.sartlar || []).join(' '));
+    const d = { tip, gorev, calisma: '', maas: '', maasNot: '', haklar: [], ucret: '' };
+    if (tip === 'memur' || tip === 'agrubu') {
+      d.calisma = vardiya ? 'Haftada 40 saat; bu kadroda nöbet veya vardiya usulü çalışma olur.' : 'Haftada 40 saat; kurumlarda genellikle hafta içi 08.00–17.00 (bazı kurumlarda 08.30–17.30).';
+      d.maas = tip === 'agrubu' ? 'Yaklaşık ' + TL(80000) + ' ve üzeri (net)' : 'Yaklaşık ' + TL(MAAS.enDusukMemur) + ' – ' + TL(MAAS.memurLisans) + ' (net)';
+      d.maasNot = tip === 'agrubu' ? 'A grubu uzman/denetim yardımcıları kurumuna göre ek ödemeyle daha yüksek alır; tutar kurumdan kuruma değişir.' : 'En düşük memur maaşı aile yardımı dahil ' + TL(MAAS.enDusukMemur) + '; lisans mezunu memur (9/1) yaklaşık ' + TL(MAAS.memurLisans) + '. Unvan, derece, ek ödeme, aile durumu ve kesintilere göre değişir.';
+      d.haklar = ['Kadrolu devlet memuru: iş güvencesi, SGK ile emeklilik ve sağlık güvencesi', 'Yıllık izin: 10 yıla kadar 20 gün, sonrasında 30 gün; ayrıca mazeret izinleri', 'Evliyse aile yardımı, çocuk başına çocuk yardımı', 'Göreve başlayınca 1–2 yıl adaylık (deneme) süresi'];
+      if (tip === 'agrubu') d.haklar.push('Yardımcılık döneminden sonra tez/yeterlik sınavıyla uzman, müfettiş vb. unvan ve maaş artışı');
+    } else if (tip === 'sozlesmeli') {
+      d.calisma = vardiya ? 'Tam zamanlı, haftada 40 saat; nöbet veya vardiya usulü olabilir.' : 'Tam zamanlı, haftada 40 saat; genellikle hafta içi mesai saatleri.';
+      d.maas = 'Kadrolu memur maaşına yakın; yaklaşık ' + TL(MAAS.enDusukMemur) + ' ve üzeri (net)';
+      d.maasNot = 'Sözleşmeli personelin net ücret tavanı unvana göre Hazine ve Maliye Bakanlığı genelgesiyle belirlenir; kesin tutar kurumdan öğrenilir.';
+      d.haklar = ['SGK ile emeklilik ve sağlık güvencesi', 'Yıllık izin: 10 yıla kadar 20 gün, sonrasında 30 gün', 'Sözleşme her yıl yenilenir; 4/B\'de belirli şartlarla kadroya geçiş düzenlemeleri olabilir', 'Aile ve çocuk yardımına benzer ödemeler ilgili mevzuata göre'];
+    } else if (tip === 'bilisim') {
+      const katlar = ((t.match(/(\d)\s*kat/gi) || []).map(x => parseInt(x, 10)).filter(x => x >= 2 && x <= 5));
+      const kat = katlar.length ? Math.max(...katlar) : 0, katAz = katlar.length ? Math.min(...katlar) : 0;
+      d.calisma = 'Tam zamanlı, haftada 40 saat; sistem görevlerinde mesai dışı müdahale gerekebilir.';
+      d.maas = !kat ? 'Brüt sözleşme ücret tavanının 2–5 katı (pozisyona göre)' : katAz === kat ? 'Brüt en fazla yaklaşık ' + TL(Math.round(MAAS.sozlesmeTavanBrut * kat)) + ' (ücret tavanının ' + kat + ' katı)' : 'Brüt en fazla yaklaşık ' + TL(Math.round(MAAS.sozlesmeTavanBrut * katAz)) + ' – ' + TL(Math.round(MAAS.sozlesmeTavanBrut * kat)) + ' (pozisyona göre ' + katAz + '–' + kat + ' katı)';
+      d.maasNot = 'Ücret, Sözleşmeli Personel Çalıştırılmasına İlişkin Esaslar\'daki brüt tavanın (' + MAAS.donem + ': ' + TL(MAAS.sozlesmeTavanBrut) + ') katıdır; ilan "katına kadar" diyorsa kurum daha az belirleyebilir. Net tutar vergi dilimine göre düşer.';
+      d.haklar = ['SGK ile emeklilik ve sağlık güvencesi', 'Yıllık izin: 10 yıla kadar 20 gün, sonrasında 30 gün', 'Sözleşme yıllık yenilenir; memur kadrosu değildir'];
+    } else if (tip === 'isci' || tip === 'iskanunu') {
+      const gecici = /geçici|belirli süreli|proje/i.test(st);
+      d.calisma = 'Haftada en fazla 45 saat (İş Kanunu); kamu işyerlerinde genellikle 40–45 saat.' + (gecici ? ' Belirli süreli iş; süre bitince sözleşme sona erer.' : '');
+      d.maas = tip === 'isci' ? 'En az asgari ücret: net ' + TL(MAAS.asgariNet) + ' (brüt ' + TL(MAAS.asgariBrut) + ')' : 'Kurumun ücret skalasına göre (ilanda ya da kurumda)';
+      d.maasNot = tip === 'isci' ? 'Toplu iş sözleşmesi olan kurumlarda ücret daha yüksektir; ikramiye ve sosyal yardımlar sözleşmeye göre eklenir.' : 'Kalkınma ajansları ve proje kadrolarında ücret ilanda veya kurumun personel yönetmeliğinde belirtilir.';
+      d.haklar = ['SGK ile emeklilik ve sağlık güvencesi', 'Yıllık izin: 1–5 yıl 14 gün, 5–15 yıl 20 gün, 15 yıldan fazla 26 gün', gecici ? 'Belirli süreli sözleşme; kıdem tazminatı şartları sözleşme süresine bağlı' : 'Kıdem ve ihbar tazminatı hakkı (İş Kanunu şartlarıyla)', 'Toplu sözleşme varsa ikramiye, yemek ve yol yardımı'];
+      if (/deneme/i.test(st)) d.haklar.push('İşe girişte deneme süresi: ' + st.match(/(\d+)\s*gün deneme/)?.[1] + ' gün');
+    } else if (tip === 'askeri') {
+      d.calisma = 'Askerî görev düzenine göre; nöbet, tatbikat ve görev yeri değişikliği olur.';
+      d.maas = 'Rütbe ve sınıfa göre; kılavuzda';
+      d.maasNot = 'Astsubay ve uzman erbaş maaşları TSK personel mevzuatına göre hesaplanır; eğitim döneminde farklıdır.';
+      d.haklar = ['SGK ile emeklilik ve sağlık güvencesi', 'Lojman ve sosyal tesis imkânı (görev yerine göre)', 'Mecburi hizmet süresi vardır; ayrıntı kılavuzda'];
+    }
+    const u = (il.basvuru || {}).ucret;
+    d.ucret = u ? u : 'İlanda başvuru ücreti belirtilmemiş; Kariyer Kapısı, e-Devlet ve İŞKUR başvuruları ücretsizdir.';
+    return Object.assign(d, il.isDetay || {});
+  }
+  function isDetayHtml(il) {
+    const d = isDetayi(il);
+    const kutu = (renk, ikon, baslik, ic) => '<div class="isd-kutu" data-r="' + renk + '"><h4>' + svgIkon(ikon, 18) + baslik + '</h4>' + ic + '</div>';
+    return '<section class="isd"><h3>İşin ayrıntıları</h3><div class="isd-izgara">' +
+      kutu('mavi', 'canta', 'Ne iş yapar?', '<p>' + esc(d.gorev) + '</p>') +
+      kutu('mor', 'saat', 'Çalışma saatleri', '<p>' + esc(d.calisma) + '</p>') +
+      kutu('yesil', 'chart', 'Tahmini maaş', '<p class="isd-maas">' + esc(d.maas) + '</p><p class="isd-not">' + esc(d.maasNot) + '</p>') +
+      kutu('turkuaz', 'onay', 'Haklar', '<ul>' + d.haklar.map(h => '<li>' + esc(h) + '</li>').join('') + '</ul>') +
+      kutu('turuncu', 'belge', 'Ücretler', '<p>' + esc(d.ucret) + '</p>') +
+      '</div><p class="isd-uyari">Maaş ve çalışma bilgileri ' + MAAS.donem + ' dönemine göre tahmindir; kesin bilgi resmî ilan metnindedir. Kaynaklar: ' + MAAS.kaynaklar.map(k => '<a href="' + esc(k.url) + '" target="_blank" rel="noopener">' + esc(k.ad) + '</a>').join(', ') + '.</p></section>';
+  }
+
   /* ---------- Araçlar: taban puan atlası, puanla nereye, puan hesaplama, bildirimler ---------- */
   // ÖSYM 2024 KPSS Lisans sayısal bilgileri (net ortalaması ve standart sapması). Kaynak: dokuman.osym.gov.tr sayisalbilgiler_kid23082024.pdf
   const KPSS_ISTAT = { yil: 2024, gy: { ort: 16.730, ss: 9.098 }, gk: { ort: 18.861, ss: 10.517 } };
@@ -3896,7 +4012,7 @@ body { background:
         }
       }
     } catch (e) { S.dl = null; }
-    window.KR = { S, durum, degerlendir, etkinPuan, planOlustur, ilanEslestir, belgeVarMi, puanDegeri, referans, posterCiz, gunlukOzetCiz, icsMetni, kontrolMaddeleri, profilEslesme, tazele, ortam: { GOMULU, UYGULAMA, IOS, DOSYA_PAYLASIM, METIN_PAYLASIM } };
+    window.KR = { S, durum, isDetayi, degerlendir, etkinPuan, planOlustur, ilanEslestir, belgeVarMi, puanDegeri, referans, posterCiz, gunlukOzetCiz, icsMetni, kontrolMaddeleri, profilEslesme, tazele, ortam: { GOMULU, UYGULAMA, IOS, DOSYA_PAYLASIM, METIN_PAYLASIM } };
   }
   baslat();
 })();

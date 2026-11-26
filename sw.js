@@ -2,7 +2,7 @@
    - Uygulama kabuğu (sayfa, simgeler) önbellekten hemen açılır, arkada güncellenir.
    - İlan verisi her zaman önce internetten çekilir; bağlantı yoksa son kaydedilen kopya gösterilir.
    Sayfa kodu değişince SURUM'u güncelle. */
-const SURUM = 'kadrovar-2026-11-26-canli';
+const SURUM = 'kadrovar-2026-11-27-isdetay';
 const KABUK = [
   './',
   './index.html',
