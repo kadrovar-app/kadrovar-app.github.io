@@ -2,7 +2,7 @@
    - Uygulama kabuğu (sayfa, simgeler) önbellekten hemen açılır, arkada güncellenir.
    - İlan verisi her zaman önce internetten çekilir; bağlantı yoksa son kaydedilen kopya gösterilir.
    Sayfa kodu değişince SURUM'u güncelle. */
-const SURUM = 'kadrovar-2026-11-26-profil';
+const SURUM = 'kadrovar-2026-11-26-araclar';
 const KABUK = [
   './',
   './index.html',
@@ -87,4 +87,39 @@ self.addEventListener('fetch', e => {
       })))
     );
   }
+});
+
+// Arka planda ilan denetimi (Android'de ana ekrana eklenmiş uygulama) ve bildirime dokununca açma
+async function arkaplanDenetle() {
+  const c = await caches.open('kr-durum');
+  const r = await c.match('./__durum.json'); if (!r) return;
+  const d = await r.json();
+  if (!d.tercih || !d.tercih.telefon) return;
+  const veri = await (await fetch('./data/ilanlar.json?v=' + Date.now(), { cache: 'no-store' })).json();
+  const simdi = Date.now();
+  const gorulen = new Set(d.gorulen || []);
+  const uyar = il => {
+    if (!(d.tercih.turler || []).includes(il.tur)) return false;
+    if (il.basvuru && il.basvuru.bitis && new Date(il.basvuru.bitis).getTime() < simdi) return false;
+    if (d.tercih.illerim && (d.iller || []).length) { const y = il.iller || []; if (y.length && !y.includes('*') && !y.some(x => d.iller.includes(x))) return false; }
+    return true;
+  };
+  const yeni = (veri.ilanlar || []).filter(il => !gorulen.has(il.id) && uyar(il));
+  const gD = new Set(d.gorulenDuyuru || []), takip = new Set(d.takip || []);
+  const yeniD = [];
+  (veri.ilanlar || []).forEach(il => (il.duyurular || []).forEach(x => { const k = il.id + '|' + x.tarih + '|' + x.baslik; if (takip.has(il.id) && !gD.has(k) && d.tercih.duyuru !== false) yeniD.push([il, x, k]); }));
+  if (yeni.length) await self.registration.showNotification(yeni.length === 1 ? 'Yeni ilan: ' + yeni[0].kurum : yeni.length + ' yeni ilan', { body: yeni.slice(0, 3).map(il => il.kurum + ' – ' + il.baslik).join('\n'), icon: 'icons/icon-192.png', badge: 'icons/favicon-32.png', tag: 'kr-yeni', data: { url: yeni.length === 1 ? '#ilan-' + yeni[0].id : '#ilanlar' } });
+  for (const [il, x] of yeniD) await self.registration.showNotification('Duyuru: ' + il.kurum, { body: x.baslik, icon: 'icons/icon-192.png', badge: 'icons/favicon-32.png', tag: 'kr-d-' + il.id, data: { url: '#ilan-' + il.id } });
+  d.gorulen = (veri.ilanlar || []).map(il => il.id).concat(d.gorulen || []).slice(0, 2000);
+  d.gorulenDuyuru = (d.gorulenDuyuru || []).concat(yeniD.map(z => z[2]));
+  await c.put('./__durum.json', new Response(JSON.stringify(d), { headers: { 'Content-Type': 'application/json' } }));
+}
+self.addEventListener('periodicsync', e => { if (e.tag === 'kr-ilan') e.waitUntil(arkaplanDenetle().catch(() => {})); });
+self.addEventListener('notificationclick', e => {
+  e.notification.close();
+  const hedef = new URL('./' + ((e.notification.data && e.notification.data.url) || ''), self.registration.scope).href;
+  e.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(ws => {
+    for (const w of ws) { if ('focus' in w) { w.navigate(hedef).catch(() => {}); return w.focus(); } }
+    return self.clients.openWindow(hedef);
+  }));
 });

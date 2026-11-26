@@ -84,7 +84,7 @@ h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; le
 .yukle-btn[hidden] { display: none; }
 .cevrimdisi { font-size: 12px; font-weight: 700; color: var(--warn); background: var(--warn-soft); border-radius: 999px; padding: 2px 9px; }
 /* Alt menü (telefon) */
-.alt-nav { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--sheet); border-top: 1px solid var(--rule); padding: 6px max(8px, env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left)); grid-template-columns: repeat(5, 1fr); gap: 2px; }
+.alt-nav { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--sheet); border-top: 1px solid var(--rule); padding: 6px max(8px, env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left)); grid-template-columns: repeat(6, 1fr); gap: 2px; }
 .alt-nav a { display: grid; justify-items: center; gap: 2px; padding: 6px 4px; border-radius: 12px; text-decoration: none; color: var(--ink-2); font-size: 12px; font-weight: 600; }
 .alt-nav a svg { width: 24px; height: 24px; }
 .alt-nav a[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
@@ -711,6 +711,73 @@ a.sayac { cursor: pointer; }
 .pf-ad-alan .istege { font-weight: 500; opacity: .75; font-size: 13px; }
 .pf-ad-alan input { background: rgba(255,255,255,.95); color: #131A2B; border-color: transparent; }
 @media (prefers-reduced-motion: reduce) { .pf-doluluk-cubuk span { transition: none; } }
+/* Araçlar */
+.araclar-ic { max-width: 980px; margin: 0 auto; padding: 16px; display: grid; gap: 16px; }
+.ar-bas { color: #fff; border-radius: var(--r-m); padding: 22px 20px; background: radial-gradient(circle at 90% 0%, rgba(255,255,255,.2) 0 80px, transparent 81px), linear-gradient(120deg, #1D4ED8, #7B3FE4 50%, #E8720C); }
+.ar-bas h1 { color: #fff; font-size: 28px; font-weight: 850; }
+.ar-bas p { margin: 4px 0 14px; color: rgba(255,255,255,.9); }
+.ar-cipler { display: flex; flex-wrap: wrap; gap: 8px; }
+.ar-cip { background: rgba(255,255,255,.18); color: #fff; text-decoration: none; padding: 8px 14px; border-radius: 99px; font-weight: 650; font-size: 14px; border: 1px solid rgba(255,255,255,.35); }
+.ar-cip:hover, .ar-cip:focus-visible { background: rgba(255,255,255,.3); }
+.ar-kart[data-r="mavi"], .ar-cip[data-r="mavi"] { --r: #2F6BFF; }
+.ar-kart[data-r="mor"] { --r: #7B3FE4; }
+.ar-kart[data-r="turkuaz"] { --r: #0A9E95; }
+.ar-kart[data-r="turuncu"] { --r: #E8720C; }
+.ar-kart { --accent: var(--r); --accent-soft: color-mix(in srgb, var(--r) 14%, transparent); border-top: 5px solid var(--r); background: linear-gradient(170deg, color-mix(in srgb, var(--r) 8%, var(--sheet)), var(--sheet) 45%); scroll-margin-top: 80px; display: grid; gap: 12px; }
+.ar-kart h2 { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 800; }
+.ar-kart h2 svg { color: #fff; background: var(--r); border-radius: 10px; padding: 6px; width: 32px; height: 32px; box-sizing: border-box; }
+.ar-kart .acik { margin: 0; }
+.ar-filtre { display: flex; flex-wrap: wrap; gap: 10px; }
+.ar-filtre label { display: grid; gap: 4px; font-size: 13px; font-weight: 650; color: var(--ink-2); min-width: 150px; }
+.ar-filtre label.genis { flex: 1 1 220px; }
+.ar-atlas { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.ar-atlas details { border: 1px solid var(--rule); border-radius: var(--r-s); background: var(--sheet); }
+.ar-atlas summary { cursor: pointer; display: grid; grid-template-columns: minmax(140px, 1.2fr) 1fr 1fr; gap: 12px; align-items: center; padding: 10px 12px; list-style: none; }
+.ar-atlas summary::-webkit-details-marker { display: none; }
+.ar-unvan { font-weight: 750; }
+.ar-donem { display: grid; gap: 3px; font-size: 13px; }
+.ar-donem small { color: var(--muted); font-size: 11px; font-weight: 650; }
+.ar-aralik { position: relative; height: 8px; border-radius: 99px; background: color-mix(in srgb, var(--r) 14%, var(--paper)); }
+.ar-aralik span { position: absolute; top: 0; bottom: 0; border-radius: 99px; background: linear-gradient(90deg, var(--r), color-mix(in srgb, var(--r) 55%, #fff)); }
+.ar-sayilar b { color: var(--ink); }
+.ar-yok { color: var(--muted); font-size: 12px; }
+.ar-ayrinti { padding: 0 12px 12px; font-size: 14px; }
+.ar-tablo { width: 100%; border-collapse: collapse; font-size: 13px; }
+.ar-tablo th, .ar-tablo td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+.ar-tablo .num { text-align: right; }
+.ar-sonuc-ozet { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.ar-sonuc-ozet div { border-radius: var(--r-s); padding: 12px; background: color-mix(in srgb, var(--r) 12%, var(--sheet)); display: grid; gap: 2px; }
+.ar-sonuc-ozet b { font-size: 26px; font-weight: 850; color: var(--r); }
+.ar-sonuc-ozet span { font-size: 13px; color: var(--ink-2); }
+.ar-alt-baslik { font-size: 15px; font-weight: 800; margin: 6px 0 0; }
+.ar-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.ar-liste li { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; padding: 8px 10px; border-radius: var(--r-s); background: var(--sheet); border: 1px solid var(--rule); border-left: 4px solid var(--r); }
+.ar-liste.iyi li { border-left-color: var(--ok); }
+.ar-liste.yakin li { border-left-color: var(--warn); }
+.ar-liste li span { color: var(--ink-2); font-size: 13px; }
+.ar-hesap-izgara { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ar-test { border: 1px solid var(--rule); border-radius: var(--r-s); padding: 10px 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0; background: var(--sheet); }
+.ar-test legend { font-weight: 800; padding: 0 4px; }
+.ar-test legend small { color: var(--muted); font-weight: 600; }
+.ar-test label { display: grid; gap: 4px; font-size: 13px; font-weight: 650; color: var(--ink-2); }
+.ar-test output { grid-column: 1 / -1; font-weight: 750; color: var(--r); }
+.ar-puan-kutu { display: flex; flex-wrap: wrap; gap: 10px; }
+.ar-puan-kutu div { flex: 1 1 120px; border-radius: var(--r-s); padding: 12px; border: 1px solid var(--rule); background: var(--sheet); display: grid; }
+.ar-puan-kutu div.ana { background: var(--r); border-color: var(--r); color: #fff; }
+.ar-puan-kutu small { font-size: 12px; font-weight: 650; opacity: .85; }
+.ar-puan-kutu b { font-size: 28px; font-weight: 850; }
+.ar-telefon { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px; border-radius: var(--r-s); background: color-mix(in srgb, var(--r) 12%, var(--sheet)); }
+.ar-telefon p { margin: 2px 0 0; }
+.duyuru-kutu { margin: 14px 0; padding: 12px 14px; border-radius: var(--r-s); border: 1px solid color-mix(in srgb, #E8720C 35%, var(--rule)); background: color-mix(in srgb, #E8720C 8%, var(--sheet)); }
+.duyuru-kutu h3 { display: flex; align-items: center; gap: 8px; font-size: 16px; margin: 0 0 8px; color: #B4530A; }
+.duyuru-kutu ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.duyuru-kutu li { display: grid; gap: 2px; }
+.duyuru-kutu time { font-size: 12px; color: var(--ink-2); font-weight: 650; }
+@media (max-width: 640px) {
+  .ar-atlas summary { grid-template-columns: 1fr; gap: 6px; }
+  .ar-hesap-izgara, .ar-sonuc-ozet { grid-template-columns: 1fr; }
+  .ar-bas h1 { font-size: 24px; }
+}
 .pf-izgara { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
 .kabarcik-grup.dikey { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px 14px; }
 .il-secici { display: grid; gap: 8px; margin-top: 8px; }
@@ -877,6 +944,7 @@ a.sayac { cursor: pointer; }
       <a href="#ilanlar" data-sekme="ilanlar">İlanlar</a>
       <a href="#robot" data-sekme="robot"><span class="s-tam">Tercih robotu</span><span class="s-kisa">Robot</span></a>
       <a href="#takvim" data-sekme="takvim">Takvim</a>
+      <a href="#araclar" data-sekme="araclar">Araçlar</a>
       <a href="#sertifika" data-sekme="sertifika"><span class="s-tam">Sertifikalar</span><span class="s-kisa">Sertifika</span></a>
       <a href="#profil" data-sekme="profil" class="profil-sekme"><span class="p-avatar" aria-hidden="true"></span><span class="p-ad">Profilim</span></a>
     </nav>
@@ -998,6 +1066,9 @@ a.sayac { cursor: pointer; }
     <div class="takvim-ic" id="takvim-ic"></div>
   </section>
 
+  <section class="gorunum" id="v-araclar" hidden aria-label="Araçlar">
+    <div class="araclar-ic" id="araclar-ic"></div>
+  </section>
   <section class="gorunum" id="v-sertifika" hidden aria-label="Sertifika rehberi">
     <div class="sertifika-ic" id="sertifika-ic"></div>
   </section>
@@ -1012,6 +1083,7 @@ a.sayac { cursor: pointer; }
   <a href="#ilanlar" data-sekme="ilanlar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h2.5v2.5H3zm5 0h13v2.5H8zM3 10.8h2.5v2.5H3zm5 0h13v2.5H8zm-5 5.7h2.5V19H3zm5 0h13V19H8z"/></svg><span>İlanlar</span></a>
   <a href="#robot" data-sekme="robot"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2.2a7.8 7.8 0 1 0 0 15.6 7.8 7.8 0 0 0 0-15.6zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6z"/></svg><span class="uzun-et">Tercih robotu</span><span class="kisa-et">Robot</span></a>
   <a href="#takvim" data-sekme="takvim"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 6h16v15H4zm2 5v8h12v-8zM7 2h2.4v5H7zm7.6 0H17v5h-2.4z"/></svg><span>Takvim</span></a>
+  <a href="#araclar" data-sekme="araclar"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h7v7H4zm2 2v3h3V6zm7-2h7v7h-7zm2 2v3h3V6zM4 13h7v7H4zm2 2v3h3v-3zm11-2h2v3h3v2h-3v3h-2v-3h-3v-2h3z"/></svg><span>Araçlar</span></a>
   <a href="#sertifika" data-sekme="sertifika"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 2h9v6h5v14H5zm3 9.5v1.8h8v-1.8zm0 3.6v1.8h8v-1.8zm0 3.6v1.8h5v-1.8zM16 2l3 3.2h-3z"/></svg><span>Sertifika</span></a>
   <a href="#profil" data-sekme="profil" class="profil-sekme"><span class="p-ikon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a4.3 4.3 0 1 1 0 8.6A4.3 4.3 0 0 1 12 3zM3.5 21c.4-4.6 4-7.4 8.5-7.4s8.1 2.8 8.5 7.4z"/></svg><span class="p-avatar" aria-hidden="true"></span></span><span class="p-ad">Profilim</span></a>
 </nav>
@@ -1587,6 +1659,7 @@ a.sayac { cursor: pointer; }
       '<h2>' + esc(il.kurum) + '</h2><p class="alt">' + (il.kadroSayisi != null ? '<b class="num">' + sayi(il.kadroSayisi) + '</b> ' : '') + esc(il.baslik) + '</p></header>' +
       seninIcinHtml(il) +
       resmiIlanHtml(il) +
+      duyuruHtml(il) +
       '<div class="poster-alan"><div class="poster-kap"><canvas id="poster" class="' + (S.posterBicim === 'hikaye' ? 'hikaye' : '') + '" width="1080" height="' + (S.posterBicim === 'hikaye' ? 1920 : 1350) + '" role="img" aria-label="' + esc(il.kurum + ' ' + il.baslik + ' paylaşım görseli') + '"></canvas>' +
       '<div class="bicim-sec" role="group" aria-label="Görsel boyutu"><button type="button" data-bicim="gonderi" aria-pressed="' + (S.posterBicim !== 'hikaye') + '">Gönderi 4:5</button><button type="button" data-bicim="hikaye" aria-pressed="' + (S.posterBicim === 'hikaye') + '">Hikâye 9:16</button></div></div>' +
       '<div class="paylas"><button type="button" class="btn takip-btn" id="d-takip" aria-pressed="false"></button>' +
@@ -2512,6 +2585,7 @@ a.sayac { cursor: pointer; }
     if (S.ilanlar.length) { ozetCiz(); akisCiz(); listeCiz(); }
     const sekme = S.sonSekme || 'ilanlar';
     if (sekme === 'robot') robotCiz();
+    if (sekme === 'araclar') araclarCiz();
     if (sekme === 'profil') profilCiz();
     if (sekme === 'sertifika') sertifikaCiz();
     if (sekme === 'ilanlar' && S.secili && document.getElementById('poster')) detayCiz(S.secili);
@@ -2680,7 +2754,7 @@ a.sayac { cursor: pointer; }
     const k = kova();
     if (k.favoriler[id]) { delete k.favoriler[id]; tost('Takipten çıkarıldı'); }
     else { k.favoriler[id] = Date.now(); tost('Takibe alındı; son günü yaklaşınca burada uyaracağız'); }
-    hesapKaydet();
+    hesapKaydet(); swDurumYaz();
   }
 
   /* ---------- İlan akışı: Tüm / Sana uygun / Takip ---------- */
@@ -3255,12 +3329,206 @@ a.sayac { cursor: pointer; }
     });
   }
 
+  /* ---------- Araçlar: taban puan atlası, puanla nereye, puan hesaplama, bildirimler ---------- */
+  // ÖSYM 2024 KPSS Lisans sayısal bilgileri (net ortalaması ve standart sapması). Kaynak: dokuman.osym.gov.tr sayisalbilgiler_kid23082024.pdf
+  const KPSS_ISTAT = { yil: 2024, gy: { ort: 16.730, ss: 9.098 }, gk: { ort: 18.861, ss: 10.517 } };
+  const PUAN_AGIRLIK = { P1: [0.7, 0.3], P2: [0.6, 0.4], P3: [0.5, 0.5] };
+  function kpssPuanTahmini(gyNet, gkNet, tur) {
+    const [a, b] = PUAN_AGIRLIK[tur];
+    const sp = (n, s) => (n - s.ort) / s.ss * 10 + 50;
+    const asp = a * sp(gyNet, KPSS_ISTAT.gy) + b * sp(gkNet, KPSS_ISTAT.gk);
+    const enYuk = a * sp(60, KPSS_ISTAT.gy) + b * sp(60, KPSS_ISTAT.gk), enDus = a * sp(-15, KPSS_ISTAT.gy) + b * sp(-15, KPSS_ISTAT.gk);
+    const p = asp >= 50 ? 70 + 30 * (asp - 50) / (enYuk - 50) : 70 - 30 * (50 - asp) / (50 - enDus);
+    return Math.max(40, Math.min(100, p));
+  }
+  const DONEM_AD = { d1: 'KPSS-2026/1', d2: 'KPSS-2025/2' };
+  const sayi2 = x => (x == null || x === '' ? '–' : Number(x).toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+  function bildirimTercih() { return Object.assign({ turler: TUM_TURLER.slice(), illerim: false, uygun: false, telefon: false, duyuru: true }, depoOku('kr-bildirim-v1') || {}); }
+  function araclarCiz(odak) {
+    const el = $('#araclar-ic'); if (!el) return;
+    const p = aktifProfil();
+    const duzey = (S.arac && S.arac.duzey) || (p && p.duzey) || 'lisans';
+    S.arac = Object.assign({ duzey, ara: '', sirala: 'taban-azalan', puan: '' }, S.arac || {});
+    if (!S.arac.puan && p) { const e = etkinPuan(p); if (e && e.deger) S.arac.puan = String(Math.round(e.deger * 100) / 100); }
+    const duzeySecim = id => '<select id="' + id + '">' + ['lisans', 'onlisans', 'ortaogretim'].map(d => '<option value="' + d + '"' + (S.arac.duzey === d ? ' selected' : '') + '>' + OGRENIM[d] + ' (' + PUAN_TURU[d] + ')</option>').join('') + '</select>';
+    const bt = bildirimTercih();
+    const izinVar = typeof Notification !== 'undefined';
+    el.innerHTML =
+      '<div class="ar-bas"><h1>Araçlar</h1><p>Geçmiş yerleştirme puanları, puanınla nereye girebileceğin, net hesaplama ve bildirim ayarları tek yerde.</p>' +
+      '<nav class="ar-cipler" aria-label="Araçlar"><a href="#araclar-atlas" class="ar-cip" data-r="mavi">Taban puan atlası</a><a href="#araclar-puanim" class="ar-cip" data-r="mor">Bu puanla nereye?</a><a href="#araclar-hesap" class="ar-cip" data-r="turkuaz">Puan hesapla</a><a href="#araclar-bildirim" class="ar-cip" data-r="turuncu">Bildirim ve duyurular</a></nav></div>' +
+      // Atlas
+      '<section class="kart ar-kart" id="ar-atlas" data-r="mavi"><h2>' + svgIkon('chart', 20) + 'Taban puan atlası</h2><p class="acik">Merkezi yerleştirmede unvan bazında kontenjan, en düşük (taban) ve en yüksek puan. ' + DONEM_AD.d1 + ' ve ' + DONEM_AD.d2 + ' dönemleri.</p>' +
+      '<div class="ar-filtre"><label><span>Öğrenim</span>' + duzeySecim('ar-duzey') + '</label><label class="genis"><span>Unvan, kurum veya il ara</span><input id="ar-ara" type="search" value="' + esc(S.arac.ara) + '" placeholder="Örn. memur, VHKİ, Ankara"></label>' +
+      '<label><span>Sırala</span><select id="ar-sirala"><option value="taban-azalan"' + (S.arac.sirala === 'taban-azalan' ? ' selected' : '') + '>Taban: yüksekten düşüğe</option><option value="taban-artan"' + (S.arac.sirala === 'taban-artan' ? ' selected' : '') + '>Taban: düşükten yükseğe</option><option value="kontenjan"' + (S.arac.sirala === 'kontenjan' ? ' selected' : '') + '>Kontenjan</option></select></label></div>' +
+      '<div id="ar-atlas-liste"></div></section>' +
+      // Puanla nereye
+      '<section class="kart ar-kart" id="ar-puanim" data-r="mor"><h2>' + svgIkon('yildiz', 20) + 'Bu puanla nereye girerim?</h2><p class="acik">Puanını yaz; geçmiş dönemlerde bu puanla yerleşilebilen unvanları ve örnek kurumları gösterelim.</p>' +
+      '<div class="ar-filtre"><label><span>Öğrenim</span>' + duzeySecim('ar-p-duzey') + '</label><label><span>Puanın</span><input id="ar-puan" inputmode="decimal" value="' + esc(S.arac.puan) + '" placeholder="Örn. 78,40"></label></div>' +
+      '<div id="ar-puanim-sonuc"></div></section>' +
+      // Puan hesaplama
+      '<section class="kart ar-kart" id="ar-hesap" data-r="turkuaz"><h2>' + svgIkon('liste', 20) + 'KPSS puan hesaplama</h2><p class="acik">Doğru ve yanlış sayılarını gir; 4 yanlış 1 doğruyu götürür. Lisans puanları ÖSYM\'nin yöntemine göre ' + KPSS_ISTAT.yil + ' KPSS istatistikleriyle tahmin edilir; resmî puan değildir.</p>' +
+      '<div class="ar-hesap-izgara">' + ['gy:Genel Yetenek', 'gk:Genel Kültür'].map(x => { const [k, ad] = x.split(':'); return '<fieldset class="ar-test"><legend>' + ad + ' <small>60 soru</small></legend><label><span>Doğru</span><input id="ar-' + k + '-d" type="number" min="0" max="60" inputmode="numeric"></label><label><span>Yanlış</span><input id="ar-' + k + '-y" type="number" min="0" max="60" inputmode="numeric"></label><output id="ar-' + k + '-net">Net: –</output></fieldset>'; }).join('') + '</div>' +
+      '<div class="ar-filtre"><label><span>Öğrenim</span>' + duzeySecim('ar-h-duzey') + '</label></div>' +
+      '<div id="ar-hesap-sonuc" class="ar-hesap-sonuc" aria-live="polite"></div></section>' +
+      // Bildirimler
+      '<section class="kart ar-kart" id="ar-bildirim" data-r="turuncu"><h2>' + svgIkon('zil', 20) + 'Bildirim tercihleri</h2><p class="acik">Hangi yeni ilanlar için haber verelim? Uygulama açıldığında ve yenilendiğinde bu tercihe göre "yeni ilan" uyarısı çıkar.</p>' +
+      '<div class="alan"><span class="etk">İlan türleri</span><div class="kabarcik-grup">' + TUM_TURLER.map(t => '<label class="kabarcik"><input type="checkbox" name="ar-b-tur" value="' + t + '"' + (bt.turler.includes(t) ? ' checked' : '') + '><span class="daire">✓</span>' + esc(TUR[t].uzun) + '</label>').join('') + '</div></div>' +
+      '<div class="alan"><div class="kabarcik-grup"><label class="kabarcik"><input type="checkbox" id="ar-b-iller"' + (bt.illerim ? ' checked' : '') + '><span class="daire">✓</span>Yalnız profilimdeki iller (ve Türkiye geneli)</label><label class="kabarcik"><input type="checkbox" id="ar-b-uygun"' + (bt.uygun ? ' checked' : '') + '><span class="daire">✓</span>Yalnız bana uygun görünenler</label><label class="kabarcik"><input type="checkbox" id="ar-b-duyuru"' + (bt.duyuru ? ' checked' : '') + '><span class="daire">✓</span>Takip ettiğim ilanların sınav ve sonuç duyuruları</label></div></div>' +
+      '<div class="ar-telefon"><div><b>Telefon bildirimi</b><p class="yardim" id="ar-b-durum">' + esc(telefonBildirimDurumu(bt)) + '</p></div>' + (izinVar ? '<button type="button" class="btn ' + (bt.telefon ? '' : 'ana') + '" id="ar-b-telefon">' + (bt.telefon ? 'Kapat' : 'Aç') + '</button>' : '') + '</div>' +
+      '<h3 class="ar-alt-baslik">Takip ettiğin ilanların duyuruları</h3><div id="ar-duyurular">' + takipDuyurulariHtml() + '</div></section>';
+    araclarOlaylari();
+    atlasCiz(); puanimCiz(); hesapCiz();
+    if (odak) { const hedef = document.getElementById('ar-' + odak); if (hedef) setTimeout(() => hedef.scrollIntoView({ block: 'start' }), 30); }
+  }
+  function telefonBildirimDurumu(bt) {
+    if (typeof Notification === 'undefined') return 'Bu tarayıcı bildirim göstermiyor. iPhone\'da önce uygulamayı ana ekrana ekle.';
+    if (Notification.permission === 'denied') return 'Bildirim izni kapalı; telefonun ayarlarından bu uygulamaya izin ver.';
+    if (!bt.telefon) return 'Kapalı. Açarsan yeni ilan ve duyurular telefon bildirimi olarak da gelir.';
+    return 'Açık. Uygulama açıldığında ve yenilendiğinde haber verir; Android\'de ana ekrana eklenmiş uygulama arka planda da günde birkaç kez denetler.';
+  }
+  function araclarOlaylari() {
+    const deg = (id, f) => { const e = document.getElementById(id); if (e) e.addEventListener('input', f); };
+    ['ar-duzey', 'ar-p-duzey', 'ar-h-duzey'].forEach(id => { const e = document.getElementById(id); if (e) e.addEventListener('change', () => { S.arac.duzey = e.value; ['ar-duzey', 'ar-p-duzey', 'ar-h-duzey'].forEach(x => { const o = document.getElementById(x); if (o) o.value = e.value; }); atlasCiz(); puanimCiz(); hesapCiz(); }); });
+    deg('ar-ara', e => { S.arac.ara = e.target.value; atlasCiz(); });
+    const sr = $('#ar-sirala'); if (sr) sr.addEventListener('change', e => { S.arac.sirala = e.target.value; atlasCiz(); });
+    deg('ar-puan', e => { S.arac.puan = e.target.value; puanimCiz(); });
+    ['gy-d', 'gy-y', 'gk-d', 'gk-y'].forEach(k => deg('ar-' + k, hesapCiz));
+    document.querySelectorAll('.ar-cip').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); const h = document.getElementById('ar-' + a.getAttribute('href').split('-')[1]); if (h) h.scrollIntoView({ behavior: 'smooth', block: 'start' }); }));
+    const kaydet = () => {
+      const bt = bildirimTercih();
+      bt.turler = Array.from(document.querySelectorAll('input[name="ar-b-tur"]:checked')).map(i => i.value);
+      bt.illerim = $('#ar-b-iller').checked; bt.uygun = $('#ar-b-uygun').checked; bt.duyuru = $('#ar-b-duyuru').checked;
+      depoYaz('kr-bildirim-v1', bt); swDurumYaz();
+    };
+    document.querySelectorAll('#ar-bildirim input[type=checkbox]').forEach(i => i.addEventListener('change', () => { kaydet(); tost('Bildirim tercihin kaydedildi'); }));
+    const tb = $('#ar-b-telefon');
+    if (tb) tb.addEventListener('click', async () => {
+      const bt = bildirimTercih();
+      if (bt.telefon) { bt.telefon = false; depoYaz('kr-bildirim-v1', bt); swDurumYaz(); araclarCiz('bildirim'); tost('Telefon bildirimi kapatıldı'); return; }
+      let izin = Notification.permission;
+      if (izin !== 'granted') { try { izin = await Notification.requestPermission(); } catch (e) { izin = 'denied'; } }
+      if (izin !== 'granted') { tost('Bildirim izni verilmedi'); araclarCiz('bildirim'); return; }
+      bt.telefon = true; depoYaz('kr-bildirim-v1', bt); swDurumYaz();
+      try {
+        const r = await navigator.serviceWorker.ready;
+        if (r.periodicSync) { const pz = await navigator.permissions.query({ name: 'periodic-background-sync' }).catch(() => null); if (!pz || pz.state === 'granted') await r.periodicSync.register('kr-ilan', { minInterval: 6 * 3600 * 1000 }).catch(() => {}); }
+        r.showNotification('KadroVar bildirimleri açık', { body: 'Yeni ilan ve takip ettiğin ilanların duyuruları burada görünecek.', icon: 'icons/icon-192.png', badge: 'icons/favicon-32.png', tag: 'kr-hosgeldin' });
+      } catch (e) { new Notification('KadroVar bildirimleri açık'); }
+      araclarCiz('bildirim'); tost('Telefon bildirimi açıldı');
+    });
+  }
+  function atlasCiz() {
+    const kap = $('#ar-atlas-liste'); if (!kap) return;
+    const q = (S.arac.ara || '').toLocaleLowerCase('tr-TR').trim();
+    let list = S.kadrolar.filter(k => k.duzey === S.arac.duzey);
+    if (q) list = list.filter(k => [k.unvan, k.bolumNot || '', ...(k.ornekler || []).map(o => o[0] + ' ' + o[1])].join(' ').toLocaleLowerCase('tr-TR').includes(q));
+    const tb = k => (k.d1 && k.d1.taban) || (k.d2 && k.d2.taban) || 0;
+    if (S.arac.sirala === 'taban-artan') list.sort((a, b) => tb(a) - tb(b)); else if (S.arac.sirala === 'kontenjan') list.sort((a, b) => ((b.d1 || {}).kontenjan || 0) - ((a.d1 || {}).kontenjan || 0)); else list.sort((a, b) => tb(b) - tb(a));
+    const enYuk = Math.max(100, ...list.map(k => Math.max((k.d1 || {}).tavan || 0, (k.d2 || {}).tavan || 0)));
+    const cubuk = r => { if (!r || r.taban == null) return '<span class="ar-yok">veri yok</span>'; const sol = Math.max(0, (r.taban - 50) / (enYuk - 50) * 100), sag = Math.max(sol + 2, ((r.tavan || r.taban) - 50) / (enYuk - 50) * 100); return '<span class="ar-aralik" title="' + sayi2(r.taban) + ' – ' + sayi2(r.tavan) + '"><span style="left:' + sol + '%;width:' + (sag - sol) + '%"></span></span><span class="ar-sayilar"><b>' + sayi2(r.taban) + '</b> – ' + sayi2(r.tavan) + (r.kontenjan ? ' · ' + sayi(r.kontenjan) + ' kişi' + (r.yaklasik ? ' (yaklaşık)' : '') : '') + '</span>'; };
+    kap.innerHTML = list.length ? '<ul class="ar-atlas">' + list.map(k => '<li><details><summary><span class="ar-unvan">' + esc(k.unvan) + '</span><span class="ar-donem"><small>' + DONEM_AD.d1 + '</small>' + cubuk(k.d1) + '</span><span class="ar-donem"><small>' + DONEM_AD.d2 + '</small>' + cubuk(k.d2) + '</span></summary>' +
+      '<div class="ar-ayrinti">' + (k.bolumNot ? '<p><b>Bölüm:</b> ' + esc(k.bolumNot) + '</p>' : '') + (k.not ? '<p>' + esc(k.not) + '</p>' : '') +
+      ((k.ornekler || []).length ? '<table class="ar-tablo"><thead><tr><th>Kurum</th><th>Yer</th><th>Kontenjan</th><th>Taban</th><th>Dönem</th></tr></thead><tbody>' + k.ornekler.map(o => '<tr><td>' + esc(o[0]) + '</td><td>' + esc(o[1]) + '</td><td class="num">' + esc(o[2]) + '</td><td class="num">' + sayi2(o[3]) + '</td><td>' + esc(o[4] || '') + '</td></tr>').join('') + '</tbody></table>' : '') + '</div></details></li>').join('') + '</ul>' +
+      '<p class="yardim">Kaynak: ÖSYM yerleştirme sonuçlarına ilişkin sayısal bilgiler. Taban, o unvana yerleşen en düşük puandır; aynı unvanda kuruma ve ile göre puan çok değişir.</p>'
+      : '<p class="acik">Bu aramaya uyan unvan yok.</p>';
+  }
+  function puanimCiz() {
+    const kap = $('#ar-puanim-sonuc'); if (!kap) return;
+    const puan = parseFloat(String(S.arac.puan || '').replace(',', '.'));
+    if (!(puan > 0)) { kap.innerHTML = '<p class="acik">Puanını yazınca sonuçlar burada görünür.</p>'; return; }
+    const list = S.kadrolar.filter(k => k.duzey === S.arac.duzey);
+    const yeter = [], yakin = [];
+    list.forEach(k => { const t = Math.min(...['d1', 'd2'].map(d => (k[d] && k[d].taban) || 999)); if (t === 999) return; if (puan >= t) yeter.push([k, t]); else if (puan >= t - 3) yakin.push([k, t]); });
+    yeter.sort((a, b) => b[1] - a[1]); yakin.sort((a, b) => a[1] - b[1]);
+    const kurumlar = [];
+    list.forEach(k => (k.ornekler || []).forEach(o => { if (o[3] != null && puan >= o[3]) kurumlar.push([k.unvan, o]); }));
+    kurumlar.sort((a, b) => b[1][3] - a[1][3]);
+    const satir = ([k, t]) => '<li><b>' + esc(k.unvan) + '</b><span>taban ' + sayi2(t) + '</span></li>';
+    kap.innerHTML = '<div class="ar-sonuc-ozet"><div><b class="num">' + yeter.length + '</b><span>unvanda geçmiş tabanın üstündesin</span></div><div><b class="num">' + yakin.length + '</b><span>unvana 3 puandan az kaldı</span></div><div><b class="num">' + kurumlar.length + '</b><span>örnek kurumda yetiyordu</span></div></div>' +
+      (yeter.length ? '<h3 class="ar-alt-baslik">Tabanını geçtiğin unvanlar</h3><ul class="ar-liste iyi">' + yeter.map(satir).join('') + '</ul>' : '') +
+      (yakin.length ? '<h3 class="ar-alt-baslik">Az farkla kalanlar</h3><ul class="ar-liste yakin">' + yakin.map(satir).join('') + '</ul>' : '') +
+      (kurumlar.length ? '<h3 class="ar-alt-baslik">Bu puanın yettiği örnek kurumlar</h3><ul class="ar-liste">' + kurumlar.slice(0, 30).map(([u, o]) => '<li><b>' + esc(o[0]) + '</b><span>' + esc(u) + ' · ' + esc(o[1]) + ' · taban ' + sayi2(o[3]) + ' (' + esc(o[4] || '') + ')</span></li>').join('') + '</ul>' : '') +
+      '<p class="yardim">Geçmiş dönem tabanları her yıl değişir; kesin sonuç değil, yön göstermek içindir. Bölüm ve nitelik şartlarını tercih robotunda kontrol et.</p>';
+  }
+  function hesapCiz() {
+    const kap = $('#ar-hesap-sonuc'); if (!kap) return;
+    const v = id => { const n = parseInt(($('#ar-' + id) || {}).value, 10); return isNaN(n) ? 0 : Math.max(0, Math.min(60, n)); };
+    const net = k => { const d = v(k + '-d'), y = v(k + '-y'); if (d + y > 60) return null; return d - y / 4; };
+    const gy = net('gy'), gk = net('gk');
+    $('#ar-gy-net').textContent = 'Net: ' + (gy == null ? 'doğru + yanlış 60\'ı geçemez' : gy.toLocaleString('tr-TR'));
+    $('#ar-gk-net').textContent = 'Net: ' + (gk == null ? 'doğru + yanlış 60\'ı geçemez' : gk.toLocaleString('tr-TR'));
+    const girildi = ['gy-d', 'gy-y', 'gk-d', 'gk-y'].some(k => ($('#ar-' + k) || {}).value);
+    if (!girildi || gy == null || gk == null) { kap.innerHTML = ''; return; }
+    if (S.arac.duzey !== 'lisans') {
+      kap.innerHTML = '<div class="ar-puan-kutu"><div><small>Toplam net</small><b class="num">' + (gy + gk).toLocaleString('tr-TR') + '</b></div></div><p class="yardim">' + PUAN_TURU[S.arac.duzey] + ' puanı kendi oturumunun ortalama ve standart sapmasıyla hesaplanır; bu istatistikler elimizde olmadığı için tahmin vermiyoruz. Sonuç belgendeki puanı profiline yazabilirsin.</p>';
+      return;
+    }
+    const p = ['P3', 'P2', 'P1'].map(t => [t, kpssPuanTahmini(gy, gk, t)]);
+    kap.innerHTML = '<div class="ar-puan-kutu">' + p.map(([t, x]) => '<div' + (t === 'P3' ? ' class="ana"' : '') + '><small>' + t + (t === 'P3' ? ' · merkezi yerleştirme' : '') + '</small><b class="num">' + sayi2(x) + '</b></div>').join('') + '</div>' +
+      '<div class="tl-butonlar"><button type="button" class="btn ana" id="ar-h-aktar">Bu P3 ile nereye girerim?</button></div>' +
+      '<p class="yardim">Tahmin; ' + KPSS_ISTAT.yil + ' KPSS Lisans istatistiklerine göre. Gerçek puanın sınava giren adayların o yılki başarısına göre değişir.</p>';
+    $('#ar-h-aktar').addEventListener('click', () => { S.arac.puan = String(Math.round(p[0][1] * 100) / 100); const i = $('#ar-puan'); if (i) i.value = S.arac.puan.replace('.', ','); S.arac.puan = S.arac.puan; puanimCiz(); $('#ar-puanim').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+  }
+  function duyuruHtml(il) {
+    const d = (il.duyurular || []).slice().sort((a, b) => String(b.tarih).localeCompare(String(a.tarih)));
+    if (!d.length) return '';
+    return '<section class="duyuru-kutu"><h3>' + svgIkon('zil', 18) + 'Duyurular</h3><ul>' + d.map(x => '<li><time>' + esc(tarihUzun(x.tarih)) + '</time><span>' + (x.url ? '<a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.baslik) + '</a>' : esc(x.baslik)) + '</span></li>').join('') + '</ul></section>';
+  }
+  function takipDuyurulariHtml() {
+    const fav = kova().favoriler || {};
+    const list = [];
+    S.ilanlar.forEach(il => { if (fav[il.id]) (il.duyurular || []).forEach(d => list.push([il, d])); });
+    if (!Object.keys(fav).length) return '<p class="acik">Henüz takip ettiğin ilan yok. İlan sayfasındaki yıldızla takibe al; sınav, sonuç ve belge teslimi duyuruları burada toplanır.</p>';
+    if (!list.length) return '<p class="acik">Takip ettiğin ilanlar için henüz duyuru yok. Kurum sınav listesi, sonuç ya da belge teslimi duyurusu yayımlayınca burada görünür.</p>';
+    list.sort((a, b) => String(b[1].tarih).localeCompare(String(a[1].tarih)));
+    return '<ul class="ar-liste">' + list.map(([il, d]) => '<li><b>' + (d.url ? '<a href="' + esc(d.url) + '" target="_blank" rel="noopener">' + esc(d.baslik) + '</a>' : esc(d.baslik)) + '</b><span>' + esc(il.kurum) + ' · ' + esc(tarihUzun(d.tarih)) + ' · <a href="#ilan-' + esc(il.id) + '">ilana git</a></span></li>').join('') + '</ul>';
+  }
+  // Bildirim: tercihe uyan yeni ilanlar ve takip edilen ilanların yeni duyuruları
+  function bildirimeUyar(il) {
+    const bt = bildirimTercih();
+    if (!bt.turler.includes(il.tur)) return false;
+    const p = aktifProfil();
+    if (bt.illerim && p && p.iller && p.iller.length) { const yer = il.iller || []; if (yer.length && !yer.includes('*') && !yer.some(x => p.iller.includes(x))) return false; }
+    if (bt.uygun && p && !sanaUygunMu(il)) return false;
+    return true;
+  }
+  const duyuruAnahtar = (il, d) => il.id + '|' + d.tarih + '|' + d.baslik;
+  function swDurumYaz() {
+    try {
+      if (!('caches' in window) || MASAUSTU) return;
+      const p = aktifProfil();
+      const durum = { tercih: bildirimTercih(), iller: (p && p.iller) || [], takip: Object.keys(kova().favoriler || {}), gorulen: depoOku('kr-gorulen-v1') || [], gorulenDuyuru: depoOku('kr-gorulen-duyuru-v1') || [] };
+      caches.open('kr-durum').then(c => c.put('./__durum.json', new Response(JSON.stringify(durum), { headers: { 'Content-Type': 'application/json' } }))).catch(() => {});
+    } catch (e) { /* önemsiz */ }
+  }
+  async function bildirimGonder(yeniIdler) {
+    const bt = bildirimTercih();
+    // Arka plan denetimi bu ilanları zaten bildirdiyse tekrar etme
+    let swGorulen = new Set();
+    try { const r = 'caches' in window ? await caches.match('./__durum.json') : null; if (r) swGorulen = new Set((await r.json()).gorulen || []); } catch (e) { /* yok */ }
+    const ilanlar = S.ilanlar.filter(il => yeniIdler.includes(il.id) && !swGorulen.has(il.id) && durum(il).kod !== 'bitti' && bildirimeUyar(il));
+    const fav = kova().favoriler || {};
+    const gorulenD = depoOku('kr-gorulen-duyuru-v1');
+    const tumD = []; S.ilanlar.forEach(il => (il.duyurular || []).forEach(d => tumD.push([il, d])));
+    const yeniD = Array.isArray(gorulenD) && bt.duyuru ? tumD.filter(([il, d]) => fav[il.id] && !gorulenD.includes(duyuruAnahtar(il, d))) : [];
+    depoYaz('kr-gorulen-duyuru-v1', tumD.map(([il, d]) => duyuruAnahtar(il, d)));
+    swDurumYaz();
+    if (yeniD.length) tost(yeniD.length + ' takip ettiğin ilanda yeni duyuru var');
+    if (!bt.telefon || typeof Notification === 'undefined' || Notification.permission !== 'granted') return;
+    try {
+      const r = await navigator.serviceWorker.ready;
+      if (ilanlar.length) r.showNotification(ilanlar.length === 1 ? 'Yeni ilan: ' + ilanlar[0].kurum : ilanlar.length + ' yeni ilan', { body: ilanlar.slice(0, 3).map(il => il.kurum + ' – ' + il.baslik).join('\n'), icon: 'icons/icon-192.png', badge: 'icons/favicon-32.png', tag: 'kr-yeni', data: { url: ilanlar.length === 1 ? '#ilan-' + ilanlar[0].id : '#ilanlar' } });
+      yeniD.forEach(([il, d]) => r.showNotification('Duyuru: ' + il.kurum, { body: d.baslik, icon: 'icons/icon-192.png', badge: 'icons/favicon-32.png', tag: 'kr-d-' + il.id, data: { url: '#ilan-' + il.id } }));
+    } catch (e) { /* bildirim gösterilemedi */ }
+  }
+
   /* ---------- Yönlendirme ---------- */
   function yonlendir() {
     const h = (location.hash || '').replace('#', '') || 'ilanlar';
     let sekme = 'ilanlar';
     if (h === 'robot' || h === 'takvim' || h === 'profil') sekme = h;
     if (h === 'sertifika' || h.indexOf('sertifika-') === 0) sekme = 'sertifika';
+    if (h === 'araclar' || h.indexOf('araclar-') === 0) sekme = 'araclar';
     document.querySelectorAll('.gorunum').forEach(v => { v.hidden = v.id !== 'v-' + sekme; });
     document.querySelectorAll('.sekmeler a, .alt-nav a').forEach(a => { if (a.dataset.sekme === sekme) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     if (S.sonSekme && S.sonSekme !== sekme) window.scrollTo(0, 0);
@@ -3280,6 +3548,7 @@ a.sayac { cursor: pointer; }
     if (sekme === 'robot') robotCiz();
     if (sekme === 'profil') profilCiz();
     if (sekme === 'sertifika') sertifikaCiz(h.indexOf('sertifika-') === 0 ? h.slice(10) : null);
+    if (sekme === 'araclar') araclarCiz(h.indexOf('araclar-') === 0 ? h.slice(8) : null);
   }
 
   function ustBilgi() {
@@ -3398,10 +3667,12 @@ a.sayac { cursor: pointer; }
     const yeniler = S.ilanlar.filter(x => !eskiIdler.has(x.id));
     yeniler.forEach(x => S.ziyaretYeni.add(x.id));
     depoYaz('kr-gorulen-v1', S.ilanlar.map(x => x.id));
+    bildirimGonder(yeniler.map(x => x.id));
     S.posterler.clear(); S.eslesmeOnbellek = null;
     ilSecenekleri(); ozetCiz(); akisCiz(); listeCiz();
     const sekme = S.sonSekme || 'ilanlar';
     if (sekme === 'robot') robotCiz();
+    if (sekme === 'araclar') araclarCiz();
     if (sekme === 'takvim') takvimCiz();
     if (sekme === 'profil' && !S.profilForm) profilCiz();
     if (sekme === 'sertifika') sertifikaCiz();
@@ -3506,6 +3777,7 @@ a.sayac { cursor: pointer; }
     if (Array.isArray(gorulen)) S.ilanlar.forEach(x => { if (!gorulen.includes(x.id)) S.ziyaretYeni.add(x.id); });
     depoYaz('kr-gorulen-v1', S.ilanlar.map(x => x.id));
     hesapYukle(); ustProfilCiz(); ilSecenekleri();
+    bildirimGonder(Array.from(S.ziyaretYeni));
     ustBilgi(); ozetCiz(); akisCiz(); listeCiz(); robotKur(); yonlendir();
     if (MASAUSTU) saatBasiPlanla();
     bulutBagla();
