@@ -3807,7 +3807,9 @@ body { background:
     }
     S.bilinenGuid = null;
     const ilan = JSON.parse(ilanMetin), kadro = JSON.parse(kadroMetin);
-    S.meta = ilan.meta || {}; S.ilanlar = ilan.ilanlar || [];
+    // İşçi ilanlarında yalnız kamu işçisi (sürekli/daimi kadro) gösterilir; geçici, mevsimlik, belirli süreli işler gösterilmez.
+    const kamuIscisiMi = il => il.tur !== 'isci' || !/geçici|belirli süreli|mevsimlik|kısmi süreli|proje/i.test(il.statu || '');
+    S.meta = ilan.meta || {}; S.ilanlar = (ilan.ilanlar || []).filter(kamuIscisiMi);
     S.kadroMeta = kadro.meta || {}; S.kadrolar = kadro.kadrolar || [];
     // Verinin değişip değişmediğini anlamak için kısa imza
     let h = 5381; const m = ilanMetin + kadroMetin;
