@@ -931,7 +931,86 @@ a.sayac { cursor: pointer; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
-</style>
+
+/* ===== Canlı tema: tüm sekmeler ===== */
+body { background:
+  radial-gradient(900px 500px at 0% 0%, color-mix(in srgb, #7B3FE4 10%, transparent), transparent 70%),
+  radial-gradient(800px 500px at 100% 10%, color-mix(in srgb, #0A9E95 10%, transparent), transparent 70%),
+  radial-gradient(900px 600px at 50% 100%, color-mix(in srgb, #E8720C 8%, transparent), transparent 70%),
+  var(--paper); background-attachment: fixed; }
+.ustbar { border-bottom: 0; box-shadow: 0 6px 20px -14px rgba(20,30,80,.5); }
+.ustbar::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: linear-gradient(90deg, #2F6BFF, #7B3FE4, #E0408A, #E8720C, #FFC23D, #1E9E52, #0A9E95); }
+.marka svg { color: #7B3FE4; }
+.marka b { background: linear-gradient(90deg, #2346C8, #7B3FE4 60%, #E0408A); -webkit-background-clip: text; background-clip: text; color: transparent; }
+[data-sekme="ilanlar"] { --sk: #2F6BFF; } [data-sekme="robot"] { --sk: #7B3FE4; } [data-sekme="takvim"] { --sk: #E0408A; }
+[data-sekme="araclar"] { --sk: #E8720C; } [data-sekme="sertifika"] { --sk: #1E9E52; } [data-sekme="profil"] { --sk: #0A9E95; }
+.sekmeler a:hover { background: color-mix(in srgb, var(--sk) 12%, transparent); color: var(--sk); }
+.sekmeler a[aria-current="page"] { background: linear-gradient(135deg, var(--sk), color-mix(in srgb, var(--sk) 70%, #000)); color: #fff; box-shadow: 0 6px 14px -8px var(--sk); }
+.alt-nav { box-shadow: 0 -8px 24px -16px rgba(20,30,80,.45); }
+.alt-nav a { color: var(--ink-2); }
+.alt-nav a svg { color: var(--sk); opacity: .75; }
+.alt-nav a[aria-current="page"] { color: #fff; background: linear-gradient(135deg, var(--sk), color-mix(in srgb, var(--sk) 72%, #000)); box-shadow: 0 6px 14px -8px var(--sk); }
+.alt-nav a[aria-current="page"] svg { color: #fff; opacity: 1; }
+.kart, .sr-kart, .takvim-ay, .sr-arac { box-shadow: 0 10px 28px -22px rgba(20,30,80,.45); }
+/* Sekme başlıkları (resimli) */
+.robot-giris, .sr-bas, .sekme-kahraman, .profil-karsilama, .profil-kafa { position: relative; overflow: hidden; color: #fff; border-radius: var(--r-m); padding: 22px 180px 22px 22px; background-repeat: no-repeat; background-position: right 14px center, 0 0; background-size: 170px auto, cover; max-width: none; }
+.robot-giris h1, .sr-bas h1, .sekme-kahraman h1, .profil-karsilama h1, .profil-kafa h1 { color: #fff; }
+.robot-giris p, .sr-bas p, .sekme-kahraman p, .profil-karsilama p, .profil-kafa p, .profil-karsilama li { color: rgba(255,255,255,.9); }
+.robot-giris { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20160%22%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2280%22%20r%3D%2262%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.18%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2280%22%20r%3D%2242%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.28%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2280%22%20r%3D%2222%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.5%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2280%22%20r%3D%228%22%20fill%3D%22%23FFD65A%22/%3E%3Cpath%20d%3D%22M170%2018%20104%2076%22%20stroke%3D%22%23fff%22%20stroke-width%3D%226%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M160%2014h18v18%22%20fill%3D%22none%22%20stroke%3D%22%23FFD65A%22%20stroke-width%3D%226%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E"), linear-gradient(125deg, #5B2BD9, #9B3FE4 55%, #E0408A); }
+.sekme-kahraman { margin-bottom: 18px; background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20160%22%3E%3Crect%20x%3D%2240%22%20y%3D%2230%22%20width%3D%22120%22%20height%3D%22110%22%20rx%3D%2216%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.3%22/%3E%3Crect%20x%3D%2240%22%20y%3D%2230%22%20width%3D%22120%22%20height%3D%2230%22%20rx%3D%2216%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.55%22/%3E%3Crect%20x%3D%2262%22%20y%3D%2218%22%20width%3D%2210%22%20height%3D%2226%22%20rx%3D%225%22%20fill%3D%22%23fff%22/%3E%3Crect%20x%3D%22128%22%20y%3D%2218%22%20width%3D%2210%22%20height%3D%2226%22%20rx%3D%225%22%20fill%3D%22%23fff%22/%3E%3Crect%20x%3D%2256%22%20y%3D%2272%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Crect%20x%3D%2282%22%20y%3D%2272%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Crect%20x%3D%22108%22%20y%3D%2272%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Crect%20x%3D%22134%22%20y%3D%2272%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Crect%20x%3D%2256%22%20y%3D%2294%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Crect%20x%3D%2282%22%20y%3D%2294%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Crect%20x%3D%22108%22%20y%3D%2294%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.85%22/%3E%3Crect%20x%3D%22134%22%20y%3D%2294%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Crect%20x%3D%2256%22%20y%3D%22116%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Crect%20x%3D%2282%22%20y%3D%22116%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Crect%20x%3D%22108%22%20y%3D%22116%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Crect%20x%3D%22134%22%20y%3D%22116%22%20width%3D%2216%22%20height%3D%2214%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%220.45%22/%3E%3Ccircle%20cx%3D%22160%22%20cy%3D%22130%22%20r%3D%2222%22%20fill%3D%22%23FFD65A%22/%3E%3Cpath%20d%3D%22M160%20118v12l8%206%22%20stroke%3D%22%237A4B00%22%20stroke-width%3D%225%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E"), linear-gradient(125deg, #C2185B, #E0408A 50%, #FF8A3D); }
+.sekme-kahraman h1 { font-size: 28px; font-weight: 850; font-stretch: 110%; }
+.sekme-kahraman p { margin: 6px 0 0; max-width: 62ch; }
+.sr-bas { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20160%22%3E%3Crect%20x%3D%2230%22%20y%3D%2226%22%20width%3D%22140%22%20height%3D%22100%22%20rx%3D%2212%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.32%22/%3E%3Crect%20x%3D%2248%22%20y%3D%2246%22%20width%3D%2280%22%20height%3D%228%22%20rx%3D%224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22/%3E%3Crect%20x%3D%2248%22%20y%3D%2264%22%20width%3D%22104%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.55%22/%3E%3Crect%20x%3D%2248%22%20y%3D%2278%22%20width%3D%2292%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.55%22/%3E%3Ccircle%20cx%3D%22140%22%20cy%3D%22112%22%20r%3D%2222%22%20fill%3D%22%23FFD65A%22/%3E%3Cpath%20d%3D%22M128%20128l-6%2024%2018-10%2018%2010-6-24%22%20fill%3D%22%23FFB020%22/%3E%3Cpath%20d%3D%22M131%20112l6%206%2012-12%22%20stroke%3D%22%237A4B00%22%20stroke-width%3D%225%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E"), linear-gradient(125deg, #0E7A43, #1E9E52 50%, #0A9E95); }
+.profil-karsilama { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20160%22%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2280%22%20r%3D%2264%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.16%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2262%22%20r%3D%2224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.75%22/%3E%3Cpath%20d%3D%22M58%20124c4-26%2022-40%2042-40s38%2014%2042%2040z%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.75%22/%3E%3Cpath%20d%3D%22M160%2022l6%2013%2014%202-10%2010%202%2014-12-7-12%207%202-14-10-10%2014-2z%22%20fill%3D%22%23FFD65A%22/%3E%3C/svg%3E"), linear-gradient(125deg, #087F78, #0A9E95 45%, #2F6BFF); border: 0; }
+.profil-karsilama .pk-ikon { background: rgba(255,255,255,.22); }
+.profil-karsilama .pk-artilar svg { color: #FFD65A; }
+.profil-karsilama .pk-not { color: rgba(255,255,255,.75); }
+.profil-karsilama .btn.ana { background: #FFD65A; color: #3A2A00; border-color: #FFD65A; }
+.profil-kafa { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20160%22%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2280%22%20r%3D%2264%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.16%22/%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%2262%22%20r%3D%2224%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.75%22/%3E%3Cpath%20d%3D%22M58%20124c4-26%2022-40%2042-40s38%2014%2042%2040z%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.75%22/%3E%3Cpath%20d%3D%22M160%2022l6%2013%2014%202-10%2010%202%2014-12-7-12%207%202-14-10-10%2014-2z%22%20fill%3D%22%23FFD65A%22/%3E%3C/svg%3E"), linear-gradient(125deg, #087F78, #0A9E95 45%, #2F6BFF); border: 0; }
+.profil-kafa .avatar { background: #FFD65A; color: #3A2A00; }
+.profil-kafa .btn { background: rgba(255,255,255,.18); color: #fff; border-color: rgba(255,255,255,.4); }
+.profil-kafa .btn.ana { background: #FFD65A; color: #3A2A00; border-color: #FFD65A; }
+/* İlanlar */
+.radar-bant { border: 0; background: linear-gradient(120deg, color-mix(in srgb, #2F6BFF 12%, var(--sheet)), var(--sheet) 45%, color-mix(in srgb, #E8720C 10%, var(--sheet))); box-shadow: 0 12px 30px -22px rgba(20,30,80,.5); position: relative; }
+.radar-bant::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; border-radius: var(--r-m) var(--r-m) 0 0; background: linear-gradient(90deg, #2F6BFF, #7B3FE4, #E8720C); }
+.ilan { border-left: 0; box-shadow: inset 5px 0 0 var(--tur-renk, var(--accent)), 0 8px 22px -20px rgba(20,30,80,.5); background: linear-gradient(100deg, color-mix(in srgb, var(--tur-renk, var(--accent)) 7%, var(--sheet)), var(--sheet) 40%); transition: transform .12s ease, box-shadow .12s ease; }
+.ilan:hover { transform: translateY(-1px); box-shadow: inset 5px 0 0 var(--tur-renk, var(--accent)), 0 12px 26px -18px color-mix(in srgb, var(--tur-renk, var(--accent)) 70%, transparent); }
+.ilan[aria-current="true"] { box-shadow: inset 5px 0 0 var(--tur-renk, var(--accent)), 0 0 0 2px var(--tur-renk, var(--accent)); }
+.ilan-ikon { background: linear-gradient(135deg, var(--tile, var(--accent)), color-mix(in srgb, var(--tile, var(--accent)) 60%, #000)); box-shadow: 0 6px 14px -8px var(--tile, var(--accent)); }
+.detay-bas { position: relative; border-radius: var(--r-m); padding: 18px 150px 18px 18px; color: #fff; background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20160%22%3E%3Crect%20x%3D%2234%22%20y%3D%2234%22%20width%3D%2296%22%20height%3D%22112%22%20rx%3D%2212%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.25%22%20transform%3D%22rotate%28-8%2082%2090%29%22/%3E%3Crect%20x%3D%2256%22%20y%3D%2224%22%20width%3D%2296%22%20height%3D%22112%22%20rx%3D%2212%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.45%22/%3E%3Crect%20x%3D%2272%22%20y%3D%2246%22%20width%3D%2260%22%20height%3D%228%22%20rx%3D%224%22%20fill%3D%22%23fff%22/%3E%3Crect%20x%3D%2272%22%20y%3D%2264%22%20width%3D%2264%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.7%22/%3E%3Crect%20x%3D%2272%22%20y%3D%2278%22%20width%3D%2250%22%20height%3D%226%22%20rx%3D%223%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.7%22/%3E%3Ccircle%20cx%3D%22150%22%20cy%3D%22112%22%20r%3D%2222%22%20fill%3D%22none%22%20stroke%3D%22%23FFD65A%22%20stroke-width%3D%229%22/%3E%3Cpath%20d%3D%22M166%20128l18%2018%22%20stroke%3D%22%23FFD65A%22%20stroke-width%3D%2210%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E"), linear-gradient(125deg, color-mix(in srgb, var(--tur-renk, #2346C8) 85%, #000), var(--tur-renk, #2346C8) 60%, color-mix(in srgb, var(--tur-renk, #2346C8) 55%, #E0408A)); background-repeat: no-repeat; background-position: right 10px center, 0 0; background-size: 130px auto, cover; }
+.detay-bas h2, .detay-bas .alt, .detay-bas .ust > span { color: #fff; }
+.detay-bas .tur-chip { background: rgba(255,255,255,.2); color: #fff; border-color: transparent; }
+/* Robot formu adımları */
+.adim { border-top: 4px solid var(--ak, var(--accent)); background: linear-gradient(170deg, color-mix(in srgb, var(--ak, var(--accent)) 8%, var(--sheet)), var(--sheet) 45%); }
+.adim:nth-of-type(1) { --ak: #2F6BFF; } .adim:nth-of-type(2) { --ak: #7B3FE4; } .adim:nth-of-type(3) { --ak: #0A9E95; } .adim:nth-of-type(4) { --ak: #E8720C; } .adim:nth-of-type(5) { --ak: #1E9E52; } .adim:nth-of-type(6) { --ak: #E0408A; }
+.adim legend .no { background: var(--ak, var(--accent)); color: #fff; border-color: var(--ak, var(--accent)); }
+/* Takvim */
+.gun-grup h2 { display: inline-flex; padding: 4px 12px; border-radius: 99px; background: color-mix(in srgb, #E0408A 12%, var(--sheet)); color: #B0215F; }
+.gun-grup.bugun h2 { background: var(--crit); color: #fff; }
+.takvim-ay { border-top: 4px solid #E0408A; }
+/* Sertifika */
+.sr-arac { border-top: 4px solid #1E9E52; }
+.sr-secim button[aria-pressed="true"] { background: linear-gradient(135deg, #1E9E52, #0A9E95); border-color: #1E9E52; color: #fff; }
+.sr-kart { border-left: 4px solid color-mix(in srgb, #1E9E52 60%, var(--rule)); }
+.sr-grup h2 { color: #0E7A43; }
+@media (max-width: 640px) {
+  .robot-giris, .sr-bas, .sekme-kahraman, .profil-karsilama, .profil-kafa { padding: 20px 18px 96px; background-position: right 10px bottom 8px, 0 0; background-size: 110px auto, cover; }
+  .detay-bas { padding: 16px 16px 16px; background-size: 0 0, cover; }
+}
+@media (prefers-reduced-motion: reduce) { .ilan { transition: none; } .ilan:hover { transform: none; } }
+
+/* Robot: profil varsa bilgiler profilden */
+.optik.profilden .adim.profil-alan { display: none; }
+.robot-profil-ozet { border-radius: var(--r-m); padding: 16px 18px; border-top: 4px solid #0A9E95; background: linear-gradient(170deg, color-mix(in srgb, #0A9E95 10%, var(--sheet)), var(--sheet) 50%); border: 1px solid color-mix(in srgb, #0A9E95 30%, var(--rule)); border-top: 4px solid #0A9E95; display: grid; gap: 12px; margin-bottom: 14px; }
+.rpo-bas { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.rpo-bas .no { width: 28px; height: 28px; border-radius: 50%; background: #0A9E95; color: #fff; display: grid; place-items: center; font-weight: 800; font-family: var(--font-display); }
+.rpo-bas div { display: grid; flex: 1 1 160px; }
+.rpo-bas small { color: var(--ink-2); }
+.rpo-liste { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.rpo-liste li { display: grid; gap: 2px; padding: 8px 10px; border-radius: var(--r-s); background: var(--sheet); border: 1px solid var(--rule); }
+.rpo-liste span { font-size: 12px; color: var(--ink-2); font-weight: 650; }
+.rpo-liste em { color: var(--warn); font-style: normal; }
+.rpo-uyari { margin: 0; color: var(--warn); font-size: 14px; }</style>
 </head>
 <body>
 <header class="ustbar">
@@ -1007,7 +1086,8 @@ a.sayac { cursor: pointer; }
     </div>
     <div class="robot-grid">
       <form class="optik" id="robot-form" autocomplete="off" novalidate>
-        <fieldset class="adim">
+        <div class="robot-profil-ozet" id="robot-profil-ozet" hidden></div>
+        <fieldset class="adim profil-alan">
           <legend><span class="no">1</span>Sınavın, puanın ve sıralaman</legend>
           <div class="kabarcik-grup" role="radiogroup" aria-label="Girdiğin KPSS">
             <label class="kabarcik"><input type="radio" name="duzey" value="lisans" id="r-duzey-lisans"><span class="daire">A</span>Lisans (P3)</label>
@@ -1016,7 +1096,7 @@ a.sayac { cursor: pointer; }
           </div>
           <div id="r-puanlar" class="puan-kap"></div>
         </fieldset>
-        <fieldset class="adim">
+        <fieldset class="adim profil-alan">
           <legend><span class="no">2</span>Yaşın</legend>
           <div class="alan">
             <label for="r-dogum">Doğum tarihin</label>
@@ -1024,14 +1104,14 @@ a.sayac { cursor: pointer; }
           </div>
           <p class="yardim" id="r-yas-bilgi">İlanlardaki yaş sınırları doğum tarihine göre hesaplanır.</p>
         </fieldset>
-        <fieldset class="adim">
+        <fieldset class="adim profil-alan">
           <legend><span class="no">3</span>Diploman</legend>
           <div class="alan">
             <label for="r-bolum">Mezun olduğun bölüm veya program</label>
             <select id="r-bolum" name="bolum"></select>
           </div>
         </fieldset>
-        <fieldset class="adim">
+        <fieldset class="adim profil-alan">
           <legend><span class="no">4</span>Belge ve sertifikaların</legend>
           <div class="belge-secim" id="r-belgeler"></div>
           <div id="r-yds-kap"></div>
@@ -2001,7 +2081,7 @@ a.sayac { cursor: pointer; }
       }).join('') + '</section>';
     });
     if (!gruplar.size) liste += '<div class="bos-durum">Önümüzdeki günlerde kayıtlı tarih yok.</div>';
-    $('#takvim-ic').innerHTML = '<div class="takvim-duzen"><div class="takvim-liste">' + liste + '</div><aside class="takvim-ay" aria-label="Ay görünümü">' + ayIzgara(tum) + '</aside></div>';
+    $('#takvim-ic').innerHTML = '<div class="sekme-kahraman"><h1>Başvuru ve sınav takvimi</h1><p>Son başvuru günleri, sınavlar ve sonuç tarihleri gün gün. Takip ettiğin ilanlar öne çıkar.</p></div><div class="takvim-duzen"><div class="takvim-liste">' + liste + '</div><aside class="takvim-ay" aria-label="Ay görünümü">' + ayIzgara(tum) + '</aside></div>';
     $('#gecmis-btn').addEventListener('click', () => { S.gecmis = !S.gecmis; takvimCiz(); });
     document.querySelectorAll('.ay-git').forEach(b => b.addEventListener('click', () => { S.takvimAy = (S.takvimAy || 0) + Number(b.dataset.yon); takvimCiz(); }));
     document.querySelectorAll('.ay-izgara .gun.var').forEach(b => b.addEventListener('click', () => {
@@ -2566,11 +2646,33 @@ a.sayac { cursor: pointer; }
     : 'Profilin yalnızca bu cihazda saklanır ve kimseyle paylaşılmaz. Başka cihazda kullanmak için profil kodunu taşıyabilirsin.';
   const basHarf = p => ((p && p.ad) || '?').trim().charAt(0).toLocaleUpperCase('tr') || '?';
   // Robot, giriş yapılmışsa aktif profilin sınav bilgilerini kullanır
+  // Aktif profil varsa robot öğrenim, puan, yaş, bölüm ve belge bilgilerini profilden alır; formda yalnız tercih tutumu kalır.
+  function robotProfilModu() {
+    const f = $('#robot-form'), kutu = $('#robot-profil-ozet'); if (!f || !kutu) return;
+    const ap = aktifProfil();
+    f.classList.toggle('profilden', !!ap); kutu.hidden = !ap;
+    const tutum = f.querySelector('.adim:not(.profil-alan) .no'); if (tutum) tutum.textContent = ap ? '2' : '5';
+    if (!ap) { kutu.innerHTML = ''; return; }
+    const e = etkinPuan(ap), yas = yasHesapla(ap.dogum);
+    const belge = (ap.belgeler || []).length;
+    const satir = (et, d) => '<li><span>' + et + '</span><b>' + d + '</b></li>';
+    kutu.innerHTML = '<div class="rpo-bas"><span class="no">1</span><div><b>Bilgilerin profilinden alındı</b><small>' + esc(ap.ad || 'Profilim') + '</small></div><button type="button" class="btn" id="rpo-duzenle">Profilde düzenle</button></div>' +
+      '<ul class="rpo-liste">' +
+      satir('Öğrenim', esc(OGRENIM[ap.duzey] || '')) +
+      satir('Bölüm', esc(bolumAdi(ap) || 'seçilmedi')) +
+      satir('KPSS ' + esc(PUAN_TURU[ap.duzey] || ''), e && e.ham != null ? sayi2(e.ham) + (e.sira ? ' · ' + (e.siraTahmini ? 'tahmini sıra ' : 'sıra ') + sayi(e.sira) : '') : '<em>girilmedi</em>') +
+      satir('Yaş', yas != null ? String(yas) : '<em>girilmedi</em>') +
+      satir('Belgeler', belge ? belge + ' belge' : 'yok') +
+      (ap.yds ? satir('Yabancı dil', esc(ap.ydsDil || '') + ' ' + esc(ap.yds)) : '') +
+      '</ul>' + (!e ? '<p class="rpo-uyari">Profilinde KPSS puanın yok; robot şans hesaplamak için puanına ihtiyaç duyar.</p>' : '');
+    $('#rpo-duzenle').addEventListener('click', () => { S.profilForm = Object.assign(JSON.parse(JSON.stringify(ap)), { yeni: false }); location.hash = 'profil'; setTimeout(() => window.scrollTo(0, 0), 50); });
+  }
   function robotProfiliniSec() {
     const ap = aktifProfil();
     if (ap) S.profil = ap;
     else { const kayit = depoOku('kr-profil-v1'); S.profil = Object.assign({}, ORNEK_PROFIL, kayit || {}); if (kayit && !kayit.puanlar) S.profil.puanlar = {}; S.profil.ilgi = S.profil.ilgi || {}; S.profil.belgeler = S.profil.belgeler || []; puanGoc(S.profil); }
     formDoldur(S.profil);
+    robotProfilModu();
   }
   function robotProfiliniKaydet(yeni) {
     const ap = aktifProfil();
