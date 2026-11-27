@@ -1,7 +1,7 @@
 {
   "meta": {
-    "sonKontrol": "2026-11-26T16:50:00+03:00",
-    "sonrakiKontrol": "2026-11-27T08:47:00+03:00",
+    "sonKontrol": "2026-11-27T08:55:00+03:00",
+    "sonrakiKontrol": "2026-11-27T16:47:00+03:00",
     "kontrolSikligi": "hafta içi her gün 08.47 ve 16.47",
     "kaynaklar": [
       {
@@ -50,6 +50,242 @@
     "kaynakIlkesi": "Her ilan resmî ilan metnine bağlanır; bilgiler resmî metinden kontrol edilir. Aracı siteler yalnız tarama için kullanılabilir, kaynak olarak gösterilmez."
   },
   "ilanlar": [
+    {
+      "id": "selcuk-uni-bilisim-2",
+      "kurum": "Selçuk Üniversitesi",
+      "kurumKisa": "Selçuk Üni.",
+      "kurumTuru": "Üniversite",
+      "ikon": "code",
+      "baslik": "Sözleşmeli bilişim personeli (yazılım ve yapay zekâ)",
+      "kadroSayisi": 2,
+      "posterAlt": "bilişim personeli",
+      "tur": "kpsssiz",
+      "statu": "Tam zamanlı sözleşmeli bilişim personeli (375 sayılı KHK ek 6. madde)",
+      "ogrenim": [
+        "lisans"
+      ],
+      "kpss": {
+        "gerekli": "opsiyonel",
+        "puanTurleri": [
+          "P3"
+        ],
+        "taban": null,
+        "yil": "2026 KPSS",
+        "aciklama": "Sıralamada 2026 KPSS P3 puanının %70'i ile İngilizce YDS (veya denk) puanının %30'u esas alınır; KPSS puanı olmayana 70, dil puanı olmayana 0 sayılır."
+      },
+      "yas": {
+        "aciklama": "İlanda yaş sınırı yok.",
+        "kurallar": []
+      },
+      "bolumTags": [
+        "muhendislik",
+        "istatistik",
+        "matematik"
+      ],
+      "bolumAciklama": "3 katı pozisyonu için yönetmeliğin 6(b), 2 katı pozisyonu için 6(b) veya 6(c) bendindeki bölümler (bilgisayar, yazılım, elektrik-elektronik mühendisliği vb.; ayrıntı ilanda).",
+      "sartlar": [
+        "Lisans mezuniyetinden sonra en az 5 yıl belgelenmiş yazılım veya yapay zekâ deneyimi.",
+        "1. pozisyon: modern frontend (Vue, React, Angular), backend (C#/.NET veya Python) ve LLM entegrasyonu deneyimi.",
+        "2. pozisyon: yapay zekâ, makine öğrenmesi, görüntü işleme ve MLOps deneyimi.",
+        "Güncel programlama dillerinden en az ikisini bildiğini belgelemek; yalnız bir pozisyona başvurulabilir."
+      ],
+      "dagilim": [
+        "Sözleşmeli bilişim personeli (ücret tavanının 2 katına kadar): 1",
+        "Sözleşmeli bilişim personeli (ücret tavanının 3 katına kadar): 1"
+      ],
+      "basvuru": {
+        "baslangic": "2026-11-27T00:01:00+03:00",
+        "bitis": "2026-12-14T23:59:00+03:00",
+        "yontem": "e-Devlet'te Selçuk Üniversitesi Kariyer Kapısı Kamu İşe Alım hizmeti ya da Kariyer Kapısı üzerinden.",
+        "adres": "kariyerkapisi.gov.tr",
+        "adresUrl": "https://kariyerkapisi.gov.tr/IlanDetay?i=20b04c08-a1a3-4c86-93e3-f6876db3a74f"
+      },
+      "secim": "KPSS P3 (%70) ve YDS (%30) sıralamasına göre çağrılan adaylarla sınav; sınav tarihi ve yeri Kariyer Kapısı'nda duyurulacak.",
+      "takvim": [
+        {
+          "tarih": "2026-12-14T23:59:00+03:00",
+          "olay": "Son başvuru"
+        }
+      ],
+      "kisa": [
+        {
+          "e": "Öğrenim",
+          "d": "Lisans (bilişim bölümleri)"
+        },
+        {
+          "e": "Deneyim",
+          "d": "5 yıl yazılım / yapay zekâ"
+        },
+        {
+          "e": "Yaş",
+          "d": "Sınır yok"
+        },
+        {
+          "e": "Başvuru",
+          "d": "27 Kasım–14 Aralık"
+        }
+      ],
+      "belgeler": [
+        [
+          "prog-iki-dil"
+        ]
+      ],
+      "iller": [
+        "Konya"
+      ],
+      "eklenme": "2026-11-27",
+      "resmi": {
+        "baslik": "Selçuk Üniversitesi Rektörlüğü - Selçuk Üniversitesi Sözleşmeli Bilişim Personeli Alım İlanı",
+        "yayin": "Kariyer Kapısı",
+        "tarih": "2026-11-27",
+        "ilanNo": "ILN00003027",
+        "metinUrl": "https://kariyerkapisi.gov.tr/IlanDetay?i=20b04c08-a1a3-4c86-93e3-f6876db3a74f",
+        "basvuruUrl": "https://www.turkiye.gov.tr/selcuk-universitesi-kariyer-kapisi-kamu-ise-alim",
+        "ekler": [
+          {
+            "ad": "Resmî Gazete ilanı, 27 Kasım 2026",
+            "url": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261127-4-11.pdf"
+          }
+        ],
+        "kontrol": "2026-11-27"
+      },
+      "resmiLink": "https://kariyerkapisi.gov.tr/IlanDetay?i=20b04c08-a1a3-4c86-93e3-f6876db3a74f",
+      "kaynaklar": [
+        {
+          "ad": "Resmî ilan metni — Kariyer Kapısı, 27 Kasım 2026",
+          "url": "https://kariyerkapisi.gov.tr/IlanDetay?i=20b04c08-a1a3-4c86-93e3-f6876db3a74f"
+        },
+        {
+          "ad": "Başvuru sayfası",
+          "url": "https://www.turkiye.gov.tr/selcuk-universitesi-kariyer-kapisi-kamu-ise-alim"
+        },
+        {
+          "ad": "Resmî Gazete ilanı, 27 Kasım 2026",
+          "url": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261127-4-11.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ab-baskanligi-sofor-5",
+      "kurum": "Dışişleri Bakanlığı Avrupa Birliği Başkanlığı",
+      "kurumKisa": "AB Başkanlığı",
+      "kurumTuru": "Bakanlık",
+      "ikon": "truck",
+      "baslik": "4/B sözleşmeli destek personeli (şoför)",
+      "kadroSayisi": 5,
+      "posterAlt": "şoför",
+      "tur": "kpssli",
+      "statu": "657 sayılı Kanun 4/B sözleşmeli personel",
+      "ogrenim": [
+        "ortaogretim",
+        "onlisans"
+      ],
+      "kpss": {
+        "gerekli": true,
+        "puanTurleri": [
+          "P94",
+          "P93"
+        ],
+        "taban": 70,
+        "yil": "2026 KPSS",
+        "aciklama": "2026 KPSS'den ortaöğretim mezunları P94, önlisans mezunları P93 puan türünden en az 70. Yerleştirme KPSS puan üstünlüğüne göre."
+      },
+      "yas": {
+        "aciklama": "657 sayılı Kanun'un 40. maddesindeki yaş şartı (18 yaşını tamamlamış olmak).",
+        "kurallar": [
+          {
+            "ogrenim": "ortaogretim",
+            "enGec": "2008-12-14",
+            "metin": "18 yaşını tamamlamış olanlar"
+          },
+          {
+            "ogrenim": "onlisans",
+            "enGec": "2008-12-14",
+            "metin": "18 yaşını tamamlamış olanlar"
+          }
+        ]
+      },
+      "bolumTags": [],
+      "bolumAciklama": "Ortaöğretim veya önlisans mezunları; bölüm şartı yok.",
+      "sartlar": [
+        "Başvuru tarihi itibarıyla en az 3 yıllık B sınıfı sürücü belgesi.",
+        "7/24 vardiyalı, kapalı ve açık alanlarda çalışmaya engel durumu olmamak; seyahat engeli bulunmamak.",
+        "Güvenlik soruşturması ve arşiv araştırması olumlu olmak."
+      ],
+      "dagilim": [
+        "Sözleşmeli destek personeli (şoför), Ankara Çankaya: 5"
+      ],
+      "basvuru": {
+        "baslangic": "2026-11-27T00:00:00+03:00",
+        "bitis": "2026-12-14T23:59:00+03:00",
+        "yontem": "e-Devlet ya da Kariyer Kapısı üzerinden; posta veya şahsen kabul edilmez.",
+        "adres": "kariyerkapisi.gov.tr",
+        "adresUrl": "https://kariyerkapisi.gov.tr/isealim"
+      },
+      "secim": "Sınav yok; KPSS puan üstünlüğüne göre asil ve yedek aday belirlenir.",
+      "takvim": [
+        {
+          "tarih": "2026-12-14T23:59:00+03:00",
+          "olay": "Son başvuru"
+        }
+      ],
+      "kisa": [
+        {
+          "e": "Öğrenim",
+          "d": "Lise veya önlisans"
+        },
+        {
+          "e": "KPSS",
+          "d": "2026 P94/P93 en az 70"
+        },
+        {
+          "e": "Belge",
+          "d": "3 yıllık B ehliyet"
+        },
+        {
+          "e": "Başvuru",
+          "d": "27 Kasım–14 Aralık"
+        }
+      ],
+      "belgeler": [
+        [
+          "ehliyet-b"
+        ]
+      ],
+      "iller": [
+        "Ankara"
+      ],
+      "eklenme": "2026-11-27",
+      "resmi": {
+        "baslik": "Dışişleri Bakanlığı Avrupa Birliği Başkanlığından: 4/B Sözleşmeli Destek Personeli (Şoför) Alım İlanı",
+        "yayin": "Resmî Gazete",
+        "tarih": "2026-11-27",
+        "metinUrl": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261127-4-8.pdf",
+        "basvuruUrl": "https://kariyerkapisi.gov.tr/isealim",
+        "ekler": [
+          {
+            "ad": "AB Başkanlığı duyuruları",
+            "url": "https://www.ab.gov.tr"
+          }
+        ],
+        "kontrol": "2026-11-27"
+      },
+      "resmiLink": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261127-4-8.pdf",
+      "kaynaklar": [
+        {
+          "ad": "Resmî ilan metni — Resmî Gazete, 27 Kasım 2026",
+          "url": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261127-4-8.pdf"
+        },
+        {
+          "ad": "Başvuru sayfası",
+          "url": "https://kariyerkapisi.gov.tr/isealim"
+        },
+        {
+          "ad": "AB Başkanlığı duyuruları",
+          "url": "https://www.ab.gov.tr"
+        }
+      ]
+    },
     {
       "id": "mersin-uni-bilisim-1",
       "kurum": "Mersin Üniversitesi",
@@ -3851,108 +4087,6 @@
         "yayin": "Resmî Gazete",
         "tarih": "2026-11-08",
         "metinUrl": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261108-4-6.pdf",
-        "kontrol": "2026-11-23"
-      }
-    },
-    {
-      "id": "bozkoy-itfaiye-1",
-      "kurum": "Niğde Bozköy Belediyesi",
-      "kurumKisa": "Bozköy Bld.",
-      "kurumTuru": "Belediye",
-      "ikon": "shield",
-      "baslik": "İtfaiye eri alımı",
-      "kadroSayisi": 1,
-      "posterAlt": "itfaiye eri",
-      "tur": "kpssli",
-      "statu": "Memur (açıktan atama, GİH 11. derece)",
-      "ogrenim": [
-        "lisans"
-      ],
-      "kpss": {
-        "gerekli": true,
-        "puanTurleri": [
-          "P3"
-        ],
-        "taban": 65,
-        "yil": "2026 KPSS (B)",
-        "aciklama": "P3 puan türünden en az 65."
-      },
-      "yas": {
-        "aciklama": "Sınav tarihinde (5 Ocak 2027) 30 yaşını doldurmamış olmak.",
-        "kurallar": [
-          {
-            "ogrenim": "*",
-            "enErken": "1997-01-06"
-          }
-        ]
-      },
-      "bolumTags": null,
-      "bolumAciklama": "Egzersiz ve spor bilimleri, spor yöneticiliği veya antrenörlük eğitimi lisans programları.",
-      "sartlar": [
-        "En az C sınıfı sürücü belgesi.",
-        "Boy: erkek en az 1,67 m, kadın en az 1,60 m; kilo ile boyun 1 metreyi aşan kısmı arasındaki fark ±10 kg'ı geçmemeli.",
-        "Kapalı alan, dar alan ve yükseklik fobisi olmamak."
-      ],
-      "dagilim": [
-        "İtfaiye eri, GİH 11. derece (lisans): 1"
-      ],
-      "basvuru": {
-        "baslangic": "2026-12-21T08:30:00+03:00",
-        "bitis": "2026-12-23T17:30:00+03:00",
-        "yontem": "Şahsen: Bozköy Belediyesi Yazı İşleri Müdürlüğü (08.30–12.30 ve 13.30–17.30). Posta ve e-posta kabul edilmez.",
-        "adres": "Yenice Mah. Fatih Cad. No:2 Çiftlik/Niğde",
-        "adresUrl": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261108-4-7.pdf"
-      },
-      "secim": "Kadronun 5 katı aday sözlü (%40) ve uygulamalı (%60) sınava çağrılır; ortalama en az 60. Atama puanı, sınav puanı ile KPSS puanının ortalaması.",
-      "takvim": [
-        {
-          "tarih": "2026-12-25T00:00:00+03:00",
-          "olay": "Sınava çağrılanlar bozkoy.bel.tr'de ilan edilir"
-        },
-        {
-          "tarih": "2027-01-05T10:00:00+03:00",
-          "olay": "Sözlü ve uygulamalı sınav"
-        }
-      ],
-      "kisa": [
-        {
-          "e": "Öğrenim",
-          "d": "Spor bilimleri lisansı"
-        },
-        {
-          "e": "KPSS",
-          "d": "P3 en az 65"
-        },
-        {
-          "e": "Yaş",
-          "d": "30'u doldurmamış"
-        },
-        {
-          "e": "Ehliyet",
-          "d": "C sınıfı"
-        }
-      ],
-      "kaynaklar": [
-        {
-          "ad": "Resmî ilan metni — Resmî Gazete, 8 Kasım 2026",
-          "url": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261108-4-7.pdf"
-        }
-      ],
-      "resmiLink": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261108-4-7.pdf",
-      "eklenme": "2026-11-08",
-      "iller": [
-        "Niğde"
-      ],
-      "belgeler": [
-        [
-          "ehliyet-c"
-        ]
-      ],
-      "resmi": {
-        "baslik": "İlk Defa Atanmak Üzere İtfaiye Eri Alım İlanı",
-        "yayin": "Resmî Gazete",
-        "tarih": "2026-11-08",
-        "metinUrl": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261108-4-7.pdf",
         "kontrol": "2026-11-23"
       }
     },
