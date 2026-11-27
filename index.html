@@ -1022,7 +1022,17 @@ body { background:
 .isd-kutu ul { padding-left: 18px; display: grid; gap: 3px; }
 .isd-maas { font-size: 17px !important; font-weight: 800; color: var(--ink); }
 .isd-not { margin-top: 4px !important; color: var(--ink-2); font-size: 13px !important; }
-.isd-uyari { margin: 0; font-size: 12.5px; color: var(--ink-2); }</style>
+.isd-uyari { margin: 0; font-size: 12.5px; color: var(--ink-2); }
+.ar-kart[data-r="pembe"], .ar-cip[data-r="pembe"] { --r: #E0408A; }
+.ar-brans-takvim { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.ar-brans-takvim li { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; padding: 8px 10px; border-radius: var(--r-s); background: color-mix(in srgb, var(--r) 9%, var(--sheet)); }
+.ar-brans-takvim span { color: var(--ink-2); font-size: 14px; }
+.ar-nasil summary { cursor: pointer; font-weight: 700; color: var(--r); }
+.ar-nasil ol { margin: 8px 0; padding-left: 20px; display: grid; gap: 4px; font-size: 14px; }
+.ar-brans-liste li.iyi { border-left-color: var(--ok); }
+.ar-brans-liste li.orta { border-left-color: var(--warn); }
+.ar-brans-liste li.zor { border-left-color: var(--crit); }
+.ar-brans-liste li.yok { border-left-color: var(--muted); }</style>
 </head>
 <body>
 <header class="ustbar">
@@ -2675,6 +2685,7 @@ body { background:
       satir('Bölüm', esc(bolumAdi(ap) || 'seçilmedi')) +
       satir('KPSS ' + esc(PUAN_TURU[ap.duzey] || ''), e && e.ham != null ? sayi2(e.ham) + (e.sira ? ' · ' + (e.siraTahmini ? 'tahmini sıra ' : 'sıra ') + sayi(e.sira) : '') : '<em>girilmedi</em>') +
       satir('Yaş', yas != null ? String(yas) : '<em>girilmedi</em>') +
+      satir('Branş sırası', ap.bransSira ? sayi(+ap.bransSira) : '<em>girilmedi</em>') +
       satir('Belgeler', belge ? belge + ' belge' : 'yok') +
       (ap.yds ? satir('Yabancı dil', esc(ap.ydsDil || '') + ' ' + esc(ap.yds)) : '') +
       '</ul>' + (!e ? '<p class="rpo-uyari">Profilinde KPSS puanın yok; robot şans hesaplamak için puanına ihtiyaç duyar.</p>' : '');
@@ -3189,7 +3200,8 @@ body { background:
         '<div class="alan"><span class="etk">Öğrenim düzeyin *</span><div class="kabarcik-grup">' + radyo('pf-duzey', 'lisans', 'Lisans', p.duzey === 'lisans') + radyo('pf-duzey', 'onlisans', 'Önlisans', p.duzey === 'onlisans') + radyo('pf-duzey', 'ortaogretim', 'Ortaöğretim (lise)', p.duzey === 'ortaogretim') + '</div></div>' +
         '<div class="alan"><label for="pf-bolum">Mezun olduğun bölüm veya program *</label><select id="pf-bolum">' + bolumler.map(b => '<option value="' + b[0] + '"' + (b[0] === p.bolum ? ' selected' : '') + '>' + esc(b[1]) + '</option>').join('') + '</select><p class="yardim">Kılavuzdaki öğrenim nitelik kodları bölüm adına göre eşleşir.</p></div>') +
       bolum('mor', 'chart', 'KPSS puanın', 'Merkezi yerleştirmede sıralama bu puanla yapılır',
-        '<div id="pf-puanlar" class="puan-kap">' + puanAlanlariHtml(p, 'pf') + '</div>') +
+        '<div id="pf-puanlar" class="puan-kap">' + puanAlanlariHtml(p, 'pf') + '</div>' +
+        '<div class="alan pf-brans"><label for="pf-brans">Branş bazında sıralaman <span class="istege">isteğe bağlı</span></label><input id="pf-brans" inputmode="numeric" value="' + esc(p.bransSira || '') + '" placeholder="Örn. 1250"><p class="yardim">ÖSYM Aday İşlemleri Sistemi\'nde kendi bölümünü (eğitim alanını) seçince görünen sıra. Bölüme özel kadrolarda şansını bununla hesaplarız. <a href="https://ais.osym.gov.tr" target="_blank" rel="noopener">ÖSYM AİS\'ye git</a></p></div>') +
       bolum('turkuaz', 'kisi', 'Yaş ve cinsiyet', 'Bazı kadrolarda yaş sınırı ya da cinsiyet şartı var',
         '<div class="pf-izgara"><div class="alan"><label for="pf-dogum">Doğum tarihin</label><input type="date" id="pf-dogum" value="' + esc(p.dogum) + '" aria-describedby="pf-yas-bilgi"><p class="yardim" id="pf-yas-bilgi">' + esc(pfYasMetni(p.dogum)) + '</p></div></div>' +
         '<div class="alan"><span class="etk">Cinsiyet</span><div class="kabarcik-grup">' + radyo('pf-cins', 'kadin', 'Kadın', p.cinsiyet === 'kadin') + radyo('pf-cins', 'erkek', 'Erkek', p.cinsiyet === 'erkek') + radyo('pf-cins', '', 'Belirtmek istemiyorum', !p.cinsiyet) + '</div><p class="yardim">Boş bırakırsan cinsiyet şartlı kadrolar "kontrol et" olarak görünür.</p></div>') +
@@ -3220,7 +3232,7 @@ body { background:
       p.ad = $('#pf-ad').value.trim(); p.dogum = $('#pf-dogum').value;
       p.cinsiyet = (f.querySelector('input[name="pf-cins"]:checked') || {}).value || '';
       p.duzey = (f.querySelector('input[name="pf-duzey"]:checked') || {}).value || 'lisans';
-      p.okul = ''; p.mezuniyet = ''; p.bolum = $('#pf-bolum').value;
+      p.okul = ''; p.mezuniyet = ''; p.bolum = $('#pf-bolum').value; p.bransSira = (($('#pf-brans') || {}).value || '').replace(/\D/g, '');
       p.puanlar = puanlariOku($('#pf-puanlar'), p.puanlar);
       const ana = p.puanlar[PUAN_TURU[p.duzey]] || {};
       p.puan = ana.puan || ''; p.siralama = ana.sira || '';
@@ -3567,13 +3579,14 @@ body { background:
     const p = aktifProfil();
     const duzey = (S.arac && S.arac.duzey) || (p && p.duzey) || 'lisans';
     S.arac = Object.assign({ duzey, ara: '', sirala: 'taban-azalan', puan: '' }, S.arac || {});
+    if (!S.arac.bransSira && p && p.bransSira) S.arac.bransSira = p.bransSira;
     if (!S.arac.puan && p) { const e = etkinPuan(p); if (e && e.deger) S.arac.puan = String(Math.round(e.deger * 100) / 100); }
     const duzeySecim = id => '<select id="' + id + '">' + ['lisans', 'onlisans', 'ortaogretim'].map(d => '<option value="' + d + '"' + (S.arac.duzey === d ? ' selected' : '') + '>' + OGRENIM[d] + ' (' + PUAN_TURU[d] + ')</option>').join('') + '</select>';
     const bt = bildirimTercih();
     const izinVar = typeof Notification !== 'undefined';
     el.innerHTML =
       '<div class="ar-bas"><h1>Araçlar</h1><p>Geçmiş yerleştirme puanları, puanınla nereye girebileceğin, net hesaplama ve bildirim ayarları tek yerde.</p>' +
-      '<nav class="ar-cipler" aria-label="Araçlar"><a href="#araclar-atlas" class="ar-cip" data-r="mavi">Taban puan atlası</a><a href="#araclar-puanim" class="ar-cip" data-r="mor">Bu puanla nereye?</a><a href="#araclar-hesap" class="ar-cip" data-r="turkuaz">Puan hesapla</a><a href="#araclar-bildirim" class="ar-cip" data-r="turuncu">Bildirim ve duyurular</a></nav></div>' +
+      '<nav class="ar-cipler" aria-label="Araçlar"><a href="#araclar-atlas" class="ar-cip" data-r="mavi">Taban puan atlası</a><a href="#araclar-puanim" class="ar-cip" data-r="mor">Bu puanla nereye?</a><a href="#araclar-hesap" class="ar-cip" data-r="turkuaz">Puan hesapla</a><a href="#araclar-brans" class="ar-cip" data-r="pembe">Branş sıralaması</a><a href="#araclar-bildirim" class="ar-cip" data-r="turuncu">Bildirim ve duyurular</a></nav></div>' +
       // Atlas
       '<section class="kart ar-kart" id="ar-atlas" data-r="mavi"><h2>' + svgIkon('chart', 20) + 'Taban puan atlası</h2><p class="acik">Merkezi yerleştirmede unvan bazında kontenjan, en düşük (taban) ve en yüksek puan. ' + DONEM_AD.d1 + ' ve ' + DONEM_AD.d2 + ' dönemleri.</p>' +
       '<div class="ar-filtre"><label><span>Öğrenim</span>' + duzeySecim('ar-duzey') + '</label><label class="genis"><span>Unvan, kurum veya il ara</span><input id="ar-ara" type="search" value="' + esc(S.arac.ara) + '" placeholder="Örn. memur, VHKİ, Ankara"></label>' +
@@ -3588,6 +3601,12 @@ body { background:
       '<div class="ar-hesap-izgara">' + ['gy:Genel Yetenek', 'gk:Genel Kültür'].map(x => { const [k, ad] = x.split(':'); return '<fieldset class="ar-test"><legend>' + ad + ' <small>60 soru</small></legend><label><span>Doğru</span><input id="ar-' + k + '-d" type="number" min="0" max="60" inputmode="numeric"></label><label><span>Yanlış</span><input id="ar-' + k + '-y" type="number" min="0" max="60" inputmode="numeric"></label><output id="ar-' + k + '-net">Net: –</output></fieldset>'; }).join('') + '</div>' +
       '<div class="ar-filtre"><label><span>Öğrenim</span>' + duzeySecim('ar-h-duzey') + '</label></div>' +
       '<div id="ar-hesap-sonuc" class="ar-hesap-sonuc" aria-live="polite"></div></section>' +
+      // Branş sıralaması
+      '<section class="kart ar-kart" id="ar-brans" data-r="pembe"><h2>' + svgIkon('kisi', 20) + 'Branş bazında sıralama</h2><p class="acik">Kendi bölümünden (eğitim alanından) sınava girenler arasındaki sıran. Bölüm şartı olan kadrolarda asıl rakiplerin bunlardır; bölüm şartsız kadrolarda ise genel sıralama geçerlidir.</p>' +
+      '<ul class="ar-brans-takvim">' + BRANS_DUYURU.map(b => '<li><b>' + esc(b.sinav) + '</b><span>' + esc(b.durum) + '</span>' + (b.url ? '<a href="' + esc(b.url) + '" target="_blank" rel="noopener">ÖSYM duyurusu</a>' : '') + '</li>').join('') + '</ul>' +
+      '<details class="ar-nasil"><summary>Sıralamamı nasıl öğrenirim?</summary><ol><li><a href="https://ais.osym.gov.tr" target="_blank" rel="noopener">ais.osym.gov.tr</a> adresine T.C. kimlik numaran ve aday şifrenle gir.</li><li>İlgili sınavın "Branş Bazında Sıralama" sayfasını aç.</li><li>Puan türünü (P3, P93, P94…) ve kendi eğitim alanını seç, "Hesapla"ya bas.</li><li>"Yerleştirilen adaylar sıralamaya dahil edilmesin" seçeneğini işaretlersen daha önce B grubu kadroya yerleşmiş adaylar sayılmaz; tercih için bu daha gerçekçidir.</li><li>Çıkan sırayı aşağıya ve profiline yaz.</li></ol><p class="yardim">ÖSYM\'ye göre bu sıra bilgilendirme amaçlıdır, belge niteliği taşımaz ve yerleştirmeyi etkilemez; eğitim bilgin e-Okul/YÖKSİS\'ten alınır.</p></details>' +
+      '<div class="ar-filtre"><label><span>Öğrenim</span>' + duzeySecim('ar-b-duzey') + '</label><label><span>Branş sıran</span><input id="ar-brans-sira" inputmode="numeric" value="' + esc(S.arac.bransSira || '') + '" placeholder="Örn. 1250"></label></div>' +
+      '<div id="ar-brans-sonuc"></div></section>' +
       // Bildirimler
       '<section class="kart ar-kart" id="ar-bildirim" data-r="turuncu"><h2>' + svgIkon('zil', 20) + 'Bildirim tercihleri</h2><p class="acik">Hangi yeni ilanlar için haber verelim? Uygulama açıldığında ve yenilendiğinde bu tercihe göre "yeni ilan" uyarısı çıkar.</p>' +
       '<div class="alan"><span class="etk">İlan türleri</span><div class="kabarcik-grup">' + TUM_TURLER.map(t => '<label class="kabarcik"><input type="checkbox" name="ar-b-tur" value="' + t + '"' + (bt.turler.includes(t) ? ' checked' : '') + '><span class="daire">✓</span>' + esc(TUR[t].uzun) + '</label>').join('') + '</div></div>' +
@@ -3595,7 +3614,7 @@ body { background:
       '<div class="ar-telefon"><div><b>Telefon bildirimi</b><p class="yardim" id="ar-b-durum">' + esc(telefonBildirimDurumu(bt)) + '</p></div>' + (izinVar ? '<button type="button" class="btn ' + (bt.telefon ? '' : 'ana') + '" id="ar-b-telefon">' + (bt.telefon ? 'Kapat' : 'Aç') + '</button>' : '') + '</div>' +
       '<h3 class="ar-alt-baslik">Takip ettiğin ilanların duyuruları</h3><div id="ar-duyurular">' + takipDuyurulariHtml() + '</div></section>';
     araclarOlaylari();
-    atlasCiz(); puanimCiz(); hesapCiz();
+    atlasCiz(); puanimCiz(); hesapCiz(); bransCiz();
     if (odak) { const hedef = document.getElementById('ar-' + odak); if (hedef) setTimeout(() => hedef.scrollIntoView({ block: 'start' }), 30); }
   }
   function telefonBildirimDurumu(bt) {
@@ -3606,10 +3625,11 @@ body { background:
   }
   function araclarOlaylari() {
     const deg = (id, f) => { const e = document.getElementById(id); if (e) e.addEventListener('input', f); };
-    ['ar-duzey', 'ar-p-duzey', 'ar-h-duzey'].forEach(id => { const e = document.getElementById(id); if (e) e.addEventListener('change', () => { S.arac.duzey = e.value; ['ar-duzey', 'ar-p-duzey', 'ar-h-duzey'].forEach(x => { const o = document.getElementById(x); if (o) o.value = e.value; }); atlasCiz(); puanimCiz(); hesapCiz(); }); });
+    ['ar-duzey', 'ar-p-duzey', 'ar-h-duzey', 'ar-b-duzey'].forEach(id => { const e = document.getElementById(id); if (e) e.addEventListener('change', () => { S.arac.duzey = e.value; ['ar-duzey', 'ar-p-duzey', 'ar-h-duzey', 'ar-b-duzey'].forEach(x => { const o = document.getElementById(x); if (o) o.value = e.value; }); atlasCiz(); puanimCiz(); hesapCiz(); bransCiz(); }); });
     deg('ar-ara', e => { S.arac.ara = e.target.value; atlasCiz(); });
     const sr = $('#ar-sirala'); if (sr) sr.addEventListener('change', e => { S.arac.sirala = e.target.value; atlasCiz(); });
     deg('ar-puan', e => { S.arac.puan = e.target.value; puanimCiz(); });
+    deg('ar-brans-sira', e => { S.arac.bransSira = e.target.value.replace(/\D/g, ''); bransCiz(); });
     ['gy-d', 'gy-y', 'gk-d', 'gk-y'].forEach(k => deg('ar-' + k, hesapCiz));
     document.querySelectorAll('.ar-cip').forEach(a => a.addEventListener('click', ev => { ev.preventDefault(); const h = document.getElementById('ar-' + a.getAttribute('href').split('-')[1]); if (h) h.scrollIntoView({ behavior: 'smooth', block: 'start' }); }));
     const kaydet = () => {
@@ -3686,6 +3706,28 @@ body { background:
       '<div class="tl-butonlar"><button type="button" class="btn ana" id="ar-h-aktar">Bu P3 ile nereye girerim?</button></div>' +
       '<p class="yardim">Tahmin; ' + KPSS_ISTAT.yil + ' KPSS Lisans istatistiklerine göre. Gerçek puanın sınava giren adayların o yılki başarısına göre değişir.</p>';
     $('#ar-h-aktar').addEventListener('click', () => { S.arac.puan = String(Math.round(p[0][1] * 100) / 100); const i = $('#ar-puan'); if (i) i.value = S.arac.puan.replace('.', ','); S.arac.puan = S.arac.puan; puanimCiz(); $('#ar-puanim').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+  }
+  const BRANS_DUYURU = [
+    { sinav: '2026 KPSS Lisans', durum: '4 Kasım 2026\'da açıklandı', url: '' },
+    { sinav: '2026 KPSS Ortaöğretim', durum: '27 Kasım 2026\'da açıklandı', url: 'https://www.osym.gov.tr/2026-kpss-ortaogretim-sinavi-brans-bazinda-siralamalar' },
+    { sinav: '2026 KPSS Önlisans', durum: 'Açıklanınca burada duyurulacak', url: '' }
+  ];
+  function bransCiz() {
+    const kap = $('#ar-brans-sonuc'); if (!kap) return;
+    const sira = parseInt(S.arac.bransSira, 10);
+    const p = aktifProfil();
+    const etiket = p && p.duzey === S.arac.duzey ? bolumEtiketleri(p) : [];
+    const list = S.kadrolar.filter(k => k.duzey === S.arac.duzey && (k.bolumTags || []).length);
+    const benim = etiket.length ? list.filter(k => k.bolumTags.some(t => etiket.includes(t))) : [];
+    if (!(sira > 0)) { kap.innerHTML = '<p class="acik">Branş sıranı yazınca bölümüne özel kadrolardaki durumunu gösterelim.' + (p ? '' : ' Bölümünü profilinde seçersen yalnız sana uyan kadroları gösteririz.') + '</p>'; return; }
+    const gos = benim.length ? benim : (etiket.length ? [] : list);
+    const deger = k => { const kon = Math.max((k.d1 || {}).kontenjan || 0, (k.d2 || {}).kontenjan || 0); if (!kon) return { kon, sinif: 'yok', yazi: 'Geçen dönemlerde kontenjan yok ya da az' }; const oran = sira / kon; return { kon, sinif: oran <= 1 ? 'iyi' : oran <= 3 ? 'orta' : 'zor', yazi: oran <= 1 ? 'Sıran geçen dönem kontenjanının içinde' : oran <= 3 ? 'Sıran kontenjanın ' + oran.toLocaleString('tr-TR', { maximumFractionDigits: 1 }) + ' katı; tercih yapmayanlarla şans var' : 'Sıran kontenjanın ' + Math.round(oran) + ' katı; zor görünüyor' }; };
+    kap.innerHTML = (benim.length ? '<p class="acik">Bölümün: <b>' + esc(bolumAdi(p)) + '</b>. Bu bölüme özel unvanlar:</p>' : '<p class="acik">' + (etiket.length ? 'Bölümüne (' + esc(bolumAdi(p)) + ') özel unvan atlasta yok. Bu durumda bölüm şartsız kadrolarda (memur, VHKİ, büro personeli vb.) genel sıralaman geçerli olur; branş sıran bölüm kodu açılan kurum kadrolarında işe yarar.' : 'Bölüm şartlı unvanlar (profiline bölüm eklersen yalnız sana uyanları gösteririz):') + '</p>') +
+      (gos.length ? '<ul class="ar-liste ar-brans-liste">' + gos.map(k => { const d = deger(k); return '<li class="' + d.sinif + '"><b>' + esc(k.unvan) + '</b><span>' + (d.kon ? 'geçen dönem en çok ' + sayi(d.kon) + ' kontenjan · ' : '') + esc(d.yazi) + '</span></li>'; }).join('') + '</ul>' : (etiket.length ? '' : '<p class="acik">Bu öğrenim düzeyinde bölüm şartlı unvan verisi yok.</p>')) +
+      '<p class="yardim">Kaba bir yön göstergesidir: adayların hepsi tercih yapmaz, kontenjan her dönem değişir ve bazı kadrolar birden fazla bölüme açıktır. Bölüm şartsız kadrolarda (memur, VHKİ vb.) genel sıralaman ve puanın geçerlidir; onlar için "Bu puanla nereye?" aracını kullan.</p>' +
+      (p && String(p.bransSira || '') !== String(sira) ? '<div class="tl-butonlar"><button type="button" class="btn" id="ar-brans-kaydet">Bu sırayı profilime kaydet</button></div>' : '');
+    const kb = $('#ar-brans-kaydet');
+    if (kb) kb.addEventListener('click', () => { const ap = aktifProfil(); if (!ap) return; ap.bransSira = String(sira); hesapKaydet(); profilDegisti(); tost('Branş sıran profiline kaydedildi'); bransCiz(); });
   }
   function duyuruHtml(il) {
     const d = (il.duyurular || []).slice().sort((a, b) => String(b.tarih).localeCompare(String(a.tarih)));
