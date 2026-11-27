@@ -1,7 +1,7 @@
 {
   "meta": {
-    "sonKontrol": "2026-11-27T08:55:00+03:00",
-    "sonrakiKontrol": "2026-11-27T16:47:00+03:00",
+    "sonKontrol": "2026-11-27T16:50:00+03:00",
+    "sonrakiKontrol": "2026-11-30T08:47:00+03:00",
     "kontrolSikligi": "hafta içi her gün 08.47 ve 16.47",
     "kaynaklar": [
       {
@@ -218,9 +218,9 @@
       "basvuru": {
         "baslangic": "2026-11-27T00:00:00+03:00",
         "bitis": "2026-12-14T23:59:00+03:00",
-        "yontem": "e-Devlet ya da Kariyer Kapısı üzerinden; posta veya şahsen kabul edilmez.",
+        "yontem": "e-Devlet'te \"Avrupa Birliği – Kariyer Kapısı Kamu İşe Alım\" hizmeti ya da Kariyer Kapısı üzerinden; posta veya şahsen kabul edilmez.",
         "adres": "kariyerkapisi.gov.tr",
-        "adresUrl": "https://kariyerkapisi.gov.tr/isealim"
+        "adresUrl": "https://kariyerkapisi.gov.tr/IlanDetay?i=add4bb83-a310-4b00-9f8b-6771300863f5"
       },
       "secim": "Sınav yok; KPSS puan üstünlüğüne göre asil ve yedek aday belirlenir.",
       "takvim": [
@@ -261,14 +261,19 @@
         "yayin": "Resmî Gazete",
         "tarih": "2026-11-27",
         "metinUrl": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261127-4-8.pdf",
-        "basvuruUrl": "https://kariyerkapisi.gov.tr/isealim",
+        "basvuruUrl": "https://www.turkiye.gov.tr/avrupa-birligi-kariyer-kapisi-kamu-ise-alim",
         "ekler": [
+          {
+            "ad": "Kariyer Kapısı ilanı (ILN00003029)",
+            "url": "https://kariyerkapisi.gov.tr/IlanDetay?i=add4bb83-a310-4b00-9f8b-6771300863f5"
+          },
           {
             "ad": "AB Başkanlığı duyuruları",
             "url": "https://www.ab.gov.tr"
           }
         ],
-        "kontrol": "2026-11-27"
+        "kontrol": "2026-11-27",
+        "ilanNo": "ILN00003029"
       },
       "resmiLink": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261127-4-8.pdf",
       "kaynaklar": [
@@ -277,8 +282,12 @@
           "url": "https://www.resmigazete.gov.tr/ilanlar/eskiilanlar/2026/11/20261127-4-8.pdf"
         },
         {
-          "ad": "Başvuru sayfası",
-          "url": "https://kariyerkapisi.gov.tr/isealim"
+          "ad": "Kariyer Kapısı ilanı",
+          "url": "https://kariyerkapisi.gov.tr/IlanDetay?i=add4bb83-a310-4b00-9f8b-6771300863f5"
+        },
+        {
+          "ad": "Başvuru sayfası (e-Devlet)",
+          "url": "https://www.turkiye.gov.tr/avrupa-birligi-kariyer-kapisi-kamu-ise-alim"
         },
         {
           "ad": "AB Başkanlığı duyuruları",
